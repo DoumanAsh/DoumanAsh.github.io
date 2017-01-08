@@ -125,8 +125,13 @@ div.sub_page
             display: none //Default is hidden when target element is preceding.
 
 div.sub_page.flex
+    display: none //By default all elements are hidden.
+
     &.default
         display: flex //Default element is always shown.
 
     &:target
         display: flex //Target element is shown
+
+        & ~ div.default
+            display: none //Default is hidden when target element is preceding.

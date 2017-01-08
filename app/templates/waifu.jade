@@ -1,21 +1,27 @@
 include _head.jade
--
-    var util = require('util');
-    var path = require('path');
-    var waifu = require(path.join(root_dir, 'waifu.json'));
+
+- var util = require('util');
+- var path = require('path');
+- var waifu = require(path.join(root_dir, 'waifu.json'));
+- var first = waifu.data.images[0];
+- var waifu = waifu.data.images.slice(1);
+- waifu.push(first);
 
 body(class="site")
     div(class="gallery" id="Waifu")
         h1(class="center")="My Waifu Gallery"
-        for item, idx in waifu.data.images
-            - var prev_idx = idx ? idx - 1 : idx;
-            - var next_idx = idx === (waifu.data.images.length-1) ? idx : idx + 1;
+        for item, idx in waifu
+            // Last is default item
+            - var cur_idx = idx + 1;
+            - var prev_idx = cur_idx === waifu.length ? "" : cur_idx - 1;
+            - var next_idx = cur_idx === waifu.length ? 1 :  cur_idx === (waifu.length - 1) ? cur_idx : cur_idx + 1;
             - var link = item.link.replace('http', 'https');
             - var height = 550;
             - var width = Math.min(item.width / 1.1, 950);
             - var style_img = util.format("width: %spx; height: %spx", width, height);
             - var style_inner = util.format("background-image: url('%s')", link);
-            div(id=idx class="sub_page flex")
+            - var div_page_class = cur_idx  === waifu.length ? "default sub_page flex" : "sub_page flex";
+            div(id=cur_idx class=div_page_class)
                 a(href="#" + prev_idx)="«"
                 div(class="current")
                     div(class="img" style=style_img)
@@ -24,4 +30,5 @@ body(class="site")
                         p(class="title")=item.title
                         p(class="details")=item.description ? item.description : ""
                 a(href="#" + next_idx)="»"
+
 
