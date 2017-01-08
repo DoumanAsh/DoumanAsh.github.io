@@ -1,0 +1,132 @@
+*
+    margin: 0
+
+body
+    background: #eaeaea
+    font-size: 25px
+    font-family: "Times New Roman", Times, serif
+
+h1.big
+    font-weight: 100
+    font-size: 6rem
+
+.container
+    margin: 1rem
+
+.center
+    text-align: center
+
+.inline_children
+    & > *
+        display:inline-block
+        vertical-align: middle
+
+.hidden
+    display: none
+
+    &:hover
+        display: block
+
+div.page_title
+    &:before
+        content: attr(page_title)
+        width: 100%
+        text-align: center
+        font-size: 2em
+        font-weight: 900
+        margin-bottom: .5em
+
+nav.site
+    color: white
+    padding: .6em
+    background: #333
+    box-shadow: 3px 3px 3px 4px rgba(0, 0, 0, 0.4)
+    text-align: center
+    box-sizing: border-box
+
+    &  a
+        box-sizing: border-box
+        padding: .6em
+        text-decoration: none
+        cursor: pointer
+        color: white
+
+        &:hover
+            background: #444
+
+        &:target
+            color:black
+
+    & > div.sub
+        display: inline-block
+
+        &:hover > .hidden
+            display: block
+
+        & > ul
+            border-radius: .2em
+            margin-top: .5em
+            box-shadow: 3px 3px 3px 4px rgba(0, 0, 0, 0.4)
+            padding: 0px
+            position: absolute
+            background: #333
+            list-style-type: none
+            width: 5em
+            opacity: .95
+
+            & > li
+                padding: .5em
+                &:hover
+                    background: #444
+                & >  a
+                    display: block
+                    padding: 0px
+
+body.site
+    display: flex
+    flex-flow: column
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    & > nav.site
+        z-index: 1
+    & > div.sub_page
+        flex: 1
+        align-content: flex-start //It is necessary so that child elements are going from top.
+        overflow: auto
+        vertical-align: top
+
+@keyframes fade-in
+    from
+        opacity:0
+        opacity: 1\9 /* IE9 only */
+    to
+        opacity:1
+
+//Default target should come after all possible targets.
+div.sub_page
+    animation: fade-in 1s;
+    & > iframe
+        border: 0
+        width: 100%
+        height: 100%
+
+    display: none //By default all elements are hidden.
+
+    &.default
+        display: block //Default element is always shown.
+
+    &:target
+        display: block //Target element is shown
+
+        & ~ div.default
+            display: none //Default is hidden when target element is preceding.
+
+div.sub_page.flex
+    &.default
+        display: flex //Default element is always shown.
+
+    &:target
+        display: flex //Target element is shown

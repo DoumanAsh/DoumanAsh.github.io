@@ -1,0 +1,52 @@
+div.goodies
+    padding: 1em
+
+    &:before
+        content: attr(page_title)
+        flex: 1 1 100%
+        text-align: center
+        font-size: 2em
+        font-weight: 900
+        margin-bottom: .5em
+
+    &.flex
+        justify-content: space-around
+        flex-wrap: wrap
+
+    & > a
+        text-align: center
+        text-decoration: none
+        color: black
+
+        &:hover
+            box-shadow: 3px 3px 3px 4px rgba(0, 0, 0, 0.1)
+
+    & > a.goodie_link
+        font-size: 1.5rem
+        padding: .5em
+        width: 25%
+
+
+        & > p.title
+            color: #999
+            font-size: 1.5em
+            font-weight: 900
+
+        & > p
+            text-align: left
+            word-wrap: break-word
+
+    & > a.sub_link
+        flex: 1 1 auto
+        display: flex
+        flex-direction: column
+
+        &::after
+            content: attr(page_title)
+
+        & > div
+            text-align: center
+            display: block
+            margin: auto
+            & > img
+                border: 0

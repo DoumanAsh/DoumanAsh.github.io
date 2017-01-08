@@ -1,0 +1,248 @@
+- var title = "Arthur Martirosyan's CV"
+include _head.jade
+
+script(src="app.js")
+
+script.
+    var _utils = require("js/utils.js");
+    var toggle_element = _utils.toggle_element;
+
+body(class="cv")
+    div(id="cv", class="cv", lang="en")
+        script.
+            var _cv = document.getElementById('cv');
+            if (window.location.hash.length > 1) {
+                _cv.lang = window.location.hash.slice(1);
+            }
+
+        div(class="lang_switcher")
+            a(href="#en", hreflang="en", title="English", onclick="_cv.lang = 'en'")
+                img(src="/img/eng.png")
+            a(href="#ru", hreflang="ru", title="Русский язык", onclick="_cv.lang = 'ru'")
+                img(src="/img/russian.png")
+
+        h1(lang="en")="Arthur Martirosyan"
+        h1(lang="ru")="Артур Мартиросян"
+
+        div(class="common")
+            table
+                tr
+                    td(lang="en")="Birth date:"
+                    td(lang="ru")="Дата рождения:"
+                    td="12.02.1992"
+                tr
+                    td(lang="en")="Residence:"
+                    td(lang="ru")="Место жительства:"
+                    td(lang="en")="Nizhny Novgorod, Russia"
+                    td(lang="ru")="Нижний Новгород, Россия"
+                tr
+                    td(lang="en")="Find me:"
+                    td(lang="ru")="Профили в сети:"
+                    td
+                        a(title="github.com/DoumanAsh", class="link_logo", href="https://github.com/DoumanAsh", target="_blank")
+                            img(class="logo", src="/img/github-logo.svg")
+                        a(title="linkedin.com/in/doumanash", href="https://linkedin.com/in/doumanash", target="_blank")
+                            img( class="logo", src="/img/linkedin-logo.svg")
+            table(style="float: right")
+                tr
+                    td(lang="en")="Marital status:"
+                    td(lang="ru")="Семейное положение:"
+                    td(lang="en")="Single"
+                    td(lang="ru")="Холост"
+                tr
+                    td(lang="en")="Phone:"
+                    td(lang="ru")="Телефон:"
+                    td="+7 910 131 72 70"
+                tr
+                    td(lang="en")="Contacts:"
+                    td(lang="ru")="Контакты:"
+                    td
+                        a(title="douman@gmx.se", class="link_logo", href="mailto:douman@gmx.se", target="_blank")
+                            img(class="logo", src="/img/close-envelope.png")
+                        a(title="Skype: coldgloom", class="link_logo", href="skype:coldgloom?call", target="_blank")
+                            img(class="logo", src="/img/skype.png")
+
+
+        section
+            h2(lang="en")="Expertise"
+            h2(lang="ru")="Экспертиза"
+            div
+                ul
+                    li(lang="en")="Several years of work experience in telecom software development."
+                    li(lang="ru")="Несколько лет опыта в разработке ПО для телекома."
+                    li
+                        b(lang="en")="Programming/scripting: "
+                        b(lang="ru")="Языки: "
+                        | C/C++, Python, Rust, HTML5/CSS, JavaScript, Powershell, Bash
+                    li
+                        b(lang="en")="Frameworks: "
+                        b(lang="ru")="Фреймворки: "
+                        | Google Test/Mock, Node.js, express.js, socket.io, ReactJS, CUnit, Django
+                    li
+                        b="APIs: "
+                        | Windows, REST, POSIX Threads
+                    li
+                        b(lang="en")="Tools: "
+                        b(lang="ru")="Утилиты: "
+                        | Git, Wireshark, JIRA, Redmine, Doxygen, Valgrind/Callgrind, gprof, oprofile, Lint, cppcheck
+                    li
+                        b(lang="en")="Protocols: "
+                        b(lang="ru")="Протоколы: "
+                        | SCTP, TCP/IP
+
+        section
+            h2(lang="en")="Experience"
+            h2(lang="ru")="Опыт работы"
+            div
+                div
+                    h3(lang="en", style="float:left; cursor:pointer", onclick="toggle_element('mera_exp')")="Senior Software Engineer"
+                    h3(lang="ru", style="float:left; cursor:pointer", onclick="toggle_element('mera_exp')")="Старший Разработчик"
+                    span(lang="en", style="float:right")="MERA Networks - Nizhny Novgorod"
+                    span(lang="ru", style="float:right")="МЕРА НН - Нижний Новгород"
+                br
+                span(lang="en")="September 2012 - Present time "
+                span(lang="ru")="Сентябрь 2012 - Настоящее время "
+                span(id="en_mera_date_diff", lang="en")=""
+                span(id="ru_mera_date_diff", lang="ru")=""
+                script.
+                    var _mera_date_diff = _utils.get_date_diff(new Date(2012, 9, 1), new Date());
+                    var _get_date_diff_string = _utils.get_diff_string;
+
+                    if (_mera_date_diff.year > 0 || _mera_date_diff.month > 0) {
+                        document.getElementById("en_mera_date_diff").innerHTML = _get_date_diff_string(_mera_date_diff, "en");
+                        document.getElementById("ru_mera_date_diff").innerHTML = _get_date_diff_string(_mera_date_diff, "ru");
+                    }
+
+                ul(id="mera_exp", class="spoiler", style="margin-left: 1em; list-style-type: disc")
+                    li(lang="en")
+                        | Support and maintenance of telecommunication software(SS7 area).
+                    li(lang="ru")
+                        | Разработка и поддержка телекомуникационного софта(SS7 область).
+                    li(lang="en")
+                        | Design and feature implementation for existing system software(C/C++).
+                    li(lang="ru")
+                        | Разработка новой функциональности на базе существующего софта.
+                    li(lang="en")
+                        | Troubleshooting of network issues and log analysis. Including Wireshark.
+                    li(lang="ru")
+                        | Анализ и разрешение проблем сети, анализ логов. Включая Wireshark.
+                    li(lang="en")
+                        | Writing automatic unit tests by means of Google Test/Mock.
+                    li(lang="ru")
+                        | Написание юнит-тестов средствами Google Test/Mock.
+                    li(lang="en")
+                        b="OS: "
+                        | OSE and Wind River Linux
+                    li(lang="ru")
+                        b="ОС: "
+                        | OSE и Wind River Linux
+                    li(lang="en")
+                        b="Development methodologies: "
+                        | Scrum, Agile.
+                    li(lang="ru")
+                        b="Методологии разработки: "
+                        | Scrum, Agile.
+                    li(lang="en")
+                        b="SCM: "
+                        | Git with Gerrit and Jenkins
+                    li(lang="ru")
+                        b="Система контроля версий: "
+                        | Git with Gerrit и Jenkins
+                    li(lang="en")
+                        b="Protocols: "
+                        | SCTP, M3UA and IP
+                    li(lang="ru")
+                        b="Протоколы: "
+                        | SCTP, M3UA & IP
+                    li(lang="en")
+                        b="Code analysis tools: "
+                        | Lint, Coverity and Valgrind.
+                    li(lang="ru")
+                        b="Анализ кода: "
+                        | Lint, Coverity & Valgrind.
+                    li(lang="en")
+                        b="Documentation: "
+                        | Doxygen
+                    li(lang="ru")
+                        b="Написание документации: "
+                        | Doxygen
+                    li(lang="en")
+                        b="Task boards: "
+                        | JIRA and Redmine.
+                    li(lang="ru")
+                        b="Управление проектом: "
+                        | JIRA & Redmine.
+                    li(lang="en")
+                        b="Code profiling: "
+                        | gprof, oprfile, callgrind.
+                    li(lang="ru")
+                        b="Профилировка кода: "
+                        | gprof, oprfile, callgrind.
+                    li(lang="en")
+                        | Writing automation and code generations Python scripts.
+                    li(lang="ru")
+                        | Написание скриптов автоматизации и кодо-генерации.
+                    li(lang="en")
+                        | Prototyping thread synchronization for test environment using POSIX Threads.
+                    li(lang="ru")
+                        | Прототипирование синхронизации тредов в тестовом окружении, используя POSIX Threads.
+        section
+            h2(lang="en")="Languages"
+            h2(lang="ru")="Языки"
+            div
+                ul
+                    li(lang="en")
+                        b="Russian: "
+                        | Native
+                    li(lang="ru")
+                        b="Русский: "
+                        | Родной
+                    li(lang="en")
+                        b="English: "
+                        | Upper intermediate
+                    li(lang="ru")
+                        b="Английский: "
+                        | Upper intermediate
+        section
+            h2(lang="en")="Education"
+            h2(lang="ru")="Образование"
+            div
+                h3(lang="en")="Nizhny Novgorod Economics and Law College"
+                h3(lang="ru")="Нижегородский Экономико-Правовой Колледж"
+                span="2008 - 2012"
+                ul
+                    li(lang="en")
+                        b="Major: "
+                        | Applied Informatics
+                    li(lang="ru")
+                        b="Специальность: "
+                        | Информационные технологии
+                    li(lang="en")
+                        b="Degree: "
+                        | Associate's degree
+                    li(lang="ru")
+                        b="Квалификация: "
+                        | Среднее профессиональное образованиe
+                br
+                h3(lang="en", title="Russian Academy of National Economy and Public Administration")="RANEPA"
+                h3(lang="ru", title="Российская академия народного хозяйства и государственной службы")="РАНХиГС"
+                span="2012 - 2016"
+                ul
+                    li(lang="en")
+                        b="Major: "
+                        | Applied Informatics
+                    li(lang="ru")
+                        b="Специальность: "
+                        | Информационные технологии
+                    li(lang="en")
+                        b="Degree: "
+                        | Bachelor's degree
+                    li(lang="ru")
+                        b="Квалификация: "
+                        | Бакалавр
+        section
+            h2(lang="en")="Interests"
+            h2(lang="ru")="Интересы"
+            div(lang="en")="Programming, Gaming, History, Chivalry"
+            div(lang="ru")="Программирование, Видео-игры, История, Рыцарство"
+

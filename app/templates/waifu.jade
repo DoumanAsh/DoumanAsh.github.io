@@ -1,0 +1,27 @@
+include _head.jade
+-
+    var util = require('util');
+    var path = require('path');
+    var waifu = require(path.join(root_dir, 'waifu.json'));
+
+body(class="site")
+    div(class="gallery" id="Waifu")
+        h1(class="center")="My Waifu Gallery"
+        for item, idx in waifu.data.images
+            - var prev_idx = idx ? idx - 1 : idx;
+            - var next_idx = idx === (waifu.data.images.length-1) ? idx : idx + 1;
+            - var link = item.link.replace('http', 'https');
+            - var height = 550;
+            - var width = Math.min(item.width / 1.1, 950);
+            - var style_img = util.format("width: %spx; height: %spx", width, height);
+            - var style_inner = util.format("background-image: url('%s')", link);
+            div(id=idx class="sub_page flex")
+                a(href="#" + prev_idx)="«"
+                div(class="current")
+                    div(class="img" style=style_img)
+                        div(class="inner" style=style_inner)
+                    div(class="description")
+                        p(class="title")=item.title
+                        p(class="details")=item.description ? item.description : ""
+                a(href="#" + next_idx)="»"
+

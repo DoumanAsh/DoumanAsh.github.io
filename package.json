@@ -1,0 +1,38 @@
+{
+  "name": "Douman-site-generator",
+  "description": "Static site generator.",
+  "author": "Douman",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "license": "MIT",
+  "scripts": {
+    "gen_data": "node ci/get_images.js",
+    "prestart": "npm install",
+    "start": "brunch watch --server",
+    "prebuild": "npm run gen_data && npm install",
+    "build": "brunch build --production",
+    "lint": "eslint . --ext .js --ext .tag --ignore-pattern public || true",
+    "update_pages": "sh ci/update_page.sh"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "auto-reload-brunch": "*",
+    "autoprefixer-stylus": "*",
+    "babel-brunch": "*",
+    "brunch": "*",
+    "clean-css-brunch": "*",
+    "css-brunch": "*",
+    "eslint-brunch": "*",
+    "jade-brunch": "*",
+    "javascript-brunch": "*",
+    "rollup-brunch": "*",
+    "rollup-plugin-babel": "*",
+    "rollup-plugin-riot": "*",
+    "stylus-brunch": "*",
+    "uglify-js-brunch": "*"
+  }
+}
