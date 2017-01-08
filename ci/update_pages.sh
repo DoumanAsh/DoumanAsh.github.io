@@ -7,12 +7,15 @@ git clone $REPO out/
 
 cd out/
 
-git checkout master
+git checkout master || git checkout --orphan master
+
+ls
+
 rm -rf *
 
 cp -rf ../public/* .
 
-find . -name "_*" | xargs rm -rf
+find . -name "_*.*" | xargs rm -rf
 
 git status
 

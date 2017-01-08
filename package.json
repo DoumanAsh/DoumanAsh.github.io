@@ -14,8 +14,7 @@
     "start": "brunch watch --server",
     "prebuild": "npm run gen_data && npm install",
     "build": "brunch build --production",
-    "lint": "eslint . --ext .js --ext .tag --ignore-pattern public || true",
-    "update_pages": "sh ci/update_page.sh"
+    "lint": "eslint . --ext .js --ext .tag --ignore-pattern public || true"
   },
   "dependencies": {
   },
