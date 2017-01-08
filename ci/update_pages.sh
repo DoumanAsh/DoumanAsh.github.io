@@ -16,6 +16,7 @@ rm -rf *
 cp -rf ../public/* .
 
 find . -name "_*.*" | xargs rm -rf
+find . -name ".*.*" | xargs rm -rf
 
 git status
 
