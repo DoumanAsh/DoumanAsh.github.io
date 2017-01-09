@@ -31,17 +31,23 @@ div.gallery
             box-shadow: 3px 3px 3px 4px rgba(0, 0, 0, 0.4)
 
             & > div.description
+                width: 70%
                 display: flex
                 flex-direction: column
                 text-align: center
                 color: white
                 padding: 1rem
+                align-self: center
                 & > p.title
                     font-weight: 900
                     font-size: 1.2em
                 & > p.details
+                    text-align: left
                     font-weight: 100
                     word-wrap: break-word
+
+                @media screen and (max-height: 800px), screen and (max-width: 800px)
+                    font-size: .7em
 
             & > div.img
                 height: 500px
@@ -49,3 +55,6 @@ div.gallery
                 background-size: contain
                 background-repeat: no-repeat
                 background-position:center
+
+                @media screen and (max-height: 800px), screen and (max-width: 800px)
+                    height: 300px
