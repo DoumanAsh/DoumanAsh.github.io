@@ -14,7 +14,6 @@ div.goodies
         flex-wrap: wrap
 
     & > a
-        text-align: center
         text-decoration: none
         color: black
 
@@ -26,7 +25,6 @@ div.goodies
         padding: .5em
         width: 25%
 
-
         & > p.title
             color: #999
             font-size: 1.5em
@@ -37,16 +35,9 @@ div.goodies
             word-wrap: break-word
 
     & > a.sub_link
-        flex: 1 1 auto
-        display: flex
-        flex-direction: column
-
-        &::after
-            content: attr(page_title)
-
-        & > div
-            text-align: center
-            display: block
-            margin: auto
-            & > img
-                border: 0
+        flex: 1 0 20%
+        padding: 1em
+        height: 150px
+        background-size: contain
+        background-repeat: no-repeat
+        background-position:center

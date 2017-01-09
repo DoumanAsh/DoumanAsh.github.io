@@ -17,7 +17,6 @@ body()
             - var prev_idx = cur_idx === waifu.length ? "" : cur_idx - 1;
             - var next_idx = cur_idx === waifu.length ? 1 :  cur_idx === (waifu.length - 1) ? cur_idx : cur_idx + 1;
             - var link = item.link.replace('http', 'https');
-            - var style_img = "";
             - var style_inner = util.format("background-image: url('%s')", link);
             - var div_page_class = cur_idx  === waifu.length ? "default sub_page flex" : "sub_page flex";
             div(id=cur_idx class=div_page_class)

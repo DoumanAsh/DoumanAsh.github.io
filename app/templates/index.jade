@@ -29,19 +29,10 @@ body(class="site")
             a(href="cv.html")="CV"
 
     div(class="sub_page flex goodies" id="Goodies" page_title="My Goodies")
-        a(class="sub_link" href="#Goodies_Rust" page_title="My Rust code")
-            //Note: img is scaled by IE11/10 inside of flex container. Due to that it should be wrapped.
-            div
-                img(src="img/rust.png")
-        a(class="sub_link" href="#Goodies_Tools" page_title="My Tools")
-            div
-                img(src="img/tools.png")
-        a(class="sub_link" href="#Goodies_Stories" page_title="My Writings")
-            div
-                img(src="img/book.png")
-        a(class="sub_link" href="#Goodies_Node" page_title="My Node.js code")
-            div
-                img(src="img/node.png")
+        a(class="sub_link" href="#Goodies_Rust" title="My Rust code" style="background-image: url('img/rust.svg'")
+        a(class="sub_link" href="#Goodies_Tools" title="My Tools" style="background-image: url('img/tools.svg'")
+        a(class="sub_link" href="#Goodies_Stories" title="My Writings" style="background-image: url('img/book.svg'")
+        a(class="sub_link" href="#Goodies_Node" title="My Node.js code" style="background-image: url('img/node.svg'")
 
     div(class="sub_page flex goodies" id="Goodies_Rust" page_title="My Rust Code")
         each goodie in goodies.rust
