@@ -1,248 +1,149 @@
-- var title = "Arthur Martirosyan's CV"
+- var util = require('util');
+- var path = require('path');
+- var data = require(path.join(root_dir, 'data', 'cv.json'));
+- var title = util.format("%s's CV", data.name);
 include _head.jade
 
-script(src="app.js")
+mixin element_title3(title_array)
+    each title, lang in title_array
+        h3(lang=lang)=title
 
-script.
-    var _utils = require("js/utils.js");
-    var toggle_element = _utils.toggle_element;
+mixin element_title(title_array)
+    each title, lang in title_array
+        h2(lang=lang)=title
 
-body(class="cv")
-    div(id="cv", class="cv", lang="en")
-        script.
-            var _cv = document.getElementById('cv');
-            if (window.location.hash.length > 1) {
-                _cv.lang = window.location.hash.slice(1);
-            }
+mixin b_opt_lang(line)
+    if line.lang
+        b(lang=line.lang)=line.line
+    else
+        b=line.line
 
-        div(class="lang_switcher")
-            a(href="#en", hreflang="en", title="English", onclick="_cv.lang = 'en'")
-                img(src="/img/eng.png")
-            a(href="#ru", hreflang="ru", title="Русский язык", onclick="_cv.lang = 'ru'")
-                img(src="/img/russian.png")
+mixin li_opt_lang(line)
+    if line.lang
+        li(lang=line.lang)=line.line
+    else
+        li=line.line
 
-        h1(lang="en")="Arthur Martirosyan"
-        h1(lang="ru")="Артур Мартиросян"
+mixin par_opt_lang(line)
+    if line.lang
+        p(lang=line.lang)=line.line
+    else
+        p=line.line
 
-        div(class="common")
-            table
-                tr
-                    td(lang="en")="Birth date:"
-                    td(lang="ru")="Дата рождения:"
-                    td="12.02.1992"
-                tr
-                    td(lang="en")="Residence:"
-                    td(lang="ru")="Место жительства:"
-                    td(lang="en")="Nizhny Novgorod, Russia"
-                    td(lang="ru")="Нижний Новгород, Россия"
-                tr
-                    td(lang="en")="Find me:"
-                    td(lang="ru")="Профили в сети:"
-                    td
-                        a(title="github.com/DoumanAsh", class="link_logo", href="https://github.com/DoumanAsh", target="_blank")
-                            img(class="logo", src="/img/github-logo.svg")
-                        a(title="linkedin.com/in/doumanash", href="https://linkedin.com/in/doumanash", target="_blank")
-                            img( class="logo", src="/img/linkedin-logo.svg")
-            table(style="float: right")
-                tr
-                    td(lang="en")="Marital status:"
-                    td(lang="ru")="Семейное положение:"
-                    td(lang="en")="Single"
-                    td(lang="ru")="Холост"
-                tr
-                    td(lang="en")="Phone:"
-                    td(lang="ru")="Телефон:"
-                    td="+7 910 131 72 70"
-                tr
-                    td(lang="en")="Contacts:"
-                    td(lang="ru")="Контакты:"
-                    td
-                        a(title="douman@gmx.se", class="link_logo", href="mailto:douman@gmx.se", target="_blank")
-                            img(class="logo", src="/img/close-envelope.svg")
-                        a(title="Skype: coldgloom", class="link_logo", href="skype:coldgloom?call", target="_blank")
-                            img(class="logo", src="/img/skype.svg")
+mixin multi_line(line)
+    if line.type == "bold_line"
+        +b_opt_lang(line)
+    else if line.type == "single_line"
+        | #{line.line}
 
 
-        section
-            h2(lang="en")="Expertise"
-            h2(lang="ru")="Экспертиза"
-            div
-                ul
-                    li(lang="en")="Several years of work experience in telecom software development."
-                    li(lang="ru")="Несколько лет опыта в разработке ПО для телекома."
-                    li
-                        b(lang="en")="Programming/scripting: "
-                        b(lang="ru")="Языки: "
-                        | C/C++, Python, Rust, HTML5/CSS, JavaScript, Powershell, Bash
-                    li
-                        b(lang="en")="Frameworks: "
-                        b(lang="ru")="Фреймворки: "
-                        | Google Test/Mock, Node.js, express.js, socket.io, ReactJS, CUnit, Django
-                    li
-                        b="APIs: "
-                        | Windows, REST, POSIX Threads
-                    li
-                        b(lang="en")="Tools: "
-                        b(lang="ru")="Утилиты: "
-                        | Git, Wireshark, JIRA, Redmine, Doxygen, Valgrind/Callgrind, gprof, oprofile, Lint, cppcheck
-                    li
-                        b(lang="en")="Protocols: "
-                        b(lang="ru")="Протоколы: "
-                        | SCTP, TCP/IP
+body(class="cv2")
+    header
+        h1=data.name
+        nav(class="lang_switcher")
+            each lang in data.langs
+                - var href = "#" + lang.code;
+                - var lang_icon_style = util.format(("background-image: url('%s')"), lang.icon)
+                a(href=href title=lang.title  style=lang_icon_style)
 
-        section
-            h2(lang="en")="Experience"
-            h2(lang="ru")="Опыт работы"
-            div
-                div
-                    h3(lang="en", style="float:left; cursor:pointer", onclick="toggle_element('mera_exp')")="Senior Software Engineer"
-                    h3(lang="ru", style="float:left; cursor:pointer", onclick="toggle_element('mera_exp')")="Старший Разработчик"
-                    span(lang="en", style="float:right")="MERA Networks - Nizhny Novgorod"
-                    span(lang="ru", style="float:right")="МЕРА НН - Нижний Новгород"
-                br
-                span(lang="en")="September 2012 - Present time "
-                span(lang="ru")="Сентябрь 2012 - Настоящее время "
-                span(id="en_mera_date_diff", lang="en")=""
-                span(id="ru_mera_date_diff", lang="ru")=""
-                script.
-                    var _mera_date_diff = _utils.get_date_diff(new Date(2012, 9, 1), new Date());
-                    var _get_date_diff_string = _utils.get_diff_string;
+    each lang in data.langs
+        div(class="lang_anchor" id=lang.code)
 
-                    if (_mera_date_diff.year > 0 || _mera_date_diff.month > 0) {
-                        document.getElementById("en_mera_date_diff").innerHTML = _get_date_diff_string(_mera_date_diff, "en");
-                        document.getElementById("ru_mera_date_diff").innerHTML = _get_date_diff_string(_mera_date_diff, "ru");
-                    }
+    div(class="main lang_switch")
+        section(class="basic")
+            - var basic_middle_idx = Math.round(data.basic.length / 2);
+            - var basic_left = data.basic.slice(0, basic_middle_idx)
+            - var basic_right = data.basic.slice(basic_middle_idx)
+            - var basic_all = [{class: "left", data: basic_left}, {class: "right", data: basic_right}]
+            each table in basic_all
+                table(class=table.class)
+                    each item in table.data
+                        tr
+                            each lang_item, lang_key in item.key
+                                td(lang=lang_key)=lang_item
+                            if item.type == "str"
+                                if typeof item.value == "string"
+                                    td=item.value
+                                else
+                                    each lang_item, lang_key in item.value
+                                        td(lang=lang_key)=lang_item
+                            else
+                                td
+                                    each link in item.value
+                                        a(title=link.title class="link_logo" href=link.href target="_blank" style="background-image: url('#{link.logo}')")
 
-                ul(id="mera_exp", class="spoiler", style="margin-left: 1em; list-style-type: disc")
-                    li(lang="en")
-                        | Support and maintenance of telecommunication software(SS7 area).
-                    li(lang="ru")
-                        | Разработка и поддержка телекомуникационного софта(SS7 область).
-                    li(lang="en")
-                        | Design and feature implementation for existing system software(C/C++).
-                    li(lang="ru")
-                        | Разработка новой функциональности на базе существующего софта.
-                    li(lang="en")
-                        | Troubleshooting of network issues and log analysis. Including Wireshark.
-                    li(lang="ru")
-                        | Анализ и разрешение проблем сети, анализ логов. Включая Wireshark.
-                    li(lang="en")
-                        | Writing automatic unit tests by means of Google Test/Mock.
-                    li(lang="ru")
-                        | Написание юнит-тестов средствами Google Test/Mock.
-                    li(lang="en")
-                        b="OS: "
-                        | OSE and Wind River Linux
-                    li(lang="ru")
-                        b="ОС: "
-                        | OSE и Wind River Linux
-                    li(lang="en")
-                        b="Development methodologies: "
-                        | Scrum, Agile.
-                    li(lang="ru")
-                        b="Методологии разработки: "
-                        | Scrum, Agile.
-                    li(lang="en")
-                        b="SCM: "
-                        | Git with Gerrit and Jenkins
-                    li(lang="ru")
-                        b="Система контроля версий: "
-                        | Git with Gerrit и Jenkins
-                    li(lang="en")
-                        b="Protocols: "
-                        | SCTP, M3UA and IP
-                    li(lang="ru")
-                        b="Протоколы: "
-                        | SCTP, M3UA & IP
-                    li(lang="en")
-                        b="Code analysis tools: "
-                        | Lint, Coverity and Valgrind.
-                    li(lang="ru")
-                        b="Анализ кода: "
-                        | Lint, Coverity & Valgrind.
-                    li(lang="en")
-                        b="Documentation: "
-                        | Doxygen
-                    li(lang="ru")
-                        b="Написание документации: "
-                        | Doxygen
-                    li(lang="en")
-                        b="Task boards: "
-                        | JIRA and Redmine.
-                    li(lang="ru")
-                        b="Управление проектом: "
-                        | JIRA & Redmine.
-                    li(lang="en")
-                        b="Code profiling: "
-                        | gprof, oprfile, callgrind.
-                    li(lang="ru")
-                        b="Профилировка кода: "
-                        | gprof, oprfile, callgrind.
-                    li(lang="en")
-                        | Writing automation and code generations Python scripts.
-                    li(lang="ru")
-                        | Написание скриптов автоматизации и кодо-генерации.
-                    li(lang="en")
-                        | Prototyping thread synchronization for test environment using POSIX Threads.
-                    li(lang="ru")
-                        | Прототипирование синхронизации тредов в тестовом окружении, используя POSIX Threads.
-        section
-            h2(lang="en")="Languages"
-            h2(lang="ru")="Языки"
-            div
-                ul
-                    li(lang="en")
-                        b="Russian: "
-                        | Native
-                    li(lang="ru")
-                        b="Русский: "
-                        | Родной
-                    li(lang="en")
-                        b="English: "
-                        | Upper intermediate
-                    li(lang="ru")
-                        b="Английский: "
-                        | Upper intermediate
-        section
-            h2(lang="en")="Education"
-            h2(lang="ru")="Образование"
-            div
-                h3(lang="en")="Nizhny Novgorod Economics and Law College"
-                h3(lang="ru")="Нижегородский Экономико-Правовой Колледж"
-                span="2008 - 2012"
-                ul
-                    li(lang="en")
-                        b="Major: "
-                        | Applied Informatics
-                    li(lang="ru")
-                        b="Специальность: "
-                        | Информационные технологии
-                    li(lang="en")
-                        b="Degree: "
-                        | Associate's degree
-                    li(lang="ru")
-                        b="Квалификация: "
-                        | Среднее профессиональное образованиe
-                br
-                h3(lang="en", title="Russian Academy of National Economy and Public Administration")="RANEPA"
-                h3(lang="ru", title="Российская академия народного хозяйства и государственной службы")="РАНХиГС"
-                span="2012 - 2016"
-                ul
-                    li(lang="en")
-                        b="Major: "
-                        | Applied Informatics
-                    li(lang="ru")
-                        b="Специальность: "
-                        | Информационные технологии
-                    li(lang="en")
-                        b="Degree: "
-                        | Bachelor's degree
-                    li(lang="ru")
-                        b="Квалификация: "
-                        | Бакалавр
-        section
-            h2(lang="en")="Interests"
-            h2(lang="ru")="Интересы"
-            div(lang="en")="Programming, Gaming, History, Chivalry"
-            div(lang="ru")="Программирование, Видео-игры, История, Рыцарство"
+        section(class="element")
+            - var expertise = data.elements.expertise
+            +element_title(expertise.title)
+            section
+                each line in expertise.data
+                    if line.type == "single_line"
+                        +par_opt_lang(line)
+                    else if line.type == "multi_line"
+                        p
+                            each sub_line in line.lines
+                                +multi_line(sub_line)
 
+        section(class="element")
+            - var experience = data.elements.experience;
+            +element_title(experience.title)
+            each job_data, job_idx in experience.data
+                - var toogle_id = util.format("job-%d", job_idx);
+                section(class="job")
+                    header(class="title")
+                        label(class="spoiler_link" for=toogle_id)
+                            +element_title3(job_data.title)
+                        each location, lang in job_data.location
+                            p(class="sub location" lang=lang)=location
+                        each date, lang in job_data.dates
+                            p(class="sub date" lang=lang)=date
+                    input(id=toogle_id class="spoiler_box" type="checkbox")
+                    ul(class="spoiler")
+                        each line in job_data.lines
+                            if line.type == "single_line"
+                                +li_opt_lang(line)
+                            else if line.type == "multi_line"
+                                li
+                                    each sub_line in line.lines
+                                        +multi_line(sub_line)
+
+        section(class="element")
+            - var languages = data.elements.languages;
+            +element_title(languages.title)
+            section
+                each lang_skill in languages.data
+                    each lang, code in lang_skill
+                        p(lang=code)
+                            b=lang.title
+                            | #{lang.level}
+
+        section(class="element")
+            - var education = data.elements.education;
+            +element_title(education.title)
+            section
+                each education_data, idx in education.data
+                    section(class="education")
+                        header(class="title")
+                            each title, code in education_data.name
+                                if education_data.title
+                                    h3(lang=code title=education_data.title[code])=title
+                                else
+                                    h3(lang=code)=title
+                            p(class="sub date")=education_data.dates
+                        section
+                            each info, code in education_data.info
+                                p(lang=code)
+                                    b=education.info_map[code].major
+                                    | #{info.major}
+                                p(lang=code)
+                                    b=education.info_map[code].degree
+                                    | #{info.degree}
+                        if idx < (education.data.length - 1)
+                            br
+
+        section(class="element")
+            - var interests = data.elements.interests;
+            +element_title(interests.title)
+            section
+                each data, code in interests.data
+                    p(lang=code)=data

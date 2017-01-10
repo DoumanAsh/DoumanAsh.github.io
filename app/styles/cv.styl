@@ -1,94 +1,86 @@
-body.cv
-    background: #f8f8f8
-
-div.cv
-    font-size: 18px
-    line-height: 24px
-    width: 780px
+body.cv2
+    font-size: 20px
+    line-height: 25px
+    width: 800px
     margin: auto
-    margin-bottom: 2rem
+    margin-bottom: 1em
 
-    &[lang=ru] *[lang]:not(:lang(ru))
-        display: none
+    @media print
+        font-size: 16px
 
-    &[lang=en] *[lang]:not(:lang(en))
-        display: none
+    & > * p.sub
+        font-style: italic
+        color: #999
 
-    & > div.lang_switcher
-        margin-top: 0
-        float: right
-        & > a > img
-            height: 32px
-            width: 32px
-            margin-right: 0.5em
-
-    & > h1
-        margin-top: 1rem
-        font-family: 'Fira Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-size: 2rem
+    & > header
+        display: flex
+        justify-content: space-between
+        margin: 1em
+        margin-left: 0px
         padding-bottom: 1rem
         border-bottom: 1px solid #000
 
-    & > div.common
-        margin-top: 1em
-        & > *
-            vertical-align: top
-            display: inline-block
-        & > p
-            color: #666
-            width: 300px
-            font-style: italic
-        & > table
-            & > * td
-                padding-right: 0.4em
+        & >
+            flex: 1
 
-    & > * img.logo
-        width: 30px
-        height: 30px
-        margin-right: 5px
-        &:hover
-            opacity: 0.4
+    & > * a.link_logo
+        display: inline-block
+        width: 40px
+        height: 40px
+        background-size: contain
+        background-repeat: no-repeat
+        margin-right: .5em
+        color: black
 
-    & > div
-        margin-top: 1rem
-        margin-left: auto
-        margin-right: auto
-
-    & > section
-        margin-top: 1rem
-        margin-left: auto
-        margin-right: auto
-        & > *
-            vertical-align: top
-            display: inline-block
-        & > * ul
-            padding: 0
-            list-style-type: none
-        & > h2
-            font-size: 20px
-            width: 20%
-            font-style: italic
-            word-wrap: break-word
-        & > div
-            width: 75%
-            padding-left: 0.8em
-            border-left: 1px solid #000
-        & > * span
-            font-style: italic
-            color: #999
-
-    @media print
-        .logo
-        div.lang_switcher
-            display: none
-        .spoiler
-            display: inline-block !important
-        .link_logo
-            font-size: 14px
+        @media print
             text-decoration: none
-        .link_logo::after
-            content:  attr(title)
+            width: auto
+            height: auto
             margin-right: 0.5em
-            text-decoration: none
-            color: black
+            &::after
+                content:  attr(title)
 
+    & > div.main
+        & > section.basic
+            width: 100%
+            display: inline-block
+            text-align: center
+            & > table.left
+                float: left
+            & > table.right
+                float: right
+            & > table
+                text-align: left
+                & > * tr
+                    & > td
+                        padding-right: .5em
+
+        & > section.element
+            margin-top: 1em
+            display: flex
+            justify-content: space-between
+
+            & > h2
+                flex: 1 0 20%
+                font-weight: 600
+                font-style: italic
+
+            & > section
+                flex: 1 0 70%
+                padding-left: 1em
+                border-left: 1px solid #000
+                & > header
+                    & > label.spoiler_link
+                        cursor: pointer
+                & > section
+                    & > p
+                        word-wrap: break-word
+
+            & > section.job
+                & > header.title
+                    display: flex
+                    flex-flow: row wrap
+                    justify-content: space-between
+                & > ul
+                    margin-left: 1em
+                    padding: 0

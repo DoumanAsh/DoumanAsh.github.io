@@ -4,6 +4,11 @@
 
 Just generator of my site.
 
-My goal is to make it JS-free.
-
 Uses [Brunch](http://brunch.io) as build system.
+
+## JS Free
+
+Yep, for now there is no JavaScript.
+
+All animations are done through CSS alone.
+

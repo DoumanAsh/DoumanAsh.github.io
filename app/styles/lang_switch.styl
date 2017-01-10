@@ -1,0 +1,29 @@
+/* Default */
+#ru:not(:target) ~ .lang_switch *[lang]:not(:lang(en))
+    display: none
+
+/* Hide */
+#ru:target ~ .lang_switch *[lang]:not(:lang(ru))
+    display: none
+
+#en:target ~ .lang_switch *[lang]:not(:lang(en))
+    display: none
+
+nav.lang_switcher
+    height: 32px
+    & > a
+        display: inline-block
+        margin-right: .5em
+        width: 32px
+        height: 32px
+        padding: 0
+        background-size: contain
+        background-repeat: no-repeat
+        background-position:center
+
+    @media print
+        display: none
+
+.lang_anchor
+    position: absolute
+    top: 0

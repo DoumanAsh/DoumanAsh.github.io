@@ -1,0 +1,543 @@
+{
+    "name": "Arthur Martirosyan",
+    "langs": [
+        {
+            "code": "en",
+            "title": "English",
+            "icon": "img/eng.png"
+        },
+        {
+            "code": "ru",
+            "title": "Русский",
+            "icon": "img/russian.png"
+        }
+    ],
+    "basic": [
+        {
+            "key": {
+                "en": "Birth date:",
+                "ru": "Дата рождения:"
+            },
+            "type": "str",
+            "value": "12.02.1992"
+        },
+        {
+            "key": {
+                "en": "Residence:",
+                "ru": "Место жительства:"
+            },
+            "type": "str",
+            "value": {
+                "en": "Nizhny Novgorod, Russia",
+                "ru": "Нижний Новгород, Россия"
+            }
+        },
+        {
+            "key": {
+                "en": "Find me:",
+                "ru": "Профили в сети:"
+            },
+            "type": "links",
+            "value" : [
+                {
+                    "title": "github.com/DoumanAsh",
+                    "href": "https://github.com/DoumanAsh",
+                    "logo": "img/github-logo.svg"
+                }
+            ]
+        },
+        {
+            "key": {
+                "en": "Marital status:",
+                "ru": "Семейное положение:"
+            },
+            "type": "str",
+            "value": {
+                "en": "Single",
+                "ru": "Холост"
+            }
+        },
+        {
+            "key": {
+                "en": "Phone:",
+                "ru": "Телефон:"
+            },
+            "type": "str",
+            "value": "+7 910 131 72 70"
+        },
+        {
+            "key": {
+                "en": "Contacts:",
+                "ru": "Контакты:"
+            },
+            "type": "links",
+            "value": [
+                {
+                    "title": "douman@gmx.se",
+                    "href": "mailto:douman@gmx.se",
+                    "logo": "img/close-envelope.svg"
+                },
+                {
+                    "title": "Skype: coldgloom",
+                    "href": "skype:coldgloom?call",
+                    "logo": "img/skype.svg"
+                }
+            ]
+        }
+    ],
+    "elements": {
+        "expertise": {
+            "title": {
+                "en": "Expertise",
+                "ru": "Экспертиза"
+            },
+            "data": [
+                {
+                    "type": "single_line",
+                    "lang": "en",
+                    "line": "Several years of work experience in telecom software development."
+                },
+                {
+                    "type": "single_line",
+                    "lang": "ru",
+                    "line": "Несколько лет опыта в разработке ПО для телекома."
+                },
+                {
+                    "type": "multi_line",
+                    "lines": [
+                        {
+                            "type": "bold_line",
+                            "lang": "en",
+                            "line": "Programming/scripting: "
+                        },
+                        {
+                            "type": "bold_line",
+                            "lang": "ru",
+                            "line": "Языки: "
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "",
+                            "line": "C/C++, Python, Rust, HTML5/CSS, JavaScript, Powershell, Bash"
+                        }
+                    ]
+                },
+                {
+                    "type": "multi_line",
+                    "lines": [
+                        {
+                            "type": "bold_line",
+                            "lang": "en",
+                            "line": "Frameworks: "
+                        },
+                        {
+                            "type": "bold_line",
+                            "lang": "ru",
+                            "line": "Фреймворки: "
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "",
+                            "line": "Google Test/Mock, Node.js, express.js, socket.io, ReactJS, CUnit, Django"
+                        }
+                    ]
+                },
+                {
+                    "type": "multi_line",
+                    "lines": [
+                        {
+                            "type": "bold_line",
+                            "lang": "",
+                            "line": "APIs: "
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "",
+                            "line": "Windows, REST, POSIX Threads"
+                        }
+                    ]
+                },
+                {
+                    "type": "multi_line",
+                    "lines": [
+                        {
+                            "type": "bold_line",
+                            "lang": "en",
+                            "line": "Tools: "
+                        },
+                        {
+                            "type": "bold_line",
+                            "lang": "ru",
+                            "line": "Утилиты: "
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "",
+                            "line": "Git, Wireshark, JIRA, Redmine, Doxygen, Valgrind/Callgrind, gprof, oprofile, Lint, cppcheck"
+                        }
+                    ]
+                },
+                {
+                    "type": "multi_line",
+                    "lines": [
+                        {
+                            "type": "bold_line",
+                            "lang": "en",
+                            "line": "Protocols: "
+                        },
+                        {
+                            "type": "bold_line",
+                            "lang": "ru",
+                            "line": "Протоколы: "
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "",
+                            "line": "SCTP, TCP/IP"
+                        }
+                    ]
+                }
+            ]
+        },
+        "experience": {
+            "title": {
+                "en": "Experience",
+                "ru": "Опыт работы"
+            },
+            "data": [
+                {
+                    "title": {
+                        "en": "Senior Software Engineer",
+                        "ru": "Старший Разработчик"
+                    },
+                    "location": {
+                        "en": "MERA Networks - Nizhny Novgorod",
+                        "ru": "МЕРА НН - Нижний Новгород"
+                    },
+                    "dates": {
+                        "en": "September 2012 - Present time ",
+                        "ru": "Сентябрь 2012 - Настоящее время "
+                    },
+                    "lines": [
+                        {
+                            "type": "single_line",
+                            "lang": "en",
+                            "line": "Support and maintenance of telecommunication software(SS7 area)."
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "ru",
+                            "line": "Разработка и поддержка телекомуникационного софта(SS7 область)."
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "en",
+                            "line": "Design and feature implementation for existing system software(C/C++)."
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "ru",
+                            "line": "Разработка новой функциональности на базе существующего софта(C/C++)."
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "en",
+                            "line": "Troubleshooting of network issues and log analysis. Including Wireshark."
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "ru",
+                            "line": "Анализ и разрешение проблем сети, анализ логов. Включая Wireshark."
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "en",
+                            "line": "Writing automatic unit tests by means of Google Test/Mock."
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "ru",
+                            "line": "Написание юнит-тестов средствами Google Test/Mock."
+                        },
+                        {
+                            "type": "multi_line",
+                            "lines": [
+                                {
+                                    "type": "bold_line",
+                                    "lang": "en",
+                                    "line": "OS: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "ru",
+                                    "line": "ОС: "
+                                },
+                                {
+                                    "type": "single_line",
+                                    "lang": "",
+                                    "line": "OSE, Wind River Linux"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "multi_line",
+                            "lines": [
+                                {
+                                    "type": "bold_line",
+                                    "lang": "en",
+                                    "line": "Development methodologies: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "ru",
+                                    "line": "Методологии разработки: "
+                                },
+                                {
+                                    "type": "single_line",
+                                    "lang": "",
+                                    "line": "Scrum, Agile."
+                                }
+                            ]
+                        },
+                        {
+                            "type": "multi_line",
+                            "lines": [
+                                {
+                                    "type": "bold_line",
+                                    "lang": "en",
+                                    "line": "SCM: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "ru",
+                                    "line": "Система контроля версий: "
+                                },
+                                {
+                                    "type": "single_line",
+                                    "lang": "",
+                                    "line": "Git + Gerrit & Jenkins"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "multi_line",
+                            "lines": [
+                                {
+                                    "type": "bold_line",
+                                    "lang": "en",
+                                    "line": "Protocols: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "ru",
+                                    "line": "Протоколы: "
+                                },
+                                {
+                                    "type": "single_line",
+                                    "lang": "",
+                                    "line": "SCTP, M3UA, IP"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "multi_line",
+                            "lines": [
+                                {
+                                    "type": "bold_line",
+                                    "lang": "en",
+                                    "line": "Code analysis tools: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "ru",
+                                    "line": "Анализ кода: "
+                                },
+                                {
+                                    "type": "single_line",
+                                    "lang": "",
+                                    "line": "Lint, Coverity, Valgrind"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "multi_line",
+                            "lines": [
+                                {
+                                    "type": "bold_line",
+                                    "lang": "en",
+                                    "line": "Documentation: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "ru",
+                                    "line": "Написание документации: "
+                                },
+                                {
+                                    "type": "single_line",
+                                    "lang": "",
+                                    "line": "Doxygen"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "multi_line",
+                            "lines": [
+                                {
+                                    "type": "bold_line",
+                                    "lang": "en",
+                                    "line": "Task boards: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "ru",
+                                    "line": "Управление проектом: "
+                                },
+                                {
+                                    "type": "single_line",
+                                    "lang": "",
+                                    "line": "JIRA, Redmine"
+                                }
+
+                            ]
+                        },
+                        {
+                            "type": "multi_line",
+                            "lines": [
+                                {
+                                    "type": "bold_line",
+                                    "lang": "en",
+                                    "line": "Code profiling: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "ru",
+                                    "line": "Профилировка кода: "
+                                },
+                                {
+                                    "type": "single_line",
+                                    "lang": "",
+                                    "line": "gprof, oprfile, callgrind."
+                                }
+                            ]
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "en",
+                            "line": "Writing automation and code generations Python scripts."
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "ru",
+                            "line": "Написание скриптов автоматизации и кодо-генерации."
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "en",
+                            "line": "Prototyping thread synchronization for test environment using POSIX Threads."
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "ru",
+                            "line": "Прототипирование синхронизации тредов в тестовом окружении, используя POSIX Threads."
+                        }
+                    ]
+                }
+            ]
+        },
+        "languages": {
+            "title": {
+                "en": "Languages",
+                "ru": "Языки"
+            },
+            "data": [
+                {
+                    "en": {
+                        "title": "English: ",
+                        "level": "Upper intermediate"
+                    },
+                    "ru": {
+                        "title": "Английский: ",
+                        "level": "Продвинутый уровень"
+                    }
+                },
+                {
+                    "en": {
+                        "title": "Russian: ",
+                        "level": "Native"
+                    },
+                    "ru": {
+                        "title": "Русский: ",
+                        "level": "Родной"
+                    }
+                }
+            ]
+        },
+        "education": {
+            "title": {
+                "en": "Education",
+                "ru": "Образование"
+            },
+            "info_map": {
+                "en": {
+                    "major": "Major: ",
+                    "degree": "Degree: "
+                },
+                "ru": {
+                    "major": "Специальность: ",
+                    "degree": "Квалификация: "
+                }
+            },
+            "data": [
+                {
+                    "name": {
+                        "en": "Nizhny Novgorod Economics and Law College",
+                        "ru": "Нижегородский Экономико-Правовой Колледж"
+                    },
+                    "title": "",
+                    "dates": "2008 - 2012",
+                    "info": {
+                        "en": {
+                            "major": "Applied Informatics",
+                            "degree": "Associate's degree"
+                        },
+                        "ru": {
+                            "major": "Информационные технологии",
+                            "degree": "Среднее профессиональное образованиe"
+                        }
+                    }
+                },
+                {
+                    "name": {
+                        "en": "RANEPA",
+                        "ru": "РАНХиГС"
+                    },
+                    "title": {
+                        "en": "Russian Academy of National Economy and Public Administration",
+                        "ru": "Российская академия народного хозяйства и государственной службы"
+                    },
+                    "dates": "2012 - 2016",
+                    "info": {
+                        "en": {
+                            "major": "Applied Informatics",
+                            "degree": "Bachelor's degree"
+                        },
+                        "ru": {
+                            "major": "Информационные технологии",
+                            "degree": "Бакалавр"
+                        }
+                    }
+                }
+            ]
+        },
+        "interests": {
+            "title": {
+                "en": "Interests",
+                "ru": "Интересы"
+            },
+            "data": {
+                "en": "Programming, Gaming, History, Chivalry",
+                "ru": "Программирование, Видео-игры, История, Рыцарство"
+            }
+        }
+    }
+}
