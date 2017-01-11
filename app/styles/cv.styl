@@ -1,14 +1,14 @@
 body.cv2
     font-size: 20px
     line-height: 25px
-    width: 800px
     margin: auto
     margin-bottom: 1em
+    width: 800px
 
     @media print
         font-size: 16px
 
-    & > * p.sub
+    & p.sub
         font-style: italic
         color: #999
 
@@ -20,10 +20,7 @@ body.cv2
         padding-bottom: 1rem
         border-bottom: 1px solid #000
 
-        & >
-            flex: 1
-
-    & > * a.link_logo
+    & a.link_logo
         display: inline-block
         width: 40px
         height: 40px
@@ -42,13 +39,10 @@ body.cv2
 
     & > div.main
         & > section.basic
-            width: 100%
-            display: inline-block
             text-align: center
-            & > table.left
-                float: left
-            & > table.right
-                float: right
+            display: flex
+            justify-content: space-between
+            flex-flow: row wrap
             & > table
                 text-align: left
                 & > * tr
