@@ -1,13 +1,7 @@
 const webpage = require('webpage');
 const fs = require('fs');
 
-/**
- * @param {Strng} name Name of HTML file.
- * @return {String} Absolute path HTML file.
- */
-function public_page(name) {
-    return 'file:///' + fs.absolute('public/' + name)
-}
+const utils = require('./phantom_utils.js');
 
 /**
  * @return {Object} Map of sub_page divs IDs to current display value.
@@ -60,29 +54,9 @@ function index_click_nav(href) {
     };
 }
 
-function fail_if(result, msg) {
-    if (result) {
-        console.log(msg);
-        phantom.exit(1);
-    }
-}
+var page = utils.create_page();
 
-var page = webpage.create();
-page.viewportSize = {
-    width: 1920,
-    height: 1080
-}
-
-page.onError = function(msg, trace) {
-    console.log(msg);
-    phantom.exit(1);
-};
-
-page.onConsoleMessage = function(msg) {
-    console.log(msg);
-};
-
-page.open(public_page('index.html'), function(status) {
+page.open(utils.public_page('index.html'), function(status) {
     console.log(">Test navigation menu on index page...");
     if (status !== 'success') {
         console.log("Couldn't load page");
@@ -104,7 +78,7 @@ page.open(public_page('index.html'), function(status) {
         var SubPageId = NavSubPages[0];
         page.evaluate(index_click_nav, '#' + SubPageId);
         var sub_pages = page.evaluate(get_index_display);
-        fail_if(!index_check_displayed(SubPageId, sub_pages), "Div wiht id='" + SubPageId + "' isn't displayed by default!")
+        utils.fail_if(!index_check_displayed(SubPageId, sub_pages), "Div wiht id='" + SubPageId + "' isn't displayed by default!")
     }
 
     phantom.exit();
