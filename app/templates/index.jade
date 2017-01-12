@@ -20,7 +20,7 @@ body(class="site")
                 li
                     a(href="#Goodies_Stories")="Writings"
                 li
-                    a(href="#Goodies_Node")="Node"
+                    a(href="#Goodies_JS")="JavaScript"
         div(class="sub")
             a(href="#Waifu")="Waifu"
         div(class="sub")
@@ -32,7 +32,7 @@ body(class="site")
         a(class="sub_link" href="#Goodies_Rust" title="My Rust code" style="background-image: url('img/rust.svg'")
         a(class="sub_link" href="#Goodies_Tools" title="My Tools" style="background-image: url('img/tools.svg'")
         a(class="sub_link" href="#Goodies_Stories" title="My Writings" style="background-image: url('img/book.svg'")
-        a(class="sub_link" href="#Goodies_Node" title="My Node.js code" style="background-image: url('img/node.svg'")
+        a(class="sub_link" href="#Goodies_JS" title="My Javascript code" style="background-image: url('img/node.svg'")
 
     div(class="sub_page flex goodies" id="Goodies_Rust" page_title="My Rust Code")
         each goodie in goodies.rust
@@ -52,7 +52,7 @@ body(class="site")
                 p(class="title")=goodie.name
                 p=goodie.description
 
-    div(class="sub_page flex goodies" id="Goodies_Node" page_title="My Node.js code")
+    div(class="sub_page flex goodies" id="Goodies_JS" page_title="My JavaScript code")
         each goodie in goodies.node
             a(class="goodie_link" href=goodie.link target="_blank")
                 p(class="title")=goodie.name

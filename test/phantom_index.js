@@ -69,7 +69,7 @@ page.open(utils.public_page('index.html'), function(status) {
         "Goodies_Rust",
         "Goodies_Tools",
         "Goodies_Stories",
-        "Goodies_Node",
+        "Goodies_JS",
         "Waifu",
         "Contact"
     ];
@@ -78,7 +78,7 @@ page.open(utils.public_page('index.html'), function(status) {
         var SubPageId = NavSubPages[0];
         page.evaluate(index_click_nav, '#' + SubPageId);
         var sub_pages = page.evaluate(get_index_display);
-        utils.fail_if(!index_check_displayed(SubPageId, sub_pages), "Div wiht id='" + SubPageId + "' isn't displayed by default!")
+        utils.fail_if(!index_check_displayed(SubPageId, sub_pages), "Div wiht id='" + SubPageId + "' isn't displayed!")
     }
 
     phantom.exit();
