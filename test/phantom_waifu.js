@@ -51,10 +51,9 @@ page.open(utils.public_page('waifu.html'), function(status) {
         //Default element(first in gallery array) has last possible ID
         var expected_id = idx ? idx : gallery.length;
 
-        var expected_href_left = '#' + (idx ? idx - 1 : '');
+        var expected_href_left = '#' + (idx ? idx - 1 : max_idx - 1);
         //Next link for last element is on itself.
-        var expected_href_right = '#' + (idx + (idx < (max_idx-1) ? 1 : 0));
-
+        var expected_href_right = '#' + (idx === (max_idx - 1) ? "" : (idx + 1));
 
         utils.fail_if(gallery_element.id != expected_id,
                       "Expected id='" + expected_id + "' but got element with id='" + gallery_element.id + "'");
