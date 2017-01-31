@@ -6,12 +6,12 @@ const webpage = require('webpage');
  * @return {String} Absolute path HTML file.
  */
 function public_page(name) {
-    return 'file:///' + fs.absolute('public/' + name)
+    return 'file:///' + fs.absolute('public/' + name);
 }
 
 function fail_if(result, msg) {
     if (result) {
-        console.log(msg);
+        console.error(msg);
         phantom.exit(1);
     }
 }
@@ -21,10 +21,10 @@ function create_page() {
     page.viewportSize = {
         width: 1920,
         height: 1080
-    }
+    };
 
-    page.onError = function(msg, trace) {
-        console.log(msg);
+    page.onError = function(msg) {
+        console.error(msg);
         phantom.exit(1);
     };
 

@@ -1,13 +1,10 @@
-const webpage = require('webpage');
-const fs = require('fs');
-
 const utils = require('./phantom_utils.js');
 
 /**
  * @return {Object} Map of sub_page divs IDs to current display value.
  */
 function get_index_display() {
-    var result = {}
+    var result = {};
     const children = document.body.childNodes;
     for (var idx = 0; idx < children.length; idx++) {
         const element = children[idx];
@@ -43,7 +40,7 @@ function index_check_displayed(expected_id, index_elements) {
 
 function index_click_nav(href) {
     var href_regex = new RegExp(href + '$');
-    var elements = document.querySelectorAll('nav > div.sub  a')
+    var elements = document.querySelectorAll('nav > div.sub  a');
 
     for (var idx = 0; idx < elements.length; idx += 1) {
         var element = elements[idx];
@@ -51,7 +48,7 @@ function index_click_nav(href) {
             element.click();
             return;
         }
-    };
+    }
 }
 
 var page = utils.create_page();
@@ -59,8 +56,8 @@ var page = utils.create_page();
 page.open(utils.public_page('index.html'), function(status) {
     console.log(">Test navigation menu on index page...");
     if (status !== 'success') {
-        console.log("Couldn't load page");
-        phantom.exit(1)
+        console.error("Couldn't load page");
+        phantom.exit(1);
     }
 
     var NavSubPages = [
@@ -78,7 +75,7 @@ page.open(utils.public_page('index.html'), function(status) {
         var SubPageId = NavSubPages[0];
         page.evaluate(index_click_nav, '#' + SubPageId);
         var sub_pages = page.evaluate(get_index_display);
-        utils.fail_if(!index_check_displayed(SubPageId, sub_pages), "Div wiht id='" + SubPageId + "' isn't displayed!")
+        utils.fail_if(!index_check_displayed(SubPageId, sub_pages), "Div wiht id='" + SubPageId + "' isn't displayed!");
     }
 
     phantom.exit();

@@ -1,6 +1,7 @@
 module.exports = {
     "extends": ["eslint:recommended"],
     "rules": {
+        "no-console": ["off"],
         "semi": ["error", "always"],
         "no-extra-parens": ["error", "all"],
         "valid-jsdoc": ["error"],
@@ -13,14 +14,9 @@ module.exports = {
         "no-duplicate-imports": "error"
     },
     "env": {
-        "browser": true,
         "node": true,
-        "es6": true
+        "es6": true,
+        "phantomjs": true,
+        "browser": true
     },
-    "parserOptions": {
-        "sourceType": "module",
-        "ecmaFeatures": {
-            "modules": true
-        }
-    }
 }

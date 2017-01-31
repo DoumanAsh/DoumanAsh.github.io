@@ -3,6 +3,9 @@ node_js:
     - node
 
 script:
+    - npm install
+    - npm run lint
+    - npm run gen_data
     - npm run build
     - npm run test
 

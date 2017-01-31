@@ -2,6 +2,7 @@
 - var path = require('path');
 - var data = require(path.join(root_dir, 'data', 'cv.json'));
 - var title = util.format("%s's CV", data.name);
+- var utils  = require(path.join(root_dir, 'data', 'utils.js'));
 include _head.jade
 
 mixin element_title3(title_array)
@@ -95,8 +96,15 @@ body(class="cv2")
                             +element_title3(job_data.title)
                         each location, lang in job_data.location
                             p(class="sub location" lang=lang)=location
+                        -
+                            var date_regex = /[^\x00-\x7F]+ [0-9]+/;
+                            var date_split = job_data.dates.en.split('-');
+                            var date_left = new Date("2 " + date_split[0].trim());
+                            var date_right = date_split[1].trim();
+                            date_right = date_right.search(date_regex) === -1 ? new Date() : new Date("2 " + date_right);
+                            var date_diff = utils.get_date_diff(date_left, date_right);
                         each date, lang in job_data.dates
-                            p(class="sub date" lang=lang)=date
+                            p(class="sub date" lang=lang)=date + ' ' + utils.get_date_diff_string(date_diff, lang)
                     input(id=toogle_id class="spoiler_box" type="checkbox")
                     ul(class="spoiler")
                         each line in job_data.lines

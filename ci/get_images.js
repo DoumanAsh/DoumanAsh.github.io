@@ -12,16 +12,16 @@ const options = {
 };
 
 http.get(options, function(response){
-    let data = ''
+    let data = '';
 
     if (response.statusCode !== 200) {
-        console.log("Cannot access imgur album. Status code %d", response.statusCode);
+        console.error("Cannot access imgur album. Status code %d", response.statusCode);
         return;
     }
 
     response.setEncoding('utf8');
     response.on('data', (chunk) => {
-        data += chunk
+        data += chunk;
     });
     response.on('end', () => {
         const result_file = path.join(__dirname, '..', 'waifu.json');
@@ -32,5 +32,5 @@ http.get(options, function(response){
     });
 
 }).on("error", function(e){
-    console.log("Got error: " + e.message);
+    console.error("Got error: " + e.message);
 });
