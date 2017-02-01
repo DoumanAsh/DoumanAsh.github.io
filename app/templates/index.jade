@@ -13,50 +13,30 @@ body(class="site")
         div(class="sub")
             a(class="hidden_parent" href="#Goodies")="Goodies"
             ul(class="hidden sub_nav")
-                li
-                    a(href="#Goodies_Rust")="Rust"
-                li
-                    a(href="#Goodies_Tools")="Tools"
-                li
-                    a(href="#Goodies_Stories")="Writings"
-                li
-                    a(href="#Goodies_JS")="JavaScript"
+                each goodie in goodies
+                    - var link = "#Goodies_" + goodie.id
+                    li
+                        a(href=link)=goodie.name
         div(class="sub")
             a(href="#Waifu")="Waifu"
         div(class="sub")
             a(href="#Contact")="Contact"
         div(class="sub")
-            a(href="cv.html" target="_blank")="CV"
+            a(href="cv.html")="CV"
 
     div(class="sub_page flex goodies" id="Goodies" page_title="My Goodies")
-        a(class="sub_link" href="#Goodies_Rust" title="My Rust code" style="background-image: url('img/rust.svg'")
-        a(class="sub_link" href="#Goodies_Tools" title="My Tools" style="background-image: url('img/tools.svg'")
-        a(class="sub_link" href="#Goodies_Stories" title="My Writings" style="background-image: url('img/book.svg'")
-        a(class="sub_link" href="#Goodies_JS" title="My Javascript code" style="background-image: url('img/node.svg'")
+        each goodie in goodies
+            - var link = "#Goodies_" + goodie.id
+            - var background_image = util.format("background-image: url('%s')", goodie.img)
+            a(class="sub_link" href=link title=goodie.title style=background_image)
 
-    div(class="sub_page flex goodies" id="Goodies_Rust" page_title="My Rust Code")
-        each goodie in goodies.rust
-            a(class="goodie_link" href=goodie.link target="_blank")
-                p(class="title")=goodie.name
-                p=goodie.description
-
-    div(class="sub_page flex goodies" id="Goodies_Tools" page_title="My Tools")
-        each goodie in goodies.tools
-            a(class="goodie_link" href=goodie.link target="_blank")
-                p(class="title")=goodie.name
-                p=goodie.description
-
-    div(class="sub_page flex goodies" id="Goodies_Stories" page_title="My Stories")
-        each goodie in goodies.stories
-            a(class="goodie_link" href=goodie.link target="_blank")
-                p(class="title")=goodie.name
-                p=goodie.description
-
-    div(class="sub_page flex goodies" id="Goodies_JS" page_title="My JavaScript code")
-        each goodie in goodies.js
-            a(class="goodie_link" href=goodie.link target="_blank")
-                p(class="title")=goodie.name
-                p=goodie.description
+    each goodie in goodies
+        - var id = "Goodies_" + goodie.id
+        div(class="sub_page flex goodies" id=id page_title=goodie.title)
+            each goodie_data in goodie.data
+                a(class="goodie_link" href=goodie_data.link target="_blank")
+                    p(class="title")=goodie_data.name
+                    p=goodie_data.description
 
     div(class="sub_page" id="Waifu")
         iframe(src="waifu.html")

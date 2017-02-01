@@ -1,112 +1,152 @@
 {
-    "rust": [
-        {
-            "name": "clipboard-win",
-            "link": "https://crates.io/crates/clipboard-win",
-            "description": "Library to interact with Windows clipboard."
-        },
-        {
-            "name": "lazy-socket",
-            "link": "https://github.com/DoumanAsh/lazy-socket.rs",
-            "description": "Thin wrapper over raw C sockets"
-        },
-        {
-            "name": "lazy-bytes-cast",
-            "link": "https://crates.io/crates/lazy-bytes-cast",
-            "description": "Lazy casts from & to byte arrays."
-        },
-        {
-            "name": "rusty-hash",
-            "link": "https://crates.io/crates/rusty-hash",
-            "description": "Simple cli utility to calculate file checksums."
-        },
-        {
-            "name": "windows-error",
-            "link": "https://crates.io/crates/windows-error",
-            "description": "Library to provide wrapper over Windows errors."
-        },
-        {
-            "name": "windows-win",
-            "link": "https://crates.io/crates/windows-win",
-            "description": "Some Windows hacking library with utilities to find windows and access them."
-        },
-        {
-            "name": "rusty-eushully",
-            "link": "https://github.com/DoumanAsh/rusty-eushully",
-            "description": "My utils to hack Eushully games"
-        },
-        {
-            "name": "clipboard-monitor",
-            "link": "https://github.com/DoumanAsh/clipboard-monitor",
-            "description": "Clipboard monitoring utilities."
-        }
-    ],
-    "js": [
-        {
-            "name": "lazy-command.js",
-            "link": "https://npmjs.org/package/lazy-command.js",
-            "description": "Rust-like Command wrapper over node.js child_process."
-        },
-        {
-            "name": "lazy-http-can",
-            "link": "https://github.com/DoumanAsh/lazy-http-can",
-            "description": "Simple HTTP testing service."
-        },
-        {
-            "name": "weather-widget-js",
-            "link": "https://github.com/DoumanAsh/weather-widget-js",
-            "description": "Simple example of weather widget using iframe and with no client side JS."
-        },
-        {
-            "name": "try-react",
-            "link": "https://github.com/DoumanAsh/try-react",
-            "description": "Trying out React.js"
-        },
-        {
-            "name": "lazy-tools.js",
-            "link": "https://github.com/DoumanAsh/lazy-tools.js",
-            "description": "My tools with cute doll assistant Aru. Powered by Riot.js"
-        },
-        {
-            "name": "chess.js",
-            "link": "https://github.com/DoumanAsh/chess.js",
-            "description": "My first proper learning project for node.js."
-        }
-    ],
-
-    "stories": [
-        {
-            "name": "Trails of Cold Steel 2 Walkthrough",
-            "link": "https://doumanash.gitbooks.io/trails-of-cold-steel-2-walkthrough/content/",
-            "description": "My walk through this great game. With pictures."
-        },
-        {
-            "name": "Make Web JS-less Again",
-            "link": "https://doumanash.gitbooks.io/make-web-js-less-again/content/",
-            "description": "My thoughts on over-using JS and tips on enhancing user experience without JS."
-        }
-    ],
-
-    "tools": [
-        {
-            "name": "Markdown parser",
-            "link": "https://doumanash.github.io/lazy-tools.js/#md",
-            "description": "Parses your markdown files with style. And with help of cute doll Aru."
-        },
-        {
-            "name": "rusty-hash",
-            "link": "https://github.com/DoumanAsh/rusty-hash",
-            "description": "Simple utility for checksum calculation."
-        },
-        {
-            "name": "ds2-js",
-            "link": "https://github.com/DoumanAsh/ds2-js",
-            "description": "Devil Survivor 2 Record Breaker Save Editor"
-        },
-        {
-            "name": "clipboard-monitor",
-            "link": "https://github.com/DoumanAsh/clipboard-monitor",
-            "description": "Bunch of utilities to work with Win clipboard."
-        }
-    ]
+    "rust": {
+        "name": "Rust",
+        "img": "img/rust.svg",
+        "title": "My Rust code",
+        "id": "Rust",
+        "data": [
+            {
+                "name": "clipboard-win",
+                "link": "https://crates.io/crates/clipboard-win",
+                "description": "Library to interact with Windows clipboard."
+            },
+            {
+                "name": "lazy-socket",
+                "link": "https://github.com/DoumanAsh/lazy-socket.rs",
+                "description": "Thin wrapper over raw C sockets"
+            },
+            {
+                "name": "lazy-bytes-cast",
+                "link": "https://crates.io/crates/lazy-bytes-cast",
+                "description": "Lazy casts from & to byte arrays."
+            },
+            {
+                "name": "rusty-hash",
+                "link": "https://crates.io/crates/rusty-hash",
+                "description": "Simple cli utility to calculate file checksums."
+            },
+            {
+                "name": "windows-error",
+                "link": "https://crates.io/crates/windows-error",
+                "description": "Library to provide wrapper over Windows errors."
+            },
+            {
+                "name": "windows-win",
+                "link": "https://crates.io/crates/windows-win",
+                "description": "Some Windows hacking library with utilities to find windows and access them."
+            },
+            {
+                "name": "rusty-eushully",
+                "link": "https://github.com/DoumanAsh/rusty-eushully",
+                "description": "My utils to hack Eushully games"
+            },
+            {
+                "name": "clipboard-monitor",
+                "link": "https://github.com/DoumanAsh/clipboard-monitor",
+                "description": "Clipboard monitoring utilities."
+            }
+        ]
+    },
+    "c": {
+        "name": "C",
+        "img": "img/c.svg",
+        "title": "My C code",
+        "id": "C",
+        "data": [
+            {
+                "name": "lazy-winapi",
+                "link": "https://github.com/DoumanAsh/lazy-winapi.c",
+                "description": "Simple and lazy wrapper over WinAPI"
+            },
+            {
+                "name": "lazy-re",
+                "link": "https://github.com/DoumanAsh/lazy_re",
+                "description": "Posix Regex C wrapper. Prototype for my work to simplify verification of debug command output"
+            }
+        ]
+    },
+    "js": {
+        "name": "JavaScript",
+        "img": "img/node.svg",
+        "title": "My JavaScript code",
+        "id": "JS",
+        "data": [
+            {
+                "name": "lazy-command.js",
+                "link": "https://npmjs.org/package/lazy-command.js",
+                "description": "Rust-like Command wrapper over node.js child_process."
+            },
+            {
+                "name": "lazy-http-can",
+                "link": "https://github.com/DoumanAsh/lazy-http-can",
+                "description": "Simple HTTP testing service."
+            },
+            {
+                "name": "weather-widget-js",
+                "link": "https://github.com/DoumanAsh/weather-widget-js",
+                "description": "Simple example of weather widget using iframe and with no client side JS."
+            },
+            {
+                "name": "try-react",
+                "link": "https://github.com/DoumanAsh/try-react",
+                "description": "Trying out React.js"
+            },
+            {
+                "name": "lazy-tools.js",
+                "link": "https://github.com/DoumanAsh/lazy-tools.js",
+                "description": "My tools with cute doll assistant Aru. Powered by Riot.js"
+            },
+            {
+                "name": "chess.js",
+                "link": "https://github.com/DoumanAsh/chess.js",
+                "description": "My first proper learning project for node.js."
+            }
+        ]
+    },
+    "stories": {
+        "name": "Writings",
+        "img": "img/book.svg",
+        "title": "My Writings code",
+        "id": "Stories",
+        "data": [
+            {
+                "name": "Trails of Cold Steel 2 Walkthrough",
+                "link": "https://doumanash.gitbooks.io/trails-of-cold-steel-2-walkthrough/content/",
+                "description": "My walk through this great game. With pictures."
+            },
+            {
+                "name": "Make Web JS-less Again",
+                "link": "https://doumanash.gitbooks.io/make-web-js-less-again/content/",
+                "description": "My thoughts on over-using JS and tips on enhancing user experience without JS."
+            }
+        ]
+    },
+    "tools": {
+        "name": "Tools",
+        "img": "img/tools.svg",
+        "title": "My Tools code",
+        "id": "Tools",
+        "data": [
+            {
+                "name": "Markdown parser",
+                "link": "https://doumanash.github.io/lazy-tools.js/#md",
+                "description": "Parses your markdown files with style. And with help of cute doll Aru."
+            },
+            {
+                "name": "rusty-hash",
+                "link": "https://github.com/DoumanAsh/rusty-hash",
+                "description": "Simple utility for checksum calculation."
+            },
+            {
+                "name": "ds2-js",
+                "link": "https://github.com/DoumanAsh/ds2-js",
+                "description": "Devil Survivor 2 Record Breaker Save Editor"
+            },
+            {
+                "name": "clipboard-monitor",
+                "link": "https://github.com/DoumanAsh/clipboard-monitor",
+                "description": "Bunch of utilities to work with Win clipboard."
+            }
+        ]
+    }
 }

@@ -24,7 +24,7 @@
         {
             "key": {
                 "en": "Residence:",
-                "ru": "Место жительства:"
+                "ru": "Местожительство:"
             },
             "type": "str",
             "value": {
@@ -34,8 +34,8 @@
         },
         {
             "key": {
-                "en": "Find me:",
-                "ru": "Профили в сети:"
+                "en": "Links:",
+                "ru": "Ссылки:"
             },
             "type": "links",
             "value" : [
@@ -43,6 +43,12 @@
                     "title": "github.com/DoumanAsh",
                     "href": "https://github.com/DoumanAsh",
                     "logo": "img/github-logo.svg"
+                },
+                {
+                    "title": "Portfolio",
+                    "href": "https://doumanash.github.io/#Goodies",
+                    "logo": "img/portfolio.svg",
+                    "add_class": "no_print"
                 }
             ]
         },

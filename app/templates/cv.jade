@@ -71,7 +71,8 @@ body(class="cv")
                             else
                                 td
                                     each link in item.value
-                                        a(title=link.title class="link_logo" href=link.href target="_blank" style="background-image: url('#{link.logo}')")
+                                        - var link_class = link.add_class ? "link_logo " + link.add_class : "link_logo"
+                                        a(title=link.title class=link_class href=link.href target="_blank" style="background-image: url('#{link.logo}')")
 
         section(class="element")
             - var expertise = data.elements.expertise

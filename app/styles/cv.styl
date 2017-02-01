@@ -36,7 +36,7 @@ body.cv
             width: auto
             height: auto
             margin-right: 0.5em
-            &::after
+            &:not(.no_print)::after
                 content:  attr(title)
 
     & > div.main
