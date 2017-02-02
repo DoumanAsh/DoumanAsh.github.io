@@ -144,7 +144,7 @@
                         {
                             "type": "single_line",
                             "lang": "",
-                            "line": "Google Test/Mock, Node.js, express.js, socket.io, ReactJS, CUnit, Django"
+                            "line": "Node.js(express/koa, riot/react, jade/pug/stylus), Google Test/Mock, CUnit, Django"
                         }
                     ]
                 },
