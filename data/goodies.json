@@ -11,6 +11,11 @@
                 "description": "Library to interact with Windows clipboard."
             },
             {
+                "name": "toa-ping",
+                "link": "https://github.com/DoumanAsh/toa-ping",
+                "description": "Cute ping tool"
+            },
+            {
                 "name": "lazy-socket",
                 "link": "https://github.com/DoumanAsh/lazy-socket.rs",
                 "description": "Thin wrapper over raw C sockets"
@@ -77,6 +82,11 @@
                 "description": "Rust-like Command wrapper over node.js child_process."
             },
             {
+                "name": "auto-clip",
+                "link": "https://github.com/DoumanAsh/auto-clip",
+                "description": "Simple firefox extension to auto-copy selected text to clipboard"
+            },
+            {
                 "name": "lazy-http-can",
                 "link": "https://github.com/DoumanAsh/lazy-http-can",
                 "description": "Simple HTTP testing service."
@@ -106,7 +116,7 @@
     "stories": {
         "name": "Writings",
         "img": "img/book.svg",
-        "title": "My Writings code",
+        "title": "My Writings",
         "id": "Stories",
         "data": [
             {
@@ -124,13 +134,18 @@
     "tools": {
         "name": "Tools",
         "img": "img/tools.svg",
-        "title": "My Tools code",
+        "title": "My Tools",
         "id": "Tools",
         "data": [
             {
                 "name": "Markdown parser",
                 "link": "https://doumanash.github.io/lazy-tools.js/#md",
                 "description": "Parses your markdown files with style. And with help of cute doll Aru."
+            },
+            {
+                "name": "toa-ping",
+                "link": "https://github.com/DoumanAsh/toa-ping",
+                "description": "Cute ping tool"
             },
             {
                 "name": "rusty-hash",
