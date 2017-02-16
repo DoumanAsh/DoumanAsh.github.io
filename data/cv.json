@@ -101,12 +101,12 @@
                 {
                     "type": "single_line",
                     "lang": "en",
-                    "line": "Several years of work experience in telecom software development."
+                    "line": "Several years of experience in software development (including open source contributions)."
                 },
                 {
                     "type": "single_line",
                     "lang": "ru",
-                    "line": "Несколько лет опыта в разработке ПО для телекома."
+                    "line": "Несколько лет опыта в разработке ПО (включая open-source) ."
                 },
                 {
                     "type": "multi_line",
