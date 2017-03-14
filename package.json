@@ -5,7 +5,7 @@
   "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/DoumanAsh/DoumanAsh.github.io"
   },
   "license": "MIT",
   "scripts": {
@@ -18,17 +18,17 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "auto-reload-brunch": "*",
-    "autoprefixer-stylus": "*",
+    "phantomjs": "*",
+    "eslint": "*",
+
     "brunch": "*",
+    "autoprefixer-stylus": "*",
     "clean-css-brunch": "*",
     "css-brunch": "*",
     "eslint-brunch": "*",
     "jade-brunch": "*",
-    "javascript-brunch": "*",
-    "phantomjs": "*",
     "stylus-brunch": "*",
-    "uglify-js-brunch": "*",
-    "eslint": "*"
+    "auto-reload-brunch": "*",
+    "uglify-js-brunch": "*"
   }
 }

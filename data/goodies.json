@@ -138,6 +138,11 @@
         "id": "Tools",
         "data": [
             {
+                "name": "Futsū Kana",
+                "link": "https://doumanash.github.io/futsu-kana/",
+                "description": "Simple web app to help with learning of Japanese kana."
+            },
+            {
                 "name": "Markdown parser",
                 "link": "https://doumanash.github.io/lazy-tools.js/#md",
                 "description": "Parses your markdown files with style. And with help of cute doll Aru."
