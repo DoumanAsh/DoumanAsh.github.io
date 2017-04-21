@@ -3,11 +3,14 @@ div.gallery
         margin: 2rem
 
     & > div.sub_page
-        align-items: center
 
         & > a
+            display: flex
+            flex-direction: column
+            justify-content: center
+
             flex: 4
-            font-size: 100px
+            font-size: 6vw
             margin: .2em
             text-align: center
             text-decoration: none
@@ -20,7 +23,7 @@ div.gallery
 
             &:hover
                 opacity: 1
-                transform: scale(1.2)
+                transform: scale(1.175)
 
         & > div.current
             display: flex
@@ -31,27 +34,23 @@ div.gallery
             box-shadow: 3px 3px 3px 4px rgba(0, 0, 0, 0.4)
 
             & > div.description
-                width: 70%
+                width: 80%
                 display: flex
                 flex-direction: column
                 text-align: center
                 color: white
                 padding: 1rem
                 align-self: center
+                font-size: 3vmin
                 & > p.title
                     font-weight: 900
-                    font-size: 1.2em
+                    font-size: 120%
                 & > p.details
                     text-align: center
                     font-weight: 100
                     word-wrap: break-word
 
-                @media screen and (max-height: 800px), screen and (max-width: 800px)
-                    font-size: .7em
 
             & > div.img
-                height: 500px
+                height: 57.5vmin
                 margin-top: 20px
-
-                @media screen and (max-height: 800px), screen and (max-width: 800px)
-                    height: 300px
