@@ -124,7 +124,7 @@
                         {
                             "type": "single_line",
                             "lang": "",
-                            "line": "C/C++, Python, Rust, HTML5/CSS, JavaScript, Powershell, Bash"
+                            "line": "C/C++, Python, Rust, HTML5/CSS, JavaScript, Elixir, Powershell, Bash"
                         }
                     ]
                 },
@@ -144,7 +144,7 @@
                         {
                             "type": "single_line",
                             "lang": "",
-                            "line": "Node.js(express/koa, riot/react, jade/pug/stylus), Google Test/Mock, CUnit"
+                            "line": "Node.js, koa.js, ReactJS/Inferno, Mobx, Google Test/Mock, CUnit"
                         }
                     ]
                 },

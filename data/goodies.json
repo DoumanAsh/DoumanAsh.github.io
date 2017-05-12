@@ -77,6 +77,11 @@
         "id": "JS",
         "data": [
             {
+                "name": "jiken",
+                "link": "https://github.com/DoumanAsh/jiken",
+                "description": "Simple EventEmitter for Browser"
+            },
+            {
                 "name": "lazy-command.js",
                 "link": "https://npmjs.org/package/lazy-command.js",
                 "description": "Rust-like Command wrapper over node.js child_process."
