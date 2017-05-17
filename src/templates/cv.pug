@@ -1,0 +1,163 @@
+include _common.pug
+
++head
+-
+    var data = require('../../data/cv.json')
+    var utils = require('../../data/utils.js')
+
+mixin element_title3(title_array)
+    each title, lang in title_array
+        h3.cv-body__section__title(lang=lang)=title
+
+mixin element_title(title_array)
+    each title, lang in title_array
+        h2.cv-body__section__title(lang=lang)=title
+
+mixin b_opt_lang(line)
+    if line.lang
+        b(lang=line.lang)=line.line
+    else
+        b=line.line
+
+mixin par_opt_lang(line)
+    if line.lang
+        p(lang=line.lang)=line.line
+    else
+        p=line.line
+
+mixin li_opt_lang(line)
+    if line.lang
+        li(lang=line.lang)=line.line
+    else
+        li=line.line
+
+mixin multi_line(line)
+    if line.type == "bold_line"
+        +b_opt_lang(line)
+    else if line.type == "single_line"
+        | #{line.line}
+
+body.main
+    +nav("CV")
+
+    main.page-content.page-content--wide.cv.article
+        header.cv-header
+            h1.cv-header__title=data.name
+            nav.lang-switcher
+                each lang in data.langs
+                    - var href = "#" + lang.code;
+                    - var icon = require('../assets/img/cv/' + lang.icon);
+                    - var lang_icon_style = `background-image: url('${icon}')`
+                    a(href=href title=lang.title  style=lang_icon_style)
+
+
+        each lang in data.langs
+            div.lang-anchor(id=lang.code)
+
+        content.cv-body.lang-switch
+            section.cv-body__basic
+                - var basic_middle_idx = Math.round(data.basic.length / 2);
+                - var basic_left = data.basic.slice(0, basic_middle_idx)
+                - var basic_right = data.basic.slice(basic_middle_idx)
+                - var basic_all = [{class: "left", data: basic_left}, {class: "right", data: basic_right}]
+                each table in basic_all
+                    table(class=table.class)
+                        each item in table.data
+                            tr
+                                each lang_item, lang_key in item.key
+                                    td(lang=lang_key)=lang_item
+                                if item.type == "str"
+                                    if typeof item.value == "string"
+                                        td=item.value
+                                    else
+                                        each lang_item, lang_key in item.value
+                                            td(lang=lang_key)=lang_item
+                                else
+                                    td
+                                        each link in item.value
+                                            - var icon = require('../assets/img/icons/' + link.logo);
+                                            - var extra_class = link.is_print === true ? 'bk-image__link--print' : 'bk-image__link--print-hide'
+                                            a.bk-image.bk-image__link(title=link.title class=extra_class href=link.href target="_blank" style=`background-image: url('${icon}')`)
+            section.cv-body__section
+                - var expertise = data.elements.expertise
+                +element_title(expertise.title)
+                section.cv-body__section__content
+                    each line in expertise.data
+                        if line.type == "single_line"
+                            +par_opt_lang(line)
+                        else if line.type == "multi_line"
+                            p
+                                each sub_line in line.lines
+                                    +multi_line(sub_line)
+
+            section.cv-body__section
+                - var experience = data.elements.experience;
+                +element_title(experience.title)
+                each job_data, job_idx in experience.data
+                    - var toogle_id = `job-${job_idx}`
+                    section.cv-body__section__content
+                        header.cv-body__section__content__title
+                            label.spoiler_link(for=toogle_id)
+                                +element_title3(job_data.title)
+                            each location, lang in job_data.location
+                                p.cv-body__section__content__sub(lang=lang)=location
+                            -
+                                var date_regex = /[^\x00-\x7F]+ [0-9]+/;
+                                var date_split = job_data.dates.en.split('-');
+                                var date_left = new Date("2 " + date_split[0].trim());
+                                var date_right = date_split[1].trim();
+                                date_right = date_right.search(date_regex) === -1 ? new Date() : new Date("2 " + date_right);
+                                var date_diff = utils.get_date_diff(date_left, date_right);
+                            each date, lang in job_data.dates
+                                p.cv-body__section__content__sub(lang=lang)=date + ' ' + utils.get_date_diff_string(date_diff, lang)
+                        input.spoiler-input(id=toogle_id type="checkbox")
+                        ul.spoiler-element
+                            each line in job_data.lines
+                                if line.type == "single_line"
+                                    +li_opt_lang(line)
+                                else if line.type == "multi_line"
+                                    li
+                                        each sub_line in line.lines
+                                            +multi_line(sub_line)
+
+
+            section.cv-body__section
+                - var languages = data.elements.languages;
+                +element_title(languages.title)
+                section.cv-body__section__content
+                    each lang_skill in languages.data
+                        each lang, code in lang_skill
+                            p(lang=code)
+                                b=lang.title
+                                | #{lang.level}
+
+            section.cv-body__section
+                - var education = data.elements.education;
+                +element_title(education.title)
+                section.cv-body__section__content
+                    each education_data, idx in education.data
+                        section
+                            header
+                                each title, code in education_data.name
+                                    if education_data.title
+                                        h3(lang=code title=education_data.title[code])=title
+                                    else
+                                        h3(lang=code)=title
+                                p.cv-body__section__content__sub=education_data.dates
+                            section
+                                each info, code in education_data.info
+                                    p(lang=code)
+                                        b=education.info_map[code].major
+                                        | #{info.major}
+                                    p(lang=code)
+                                        b=education.info_map[code].degree
+                                        | #{info.degree}
+                            if idx < (education.data.length - 1)
+                                br
+
+            section.cv-body__section
+                - var interests = data.elements.interests;
+                +element_title(interests.title)
+                section.cv-body__section__content
+                    each data, code in interests.data
+                        p(lang=code)=data

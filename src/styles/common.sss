@@ -1,0 +1,61 @@
+html
+    box-sizing: border-box
+
+body
+    font-size: 25px
+    font-family: "Times New Roman", Times, serif
+
+*,
+::after,
+::before
+    margin: 0
+    box-sizing: inherit
+
+@keyframes fade-in
+    from
+        opacity: 0
+
+    to
+        opacity: 1
+
+@keyframes fly-in
+    0%
+        opacity: 0
+        transform: translateY(-40px)
+
+    100%
+        opacity: 1
+        transform: translateY(0)
+
+a
+    color: teal
+
+.article
+    max-width: 800px
+
+.article--md
+    & p
+        line-height: 1em !important
+        margin-bottom: .75em
+
+.heading
+    font-size: 2em
+
+h1.big
+    font-weight: 100
+    font-size: 6rem
+
+.container
+    margin: 1rem
+
+.center
+    text-align: center
+
+.inline-children
+    & > *
+        display: inline-block
+        vertical-align: middle
+
+.hidden
+    display: none !important
+

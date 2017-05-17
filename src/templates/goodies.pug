@@ -1,0 +1,29 @@
+include _common.pug
+
++head
+
+-
+    var path = require('path')
+    var goodies = require('../../data/goodies.json')
+
+body.main
+    +nav("Goodies")
+
+    main.page-content.page-content--wide
+        each goodie in goodies
+            - var id = goodie.id
+            div.target-sub-page.target-sub-page--flex.target-sub-page--title(id=id page_title=goodie.title)
+                div.page-links
+                    each goodie_data in goodie.data
+                        a.flex-link(href=goodie_data.link target="_blank")
+                            p.flex-link__title=goodie_data.name
+                            p.flex-link__desc=goodie_data.description
+
+        div.target-sub-page.default
+            header="Some stuff I made occasionally."
+            content.page-links
+                each goodie in goodies
+                    - var link = goodie.id
+                    - var img = require('../assets/img/goodies/' + goodie.img)
+                    a.flex-link.flex-link--img.bk-image(href=`#${link}` title=goodie.title style=`background-image: url('${img}')`)
+

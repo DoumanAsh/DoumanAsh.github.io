@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+    - node
+
+script:
+    - npm run lint
+    - npm run gen_data
+    - npm run build:p
+
+after_success:
+    - bash -x ci/update_pages.sh

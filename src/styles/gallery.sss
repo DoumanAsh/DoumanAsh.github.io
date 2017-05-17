@@ -1,0 +1,63 @@
+//Image gallery page.
+//Should be main page.
+.im-g
+    height: 100%
+    margin: 1em
+
+//Image gallery navigation links
+.im-g__nav
+    display: flex
+    flex-direction: column
+    justify-content: center
+    flex: 4
+    font-size: 6vw
+    margin: .2em
+    text-align: center
+    text-decoration: none
+    opacity: 0.5
+    transition: all .2s ease-in-out
+    color: black
+
+    &:visited
+        color: black
+
+    &:hover
+        opacity: 1
+        transform: scale(1.175)
+
+//Image gallery flex container for image with description
+.im-g__wrap
+    display: flex
+    flex-flow: column
+    flex: 5 0 50%
+    background: #333
+    box-shadow: 3px 3px 3px 4px rgba(0, 0, 0, 0.4)
+
+//Image gallery image to auto-adjust height by viewport
+.im-g__wrap__img
+    height: 57.5vmin
+    margin-top: 20px
+    background-position: center
+
+//Image gallery image description container
+.im-g__wrap__desc
+    display: flex
+    flex-direction: column
+    text-align: center
+    color: white
+    padding: 1rem
+    align-self: center
+    font-size: 3vmin
+
+//Header of .im-g__wrap__desc
+.im-g__wrap__desc__h
+    font-weight: 900
+    font-size: 120%
+
+//Details of .im-g__wrap__desc
+.im-g__wrap__desc__d
+    line-height: 1.25em
+    text-align: center
+    font-weight: 100
+    font-size: 90%
+    word-wrap: break-word

@@ -1,0 +1,38 @@
+//Default target should come after all possible targets.
+.target-sub-page
+    animation: fade-in 1s
+    display: none //By default all elements are hidden.
+
+    &.default
+        display: block //Default element is always shown.
+
+    &:target
+        display: block //Target element is shown
+
+        & ~ div.default
+            display: none //Default is hidden when target element is preceding.
+
+.target-sub-page--flex
+    &.default
+        display: flex
+
+    &:target
+        display: flex
+
+.target-sub-page--title
+    flex-wrap: wrap
+    &::before
+        content: attr(page_title)
+        flex: 1 1 100%
+        text-align: center
+        font-size: 2em
+        font-weight: 900
+        margin-bottom: .5em
+
+//Page with multiple links
+.page-links
+    width: 100%
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+    padding: 1em

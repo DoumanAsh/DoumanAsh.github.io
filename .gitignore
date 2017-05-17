@@ -1,0 +1,8 @@
+# NPM packages folder.
+node_modules/
+
+# Brunch output folder.
+public/
+
+# Dump with imgur waifu album data
+waifu.json

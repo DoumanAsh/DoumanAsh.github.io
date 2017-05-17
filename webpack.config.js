@@ -1,0 +1,104 @@
+"use strict";
+
+const path = require('path');
+
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
+
+const PUBLIC = path.resolve(__dirname, 'public');
+const SRC = path.resolve(__dirname, 'src');
+
+const css_loader = {
+    test: /\.sss/,
+    use: ExtractTextPlugin.extract({
+        use: [
+            'css-loader',
+            'postcss-loader'
+        ]
+    })
+};
+
+const json_loader = {
+    test: /\.json$/,
+    loader: 'json5-loader'
+};
+
+const img_loader = {
+    test: /\.(jpe?g|png|svg|ico)$/,
+    loader: 'file-loader',
+    options: {
+        useRelatievePath: false,
+        outputPath: "img/",
+        name: '[name].[hash].[ext]',
+    },
+};
+
+const js_loader = {
+    test: /\.jsx?$/,
+    use: [
+        "babel-loader",
+        "eslint-loader"
+    ]
+};
+
+const pug_loader = {
+    test: /\.pug?$/,
+    include: path.join(SRC, 'templates'),
+    use: [
+        'pug-loader'
+    ]
+};
+
+module.exports.entry = {
+    app: `${SRC}/js/init.js`
+};
+
+module.exports.output = {
+    filename: '[name].bundle.[chunkhash].js',
+    path: PUBLIC
+};
+
+module.exports.module = {
+    rules: [
+        css_loader,
+        img_loader,
+        json_loader,
+        js_loader,
+        pug_loader
+    ]
+};
+
+function html_pug_plug(title, template, opts) {
+    const options = Object.assign({
+        title,
+        template: path.join(SRC, template),
+        filename: path.basename(template, '.pug') + '.html',
+    }, opts);
+    return new HtmlWebpackPlugin(options);
+}
+
+const TITLE = "Douman";
+const STATIC_HTML = {
+    inject: false
+};
+
+module.exports.plugins = [
+    html_pug_plug(TITLE, "templates/index.pug", STATIC_HTML),
+    html_pug_plug(TITLE, "templates/contacts.pug", STATIC_HTML),
+    html_pug_plug(TITLE, "templates/waifu.pug", STATIC_HTML),
+    html_pug_plug(TITLE, "templates/goodies.pug", STATIC_HTML),
+    html_pug_plug("Arthur's CV", "templates/cv.pug", STATIC_HTML),
+    html_pug_plug("Page not found", "templates/404.pug", STATIC_HTML),
+    new ScriptExtHtmlWebpackPlugin({
+        defaultAttribute: 'async'
+    }),
+    new ExtractTextPlugin('[name].bundle.[chunkhash].css')
+];
+
+module.exports.devServer = {
+    port: 3333,
+    compress: true
+};
+
+module.exports.devtool = "cheap-source-map";

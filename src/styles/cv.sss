@@ -1,0 +1,83 @@
+@import './main.sss'
+
+@import './spoiler.sss'
+
+.cv
+    font-size: 20px
+    line-height: 25px
+    margin: auto
+    padding-bottom: 1em
+
+    @media print
+        font-size: 75%
+
+.cv-header
+    display: flex
+    justify-content: space-between
+    margin: 1em
+    margin-left: 0
+    padding-bottom: 1rem
+    border-bottom: 1px solid #000
+
+//Default
+#ru:not(:target) ~ .lang-switch *[lang]:not(:lang(en))
+    display: none
+
+//Hide
+#ru:target ~ .lang-switch *[lang]:not(:lang(ru))
+    display: none
+
+#en:target ~ .lang-switch *[lang]:not(:lang(en))
+    display: none
+
+nav.lang-switcher
+    height: 32px
+    & > a
+        display: inline-block
+        margin-right: .5em
+        width: 32px
+        height: 32px
+        padding: 0
+        background-size: contain
+        background-repeat: no-repeat
+        background-position: center
+
+    @media print
+        display: none
+
+.lang-anchor
+    position: absolute
+    top: 0
+
+.cv-body__basic
+    display: flex
+    flex-flow: wrap
+    justify-content: space-between
+    text-align: left
+
+.cv-body__section
+    margin-top: 1em
+    text-align: center
+    display: flex
+    justify-content: space-between
+    flex-flow: row wrap
+
+.cv-body__section__title
+    flex: 1 0 20%
+    font-weight: 600
+    font-style: italic
+
+.cv-body__section__content
+    text-align: left
+    flex: 1 0 70%
+    padding-left: 1em
+    border-left: 1px solid #000
+
+.cv-body__section__content__title
+    display: flex
+    flex-flow: row wrap
+    justify-content: space-between
+
+.cv-body__section__content__sub
+    font-style: italic
+    color: #999

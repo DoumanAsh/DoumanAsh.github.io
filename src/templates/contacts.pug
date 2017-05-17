@@ -1,0 +1,21 @@
+include _common.pug
+
++head
+
+-
+    var contacts = [
+        { title: "douman@gmx.se", href: "mailto:douman@gmx.se", img: require('../assets/img/icons/close-envelope.svg')},
+        { title: "Skype: coldgloom", href: "skype:coldgloom?call", img: require('../assets/img/icons/skype.svg')},
+        { title: "Github", href: "https://github.com/DoumanAsh", img: require('../assets/img/icons/github-logo.svg'), target: "_blank"}
+    ]
+
+body.main
+    +nav("Contacts")
+
+    main.page-content
+        p="Wanna get in touch with great me?"
+        p="Here you go:"
+        div.contant-links
+            each contact in contacts
+                a.bk-image.bk-image__link(title=contact.title, href=contact.href, target=contact.target, style=`background-image: url('${contact.img}')`)
+

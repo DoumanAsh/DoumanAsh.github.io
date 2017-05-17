@@ -1,0 +1,110 @@
+///Main style for all pages
+html
+    height: auto
+
+body
+    height: inherit
+
+.main
+    display: flex
+    flex-direction: column
+
+///Page content
+.page-content
+    flex: 1
+    margin: 1em auto
+    line-height: 2em
+    text-align: center
+
+.page-content--wide
+    width: 100%
+
+///Navigation panel
+.nav
+    display: inline-block
+    color: white
+    background: #333
+    box-shadow: 3px 3px 3px 4px rgba(0, 0, 0, 0.4)
+    text-align: center
+    font-size: 1.25em
+
+    @media print
+        display: none
+
+.nav__link
+    display: inline-block
+    font-size: inherit
+    padding: .6em
+    text-decoration: none
+    cursor: pointer
+    color: white
+
+    &:hover
+        background: #444
+
+.nav__link--selected
+    background: teal !important
+
+///Background image
+.bk-image
+    background-size: contain
+    background-repeat: no-repeat
+    margin: .5em
+
+.bk-image__link
+    display: inline-block
+    height: 48px
+    width: 48px
+
+    &:hover
+        opacity: 0.4
+
+.bk-image__link--print-hide
+    @media print
+        display: none
+
+.bk-image__link--print
+    @media print
+        font-size: .85em
+        color: black
+        text-decoration: none
+        width: auto
+        height: 0
+        margin: 0
+        margin-right: 0.5em
+        &::after
+            content: attr(title)
+
+
+//.contact-links
+
+///Link to external resource for flex containers
+.flex-link
+    font-size: 1.25rem
+    padding: .5em
+    width: 25%
+    text-decoration: none
+    text-align: left
+    line-height: 1em
+
+    &:hover
+        box-shadow: 3px 3px 3px 4px rgba(0, 0, 0, 0.1)
+
+.flex-link--img
+    flex: 1 0 20%
+    height: 20vmin
+    max-width: 25%
+    background-position: center
+
+///Link's title
+.flex-link__title
+    color: teal
+    font-size: 1.5em
+    font-weight: 900
+    word-wrap: break-word
+    margin-bottom: .5em
+
+///Link's description
+.flex-link__desc
+    color: black
+    word-wrap: break-word

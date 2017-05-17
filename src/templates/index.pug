@@ -1,0 +1,9 @@
+include _common.pug
++head
+
+body.main
+    +nav("Home")
+
+    main.page-content.article.article--md
+        include:markdown-it index.md
+
