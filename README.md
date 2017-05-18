@@ -35,7 +35,7 @@ Structure of each element:
 - **name** - Name of element for reader;
 - **img** - Image link for Goodies main page link;
 - **title** - Description of goodie which is used as title to links and goodie page;
-- **id** - ID of goodie to be used as unique div ID for navigation. Result format `Goodies_<id>`;
+- **id** - ID of goodie to be used as unique div ID for navigation. Result format `<id>`;
 - **data** - List with elements of goodie page:
     - **name** - Name of goodie;
     - **link** - Link to project;
