@@ -14,7 +14,7 @@ body.main
     +nav("My waifu")
 
     main.page-content.im-g
-        header="This is a catalog of adorable girls.These are the one I shall remember forever..."
+        header(style="margin-bottom: .5em")="This is a catalog of adorable girls.These are the one I shall remember forever..."
         for item, idx in waifu
             - var cur_idx = idx + 1;
             - var prev_idx = cur_idx === waifu.length ? waifu.length - 1 : cur_idx - 1;

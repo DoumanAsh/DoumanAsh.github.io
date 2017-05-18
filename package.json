@@ -31,6 +31,8 @@
       "webpack": "*",
       "webpack-dev-server": "*",
 
+      "raw-loader": "*",
+      "dateformat": "*",
       "html-webpack-plugin": "*",
       "script-ext-html-webpack-plugin": "*",
       "extract-text-webpack-plugin": "*",

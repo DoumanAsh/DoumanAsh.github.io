@@ -1,0 +1,14 @@
+include ../_common.pug
++head
+
+body.main
+    +nav("Blog")
+
+    -
+    main.page-content.article.blog-post.blog-post--md
+        p="Kinda blog..."
+        each post in htmlWebpackPlugin.options._posts
+            section.blog-entry
+                span.sub-text=post.date
+                a(href=post.filename)=post.title
+
