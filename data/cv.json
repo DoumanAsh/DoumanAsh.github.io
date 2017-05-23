@@ -136,17 +136,17 @@
                         {
                             "type": "bold_line",
                             "lang": "en",
-                            "line": "Frameworks: "
+                            "line": "Frameworks/Libraries: "
                         },
                         {
                             "type": "bold_line",
                             "lang": "ru",
-                            "line": "Фреймворки: "
+                            "line": "Фреймворки/Библиотеки: "
                         },
                         {
                             "type": "single_line",
                             "lang": "",
-                            "line": "Node.js, koa.js, ReactJS/Inferno, Mobx, Google Test/Mock, CUnit"
+                            "line": "Node.js, express/koa.js, ReactJS/Inferno, PostCSS/stylus, Mobx, Google Test/Mock, CUnit"
                         }
                     ]
                 },
