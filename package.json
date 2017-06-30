@@ -1,77 +1,75 @@
 {
-  "name": "DoumanAsh.github.io",
-  "version": "1.0.0",
-  "private": true,
-  "description": "Static site generator",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-
-    "lint": "eslint . --ext .js --ignore-pattern public",
-    "gen_data": "node ci/get_images.js",
-
-    "build": "webpack",
-    "build:p": "webpack -p",
-    "build:profile": "webpack --profile --json > stats.json",
-    "build:analyze": "webpack-bundle-analyzer stats.json",
-    "build:s": "webpack-dev-server"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DoumanAsh/DoumanAsh.github.io.git"
-  },
-  "keywords": [],
-  "author": "Douman <douman@gmx.se>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/DoumanAsh/DoumanAsh.github.io/issues"
-  },
-  "homepage": "https://github.com/DoumanAsh/DoumanAsh.github.io#readme",
-  "devDependencies": {
-      "webpack": "*",
-      "webpack-dev-server": "*",
-
-      "raw-loader": "*",
-      "dateformat": "*",
-      "html-webpack-plugin": "*",
-      "script-ext-html-webpack-plugin": "*",
-      "extract-text-webpack-plugin": "*",
-      "pug": "^2.0.0-rc.1",
-      "jstransformer-markdown-it": "*",
-      "pug-loader": "*",
-
-      "file-loader": "*",
-      "json5-loader": "*",
-
-      "eslint": "*",
-      "eslint-plugin-compat": "*",
-      "eslint-loader": "*",
-
-      "babel-core": "*",
-      "babel-plugin-inferno": "*",
-      "babel-preset-es2015": "*",
-      "babel-plugin-transform-object-rest-spread": "*",
-      "babel-loader": "*",
-
-      "css-loader": "*",
-      "postcss-loader": "*",
-      "postcss-import": "*",
-      "postcss-nesting": "*",
-      "sugarss": "*",
-      "stylelint": "*",
-      "stylelint-config-standard": "*",
-      "autoprefixer": "*"
-  },
-
-  "babel": {
-      "presets": [
-          ["es2015", {"modules": false}]
-      ],
-      "plugins": ["transform-object-rest-spread"]
-  },
-
-  "browserslist": [
-      "Last 2 versions",
-      "ie 11"
-  ]
+    "name": "DoumanAsh.github.io",
+    "version": "1.0.0",
+    "private": true,
+    "description": "Static site generator",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lint": "eslint . --ext .js --ignore-pattern public",
+        "gen_data": "node ci/get_images.js",
+        "build": "webpack",
+        "build:p": "webpack -p",
+        "build:profile": "webpack --profile --json > stats.json",
+        "build:analyze": "webpack-bundle-analyzer stats.json",
+        "build:s": "webpack-dev-server"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/DoumanAsh/DoumanAsh.github.io.git"
+    },
+    "keywords": [],
+    "author": "Douman <douman@gmx.se>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/DoumanAsh/DoumanAsh.github.io/issues"
+    },
+    "homepage": "https://github.com/DoumanAsh/DoumanAsh.github.io#readme",
+    "devDependencies": {
+        "webpack": "*",
+        "webpack-dev-server": "*",
+        "raw-loader": "*",
+        "dateformat": "*",
+        "html-webpack-plugin": "*",
+        "script-ext-html-webpack-plugin": "*",
+        "extract-text-webpack-plugin": "*",
+        "pug": "^2.0.0-rc.1",
+        "jstransformer-markdown-it": "*",
+        "pug-loader": "*",
+        "file-loader": "*",
+        "json5-loader": "*",
+        "eslint": "*",
+        "eslint-plugin-compat": "*",
+        "eslint-loader": "*",
+        "babel-core": "*",
+        "babel-plugin-inferno": "*",
+        "babel-preset-es2015": "*",
+        "babel-plugin-transform-object-rest-spread": "*",
+        "babel-loader": "*",
+        "css-loader": "*",
+        "postcss-loader": "*",
+        "postcss-import": "*",
+        "postcss-nesting": "*",
+        "sugarss": "*",
+        "stylelint": "*",
+        "stylelint-config-standard": "*",
+        "autoprefixer": "*"
+    },
+    "babel": {
+        "presets": [
+            [
+                "es2015",
+                {
+                    "modules": false
+                }
+            ]
+        ],
+        "plugins": [
+            "transform-object-rest-spread"
+        ]
+    },
+    "browserslist": [
+        "Last 2 versions",
+        "ie 11"
+    ]
 }
