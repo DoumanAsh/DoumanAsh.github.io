@@ -17,7 +17,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 function get_blog_posts(template, blog_index) {
     const blog_dir = path.join(__dirname, '..', 'blog');
     const dir_list = fs.readdirSync(blog_dir);
-    const result = dir_list.map((name) => {
+    const result = dir_list.reverse().map((name) => {
         const basename = path.basename(name, '.md');
         let [date, title] = basename.split('__');
         const filename = `blog/${basename}.html`;
