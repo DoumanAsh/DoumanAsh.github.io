@@ -449,6 +449,82 @@
                             "line": "Прототипирование синхронизации тредов в тестовом окружении, используя POSIX Threads."
                         }
                     ]
+                },
+                {
+                    "title": {
+                        "en": "Front-end Developer",
+                        "ru": "Front-end Разработчик"
+                    },
+                    "location": {
+                        "en": "Smartbics - Nizhny Novgorod",
+                        "ru": "Smartbics - Нижний Новгород"
+                    },
+                    "dates": {
+                        "en": "June 2017 - now",
+                        "ru": "Июнь 2017 - Настоящее время"
+                    },
+                    "lines": [
+                        {
+                            "type": "single_line",
+                            "lang": "en",
+                            "line": "Development of front-end for booking system."
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "ru",
+                            "line": "Разработка front-end'a для системы букинга."
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "en",
+                            "line": "Writing email templates for server."
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "ru",
+                            "line": "Написание темплейтов писем для сервера."
+                        },
+                        {
+                            "type": "multi_line",
+                            "lines": [
+                                {
+                                    "type": "bold_line",
+                                    "lang": "en",
+                                    "line": "Stack: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "ru",
+                                    "line": "Стэк: "
+                                },
+                                {
+                                    "type": "single_line",
+                                    "lang": "",
+                                    "line": "webpack, React/Redux, Redux Form, SCSS"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "multi_line",
+                            "lines": [
+                                {
+                                    "type": "bold_line",
+                                    "lang": "en",
+                                    "line": "SCM: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "ru",
+                                    "line": "Система контроля версий: "
+                                },
+                                {
+                                    "type": "single_line",
+                                    "lang": "",
+                                    "line": "Mercurial"
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         },

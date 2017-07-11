@@ -62,5 +62,5 @@ exports.get_date_diff_string = (date_diff, locale) => {
         result += date_diff.month > 1 ? locale_map[locale].months : locale_map[locale].month;
     }
 
-    return result === "" ? "" : "(" + result + ")";
+    return result === "" ? "" : "(" + result.trim() + ")";
 };
