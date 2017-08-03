@@ -103,12 +103,11 @@ body.main
                                     each location, lang in job_data.location
                                         p.cv-body__section__content__sub(lang=lang)=location
                                     -
-                                        var date_regex = /[^\x00-\x7F]+ [0-9]+/;
                                         var date_split = job_data.dates.en.split('-');
-                                        var date_left = new Date("2 " + date_split[0].trim());
+                                        var date_left = new Date("1 " + date_split[0].trim());
                                         var date_right = date_split[1].trim();
-                                        date_right = date_right.search(date_regex) === -1 ? new Date() : new Date("2 " + date_right);
-                                        var date_diff = utils.get_date_diff(date_left, date_right);
+                                        date_right = new Date("29 " + date_right);
+                                        var date_diff = utils.get_date_diff(date_left, isNaN(date_right) ? new Date() : date_right);
                                     each date, lang in job_data.dates
                                         p.cv-body__section__content__sub(lang=lang)=date + ' ' + utils.get_date_diff_string(date_diff, lang)
                                 input.spoiler-input(id=toogle_id type="checkbox")

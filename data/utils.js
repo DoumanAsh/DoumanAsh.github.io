@@ -1,5 +1,7 @@
 //Utilities used during build
 
+const moment = require('moment');
+
 /**
  * @param {Date} before Instance of Date before
  * @param {Date} after Instance of Date after
@@ -13,10 +15,10 @@ exports.get_date_diff = (before, after) => {
         throw "Invalid date after " + after;
     }
 
-    var diff = new Date(after.getTime() - before.getTime());
+    var diff = moment.duration(moment(after).diff(moment(before)));
 
-    var month_diff = diff.getMonth() + 1; //getMonth returns 0-11
-    var year_diff = diff.getFullYear() - 1970; //getFullYear returns 1970 + year
+    var month_diff = diff.months() + 1; //returns 0-11
+    var year_diff = diff.years();
 
     if (month_diff === 12) {
         year_diff += 1;
