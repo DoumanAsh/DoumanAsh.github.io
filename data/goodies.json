@@ -70,6 +70,19 @@
             }
         ]
     },
+    "c_plus_plus": {
+        "name": "C++",
+        "img": "c_plus_plus.svg",
+        "title": "My C++ code",
+        "id": "C_plus_plus",
+        "data": [
+            {
+                "name": "gomibako",
+                "link": "https://github.com/DoumanAsh/gomibako.cpp",
+                "description": "Simple HTTP server using Boost Asio & Beast"
+            }
+        ]
+    },
     "js": {
         "name": "JavaScript",
         "img": "node.svg",
