@@ -146,7 +146,7 @@
                         {
                             "type": "single_line",
                             "lang": "",
-                            "line": "Node.js, express/koa.js, ReactJS/Inferno, PostCSS/stylus, Redux/Mobx, Google Test/Mock, Qt"
+                            "line": "Node.js, express/koa.js, ReactJS/Inferno, PostCSS/stylus, Redux/Mobx, Google Test/Mock, Qt, Boost"
                         }
                     ]
                 },
