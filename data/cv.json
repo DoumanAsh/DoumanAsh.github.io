@@ -2,21 +2,27 @@
     "name": "Arthur Martirosyan",
     "langs": [
         {
-            "code": "en",
-            "title": "English",
-            "icon": "eng.png"
-        },
-        {
             "code": "ru",
             "title": "Русский",
-            "icon": "russian.png"
+            "icon": "russian.svg"
+        },
+        {
+            "code": "jp",
+            "title": "日本語",
+            "icon": "jp.svg"
+        },
+        {
+            "code": "en",
+            "title": "English",
+            "icon": "eng.svg"
         }
     ],
     "basic": [
         {
             "key": {
                 "en": "Birth date:",
-                "ru": "Дата рождения:"
+                "ru": "Дата рождения:",
+                "jp": "生年月日:"
             },
             "type": "str",
             "value": "12.02.1992"
@@ -24,18 +30,21 @@
         {
             "key": {
                 "en": "Residence:",
-                "ru": "Местожительство:"
+                "ru": "Местожительство:",
+                "jp": "住まい:"
             },
             "type": "str",
             "value": {
                 "en": "Nizhny Novgorod, Russia",
-                "ru": "Ниж. Новгород, Россия"
+                "ru": "Ниж. Новгород, Россия",
+                "jp": "ニジニノヴゴロド、 ロシア"
             }
         },
         {
             "key": {
                 "en": "Links:",
-                "ru": "Ссылки:"
+                "ru": "Ссылки:",
+                "jp": "リンク"
             },
             "type": "links",
             "value" : [
@@ -55,18 +64,21 @@
         {
             "key": {
                 "en": "Marital status:",
-                "ru": "Семейное положение:"
+                "ru": "Семейное положение:",
+                "jp": "配偶者の有無:"
             },
             "type": "str",
             "value": {
                 "en": "Single",
-                "ru": "Холост"
+                "ru": "Холост",
+                "jp": "無"
             }
         },
         {
             "key": {
                 "en": "Phone:",
-                "ru": "Телефон:"
+                "ru": "Телефон:",
+                "jp": "電話番号:"
             },
             "type": "str",
             "value": "+7 910 131 72 70"
@@ -74,7 +86,8 @@
         {
             "key": {
                 "en": "Contacts:",
-                "ru": "Контакты:"
+                "ru": "Контакты:",
+                "jp": "お問い合わせ:"
             },
             "type": "links",
             "value": [
@@ -97,7 +110,8 @@
         "expertise": {
             "title": {
                 "en": "Expertise",
-                "ru": "Экспертиза"
+                "ru": "Экспертиза",
+                "jp": "専門知識"
             },
             "data": [
                 {
@@ -108,7 +122,12 @@
                 {
                     "type": "single_line",
                     "lang": "ru",
-                    "line": "Несколько лет опыта в разработке ПО (включая open-source) ."
+                    "line": "Несколько лет опыта в разработке ПО (включая open-source)."
+                },
+                {
+                    "type": "single_line",
+                    "lang": "jp",
+                    "line": "ソフトウェア開発の数年の経験 (オープンソース込み)"
                 },
                 {
                     "type": "multi_line",
@@ -122,6 +141,11 @@
                             "type": "bold_line",
                             "lang": "ru",
                             "line": "Языки: "
+                        },
+                        {
+                            "type": "bold_line",
+                            "lang": "jp",
+                            "line": "プログラム言語: "
                         },
                         {
                             "type": "single_line",
@@ -142,6 +166,11 @@
                             "type": "bold_line",
                             "lang": "ru",
                             "line": "Фреймворки/Библиотеки: "
+                        },
+                        {
+                            "type": "bold_line",
+                            "lang": "jp",
+                            "line": "フレームワーク: "
                         },
                         {
                             "type": "single_line",
@@ -179,6 +208,11 @@
                             "line": "Утилиты: "
                         },
                         {
+                            "type": "bold_line",
+                            "lang": "jp",
+                            "line": "ツール: "
+                        },
+                        {
                             "type": "single_line",
                             "lang": "",
                             "line": "Git, Wireshark, JIRA, Redmine, Doxygen, Valgrind/Callgrind, CMake, gprof, oprofile, Lint, cppcheck"
@@ -199,6 +233,11 @@
                             "line": "Протоколы: "
                         },
                         {
+                            "type": "bold_line",
+                            "lang": "jp",
+                            "line": "プロトコル: "
+                        },
+                        {
                             "type": "single_line",
                             "lang": "",
                             "line": "SCTP, TCP/IP"
@@ -210,21 +249,25 @@
         "experience": {
             "title": {
                 "en": "Experience",
-                "ru": "Опыт работы"
+                "ru": "Опыт работы",
+                "jp": "実務経験"
             },
             "data": [
                 {
                     "title": {
                         "en": "Senior Software Engineer",
-                        "ru": "Старший Разработчик"
+                        "ru": "Старший Разработчик",
+                        "jp": "シニアソフトウェアエンジニア"
                     },
                     "location": {
-                        "en": "MERA Networks - Nizhny Novgorod",
-                        "ru": "МЕРА НН - Нижний Новгород"
+                        "en": "MERA - Nizhny Novgorod",
+                        "ru": "МЕРА - Нижний Новгород",
+                        "jp": "MERA - ニジニノヴゴロド"
                     },
                     "dates": {
                         "en": "September 2012 - December 2016",
-                        "ru": "Сентябрь 2012 - Декабрь 2016"
+                        "ru": "Сентябрь 2012 - Декабрь 2016",
+                        "jp": "9月 2012 - 12月 2016"
                     },
                     "lines": [
                         {
@@ -239,6 +282,11 @@
                         },
                         {
                             "type": "single_line",
+                            "lang": "jp",
+                            "line": "通信ソフトウェアのサポートとメンテナンス(SS7)"
+                        },
+                        {
+                            "type": "single_line",
                             "lang": "en",
                             "line": "Design and feature implementation for existing system software(C/C++)."
                         },
@@ -249,13 +297,23 @@
                         },
                         {
                             "type": "single_line",
+                            "lang": "jp",
+                            "line": "既存のシステムソフトウェアの設計と改善"
+                        },
+                        {
+                            "type": "single_line",
                             "lang": "en",
-                            "line": "Troubleshooting of network issues and log analysis. Including Wireshark."
+                            "line": "Troubleshooting of network issues and log analysis(including Wireshark)."
                         },
                         {
                             "type": "single_line",
                             "lang": "ru",
-                            "line": "Анализ и разрешение проблем сети, анализ логов. Включая Wireshark."
+                            "line": "Анализ и разрешение проблем сети, анализ логов(включая Wireshark)."
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "jp",
+                            "line": "ネットワークはトラブルシューティングするやログ解析(Wireshark込み)"
                         },
                         {
                             "type": "single_line",
@@ -266,6 +324,11 @@
                             "type": "single_line",
                             "lang": "ru",
                             "line": "Написание юнит-тестов средствами Google Test/Mock."
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "jp",
+                            "line": "Google Test/Mockによるユニットテストを作る"
                         },
                         {
                             "type": "multi_line",
@@ -279,6 +342,11 @@
                                     "type": "bold_line",
                                     "lang": "ru",
                                     "line": "ОС: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "jp",
+                                    "line": "OS: "
                                 },
                                 {
                                     "type": "single_line",
@@ -301,6 +369,11 @@
                                     "line": "Методологии разработки: "
                                 },
                                 {
+                                    "type": "bold_line",
+                                    "lang": "jp",
+                                    "line": "開発手法: "
+                                },
+                                {
                                     "type": "single_line",
                                     "lang": "",
                                     "line": "Scrum, Agile."
@@ -319,6 +392,11 @@
                                     "type": "bold_line",
                                     "lang": "ru",
                                     "line": "Система контроля версий: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "jp",
+                                    "line": "SCM: "
                                 },
                                 {
                                     "type": "single_line",
@@ -341,6 +419,11 @@
                                     "line": "Протоколы: "
                                 },
                                 {
+                                    "type": "bold_line",
+                                    "lang": "jp",
+                                    "line": "プロトコル: "
+                                },
+                                {
                                     "type": "single_line",
                                     "lang": "",
                                     "line": "SCTP, M3UA, IP"
@@ -359,6 +442,11 @@
                                     "type": "bold_line",
                                     "lang": "ru",
                                     "line": "Анализ кода: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "jp",
+                                    "line": "コード解析ツール: "
                                 },
                                 {
                                     "type": "single_line",
@@ -381,6 +469,11 @@
                                     "line": "Написание документации: "
                                 },
                                 {
+                                    "type": "bold_line",
+                                    "lang": "jp",
+                                    "line": "コードのドキュメンテーション: "
+                                },
+                                {
                                     "type": "single_line",
                                     "lang": "",
                                     "line": "Doxygen"
@@ -399,6 +492,11 @@
                                     "type": "bold_line",
                                     "lang": "ru",
                                     "line": "Управление проектом: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "jp",
+                                    "line": "タスクボード: "
                                 },
                                 {
                                     "type": "single_line",
@@ -422,6 +520,11 @@
                                     "line": "Профилировка кода: "
                                 },
                                 {
+                                    "type": "bold_line",
+                                    "lang": "jp",
+                                    "line": "コードプロファイリング: "
+                                },
+                                {
                                     "type": "single_line",
                                     "lang": "",
                                     "line": "gprof, oprfile, callgrind."
@@ -431,12 +534,17 @@
                         {
                             "type": "single_line",
                             "lang": "en",
-                            "line": "Writing automation and code generations Python scripts."
+                            "line": "Writing automation and code generation Python scripts."
                         },
                         {
                             "type": "single_line",
                             "lang": "ru",
                             "line": "Написание скриптов автоматизации и кодо-генерации."
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "jp",
+                            "line": "オートメーションやコード生成のPythonスクリプトを作る"
                         },
                         {
                             "type": "single_line",
@@ -453,15 +561,18 @@
                 {
                     "title": {
                         "en": "Front-end Developer",
-                        "ru": "Front-end Разработчик"
+                        "ru": "Front-end Разработчик",
+                        "jp": "フロントエンドエンジニア"
                     },
                     "location": {
                         "en": "Smartbics - Nizhny Novgorod",
-                        "ru": "Smartbics - Нижний Новгород"
+                        "ru": "Smartbics - Нижний Новгород",
+                        "jp": "Smartbics - ニジニノヴゴロド"
                     },
                     "dates": {
                         "en": "June 2017 - Jule 2017",
-                        "ru": "Июнь 2017 - Июль 2017"
+                        "ru": "Июнь 2017 - Июль 2017",
+                        "jp": "6月 2017 - 7月 2017"
                     },
                     "lines": [
                         {
@@ -476,13 +587,23 @@
                         },
                         {
                             "type": "single_line",
+                            "lang": "jp",
+                            "line": "予約システムのフロントエンドを作る"
+                        },
+                        {
+                            "type": "single_line",
                             "lang": "en",
-                            "line": "Writing email templates for server."
+                            "line": "Writing email templates."
                         },
                         {
                             "type": "single_line",
                             "lang": "ru",
-                            "line": "Написание темплейтов писем для сервера."
+                            "line": "Написание темплейтов писем."
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "jp",
+                            "line": "電子メールテンプレートを作る"
                         },
                         {
                             "type": "multi_line",
@@ -496,6 +617,11 @@
                                     "type": "bold_line",
                                     "lang": "ru",
                                     "line": "Стэк: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "jp",
+                                    "line": "テクノロジースタック: "
                                 },
                                 {
                                     "type": "single_line",
@@ -518,6 +644,11 @@
                                     "line": "Система контроля версий: "
                                 },
                                 {
+                                    "type": "bold_line",
+                                    "lang": "jp",
+                                    "line": "SCM: "
+                                },
+                                {
                                     "type": "single_line",
                                     "lang": "",
                                     "line": "Mercurial"
@@ -525,13 +656,123 @@
                             ]
                         }
                     ]
-                }
+                },
+                {
+                    "title": {
+                        "en": "Senior Software Engineer",
+                        "ru": "Старший разработчик",
+                        "jp": "シニアソフトウェアエンジニア"
+                    },
+                    "location": {
+                        "en": "MERA Networks - Nizhny Novgorod",
+                        "ru": "МЕРА НН - Нижний Новгород",
+                        "jp": "MERA - ニジニノヴゴロド"
+                    },
+                    "dates": {
+                        "en": "December 2017 - now",
+                        "ru": "Декабрь 2017 - now",
+                        "jp": "12月 2017 - 今"
+                    },
+                    "lines": [
+                        {
+                            "type": "single_line",
+                            "lang": "en",
+                            "line": "Support and maintenance of SIP based phones"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "ru",
+                            "line": "Разработка и поддержка SIP телефонов"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "jp",
+                            "line": "SIP電話のサポートとメンテナンス"
+                        },
+                        {
+                            "type": "multi_line",
+                            "lines": [
+                                {
+                                    "type": "bold_line",
+                                    "lang": "en",
+                                    "line": "SCM: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "ru",
+                                    "line": "Система контроля версий: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "jp",
+                                    "line": "SCM: "
+                                },
+                                {
+                                    "type": "single_line",
+                                    "lang": "",
+                                    "line": "Git"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "multi_line",
+                            "lines": [
+                                {
+                                    "type": "bold_line",
+                                    "lang": "en",
+                                    "line": "Used technologies: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "ru",
+                                    "line": "Используемые технологии: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "jp",
+                                    "line": "テクノロジー: "
+                                },
+                                {
+                                    "type": "single_line",
+                                    "lang": "",
+                                    "line": "C++, Qt"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "multi_line",
+                            "lines": [
+                                {
+                                    "type": "bold_line",
+                                    "lang": "en",
+                                    "line": "Protocols: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "ru",
+                                    "line": "Протоколы: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "jp",
+                                    "line": "プロトコル: "
+                                },
+                                {
+                                    "type": "single_line",
+                                    "lang": "",
+                                    "line": "SIP"
+                                }
+                            ]
+                        }
+                    ]
+}
             ]
         },
         "languages": {
             "title": {
                 "en": "Languages",
-                "ru": "Языки"
+                "ru": "Языки",
+                "jp": "言語"
             },
             "data": [
                 {
@@ -542,6 +783,10 @@
                     "ru": {
                         "title": "Английский: ",
                         "level": "Продвинутый уровень"
+                    },
+                    "jp": {
+                        "title": "英語: ",
+                        "level": "ビジネス会話"
                     }
                 },
                 {
@@ -552,6 +797,24 @@
                     "ru": {
                         "title": "Русский: ",
                         "level": "Родной"
+                    },
+                    "jp": {
+                        "title": "ロシア語: ",
+                        "level": "ネイティヴ"
+                    }
+                },
+                {
+                    "en": {
+                        "title": "Japanese: ",
+                        "level": "Basic"
+                    },
+                    "ru": {
+                        "title": "Японский: ",
+                        "level": "Базовый"
+                    },
+                    "jp": {
+                        "title": "日本語: ",
+                        "level": "最低限のコミュニケーション"
                     }
                 }
             ]
@@ -559,7 +822,8 @@
         "education": {
             "title": {
                 "en": "Education",
-                "ru": "Образование"
+                "ru": "Образование",
+                "jp": "学歴"
             },
             "info_map": {
                 "en": {
@@ -569,13 +833,18 @@
                 "ru": {
                     "major": "Специальность: ",
                     "degree": "Квалификация: "
+                },
+                "jp": {
+                    "major": "専攻分野: ",
+                    "degree": "学位: "
                 }
             },
             "data": [
                 {
                     "name": {
                         "en": "Nizhny Novgorod Economics and Law College",
-                        "ru": "Нижегородский Экономико-Правовой Колледж"
+                        "ru": "Нижегородский Экономико-Правовой Колледж",
+                        "jp": "Nizhny Novgorod Economics and Law College"
                     },
                     "title": "",
                     "dates": "2008 - 2012",
@@ -587,17 +856,23 @@
                         "ru": {
                             "major": "Информационные технологии",
                             "degree": "Среднее профессиональное образованиe"
+                        },
+                        "jp": {
+                            "major": "応用情報学",
+                            "degree": "専門学校"
                         }
                     }
                 },
                 {
                     "name": {
                         "en": "RANEPA",
-                        "ru": "РАНХиГС"
+                        "ru": "РАНХиГС",
+                        "jp": "RANEPA"
                     },
                     "title": {
                         "en": "Russian Academy of National Economy and Public Administration",
-                        "ru": "Российская академия народного хозяйства и государственной службы"
+                        "ru": "Российская академия народного хозяйства и государственной службы",
+                        "jp": ""
                     },
                     "dates": "2012 - 2016",
                     "info": {
@@ -608,6 +883,10 @@
                         "ru": {
                             "major": "Информационные технологии",
                             "degree": "Бакалавр"
+                        },
+                        "jp": {
+                            "major": "応用情報学",
+                            "degree": "大学"
                         }
                     }
                 }
@@ -616,11 +895,13 @@
         "interests": {
             "title": {
                 "en": "Interests",
-                "ru": "Интересы"
+                "ru": "Интересы",
+                "jp": "趣味"
             },
             "data": {
                 "en": "Programming, Gaming, History, Chivalry",
-                "ru": "Программирование, Видео-игры, История, Рыцарство"
+                "ru": "Программирование, Видео-игры, История, Рыцарство",
+                "jp": "プログラミング、ゲーム、歴史、騎士道"
             }
         }
     }

@@ -11,6 +11,11 @@
                 "description": "Library to interact with Windows clipboard."
             },
             {
+                "name": "Roseline",
+                "link": "https://github.com/DoumanAsh/roseline.rs",
+                "description": "My IRC bot written using tokio and actix async libraries"
+            },
+            {
                 "name": "toa-ping",
                 "link": "https://github.com/DoumanAsh/toa-ping",
                 "description": "Cute ping tool"

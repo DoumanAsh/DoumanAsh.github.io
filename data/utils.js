@@ -51,6 +51,12 @@ exports.get_date_diff_string = (date_diff, locale) => {
             "months": "месяцев",
             "year": "год",
             "years": "года"
+        },
+        "jp": {
+            "month": "月",
+            "months": "月",
+            "year": "年",
+            "years": "年"
         }
     };
 

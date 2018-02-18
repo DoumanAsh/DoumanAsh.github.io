@@ -6,7 +6,9 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "lint": "eslint . --ext .js --ignore-pattern public",
+        "lint:style": "stylelint src/styles",
+        "lint:js": "eslint . --ext .js --ignore-pattern public",
+        "lint": "npm run lint:style && npm run lint:js",
         "gen_data": "node ci/get_images.js",
         "start": "webpack-dev-server",
         "build": "webpack",
