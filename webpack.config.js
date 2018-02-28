@@ -34,14 +34,6 @@ const img_loader = {
     },
 };
 
-const js_loader = {
-    test: /\.jsx?$/,
-    use: [
-        "babel-loader",
-        "eslint-loader"
-    ]
-};
-
 const raw_loader = {
     test: /\.md?$/,
     use: 'raw-loader'
@@ -69,7 +61,6 @@ module.exports.module = {
         css_loader,
         img_loader,
         json_loader,
-        js_loader,
         pug_loader,
         raw_loader
     ]

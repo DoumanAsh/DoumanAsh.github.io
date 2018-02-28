@@ -29,49 +29,30 @@
     },
     "homepage": "https://github.com/DoumanAsh/DoumanAsh.github.io#readme",
     "devDependencies": {
-        "autoprefixer": "*",
-        "babel-core": "*",
-        "babel-loader": "*",
-        "babel-plugin-inferno": "*",
-        "babel-plugin-transform-object-rest-spread": "*",
-        "babel-preset-es2015": "*",
-        "css-loader": "*",
-        "dateformat": "*",
-        "eslint": "*",
-        "eslint-loader": "*",
-        "eslint-plugin-compat": "*",
-        "extract-text-webpack-plugin": "*",
-        "file-loader": "*",
-        "html-webpack-plugin": "*",
-        "json5-loader": "*",
-        "jstransformer-markdown-it": "*",
-        "postcss-import": "*",
-        "postcss-loader": "*",
-        "postcss-nesting": "*",
+        "autoprefixer": "8",
+        "css-loader": "0.28",
+        "dateformat": "3",
+        "eslint": "4",
+        "eslint-loader": "2",
+        "eslint-plugin-compat": "2",
+        "extract-text-webpack-plugin": "3",
+        "file-loader": "1",
+        "html-webpack-plugin": "2",
+        "json5-loader": "1",
+        "jstransformer-markdown-it": "2",
+        "postcss-import": "11",
+        "postcss-loader": "2",
+        "postcss-nesting": "4",
         "pug": "^2.0.0-rc.1",
-        "pug-loader": "*",
-        "raw-loader": "*",
-        "script-ext-html-webpack-plugin": "*",
-        "stylelint": "*",
-        "stylelint-config-standard": "*",
-        "sugarss": "*",
-        "moment": "*",
-        "webpack": "*",
-        "webpack-cli": "*",
-        "webpack-dev-server": "*"
-    },
-    "babel": {
-        "presets": [
-            [
-                "es2015",
-                {
-                    "modules": false
-                }
-            ]
-        ],
-        "plugins": [
-            "transform-object-rest-spread"
-        ]
+        "pug-loader": "2",
+        "raw-loader": "0.5",
+        "script-ext-html-webpack-plugin": "1",
+        "stylelint": "9",
+        "stylelint-config-standard": "18",
+        "sugarss": "1",
+        "moment": "2",
+        "webpack": "3",
+        "webpack-dev-server": "2"
     },
     "browserslist": [
         "Last 2 versions",
