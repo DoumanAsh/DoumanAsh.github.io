@@ -130,6 +130,21 @@
                     "line": "ソフトウェア開発の数年の経験 (オープンソース込み)"
                 },
                 {
+                    "type": "single_line",
+                    "lang": "en",
+                    "line": "Experience with embedded development."
+                },
+                {
+                    "type": "single_line",
+                    "lang": "ru",
+                    "line": "Опыт embedded разработки."
+                },
+                {
+                    "type": "single_line",
+                    "lang": "jp",
+                    "line": "組み込みシステム開発"
+                },
+                {
                     "type": "multi_line",
                     "lines": [
                         {

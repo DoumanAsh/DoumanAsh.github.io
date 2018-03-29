@@ -16,6 +16,11 @@
                 "description": "My IRC bot written using tokio and actix async libraries"
             },
             {
+                "name": "stm32l4x6_hal",
+                "link": "https://github.com/DoumanAsh/stm32l4x6_hal",
+                "description": "Abstractions for my stm32l4 microcontroller"
+            },
+            {
                 "name": "toa-ping",
                 "link": "https://github.com/DoumanAsh/toa-ping",
                 "description": "Cute ping tool"
