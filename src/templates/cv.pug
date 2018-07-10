@@ -94,7 +94,7 @@ body.main
                 - var experience = data.elements.experience;
                 +element_title(experience.title)
                 section.cv-body__section__content
-                    each job_data, job_idx in experience.data
+                    each job_data, job_idx in experience.data.reverse()
                         section
                             - var toogle_id = `job-${job_idx}`
                                 header.cv-body__section__content__title
