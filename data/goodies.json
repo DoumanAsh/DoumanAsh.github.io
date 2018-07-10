@@ -6,14 +6,34 @@
         "id": "Rust",
         "data": [
             {
+                "name": "fie",
+                "link": "https://github.com/DoumanAsh/fie",
+                "description": "Small and cute social media CLI tool."
+            },
+            {
                 "name": "clipboard-win",
                 "link": "https://crates.io/crates/clipboard-win",
                 "description": "Library to interact with Windows clipboard."
             },
             {
+                "name": "vndb",
+                "link": "https://github.com/DoumanAsh/vndb.rs",
+                "description": "Tokio TCP based client to VNDB"
+            },
+            {
                 "name": "Roseline",
                 "link": "https://github.com/DoumanAsh/roseline.rs",
                 "description": "My IRC bot written using tokio and actix async libraries"
+            },
+            {
+                "name": "cortex-m-log",
+                "link": "https://github.com/DoumanAsh/cortex-m-log",
+                "description": "Logging facilities for Cortex-m"
+            },
+            {
+                "name": "etag",
+                "link": "https://github.com/DoumanAsh/etag-rs",
+                "description": "Simple ETag calculation."
             },
             {
                 "name": "stm32l4x6_hal",
@@ -87,9 +107,19 @@
         "id": "C_plus_plus",
         "data": [
             {
+                "name": "Result",
+                "link": "https://github.com/DoumanAsh/Result.cpp",
+                "description": "Result type for C++ inspired by Rust"
+            },
+            {
                 "name": "gomibako",
                 "link": "https://github.com/DoumanAsh/gomibako.cpp",
                 "description": "Simple HTTP server using Boost Asio & Beast"
+            },
+            {
+                "name": "c++ exercises",
+                "link": "https://github.com/DoumanAsh/c--test-exe",
+                "description": "Various test exercises I've been doing"
             }
         ]
     },
