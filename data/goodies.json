@@ -6,6 +6,11 @@
         "id": "Rust",
         "data": [
             {
+                "name": "Yukikaze",
+                "link": "https://gitlab.com/Douman/yukikaze",
+                "description": "Beautiful and elegant HTTP client library."
+            },
+            {
                 "name": "fie",
                 "link": "https://github.com/DoumanAsh/fie",
                 "description": "Small and cute social media CLI tool."
