@@ -56,10 +56,9 @@ body
     background-size: contain
     background-repeat: no-repeat
     margin: .5em
-
 .bk-image__link
     display: inline-block
-    height: 48px
+    min-height: 48px
     width: 48px
 
     &:hover
@@ -80,6 +79,9 @@ body
         margin-right: 0.5em
         &::after
             content: attr(title)
+
+.bk-image__link--wide
+    width: 192px
 
 //.contact-links
 
