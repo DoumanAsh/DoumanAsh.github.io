@@ -705,6 +705,21 @@
                             "line": "SIP電話のサポートとメンテナンス"
                         },
                         {
+                            "type": "single_line",
+                            "lang": "en",
+                            "line": "ARM embedded development"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "ru",
+                            "line": "Разработка под ARM"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "jp",
+                            "line": "ARM組み込み開発"
+                        },
+                        {
                             "type": "multi_line",
                             "lines": [
                                 {
