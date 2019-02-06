@@ -793,9 +793,35 @@
                                     "line": "SIP, Bluetooth(headset support)"
                                 }
                             ]
+                        },
+                        {
+                            "type": "multi_line",
+                            "lines": [
+                                {
+                                    "type": "bold_line",
+                                    "lang": "en",
+                                    "line": "Database: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "ru",
+                                    "line": "База данных: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "jp",
+                                    "line": " データベース: "
+                                },
+                                {
+                                    "type": "single_line",
+                                    "lang": "",
+                                    "line": "SQlite"
+                                }
+                            ]
                         }
+
                     ]
-}
+                }
             ]
         },
         "languages": {
