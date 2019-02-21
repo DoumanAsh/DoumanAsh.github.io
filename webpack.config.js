@@ -24,7 +24,7 @@ const img_loader = {
     options: {
         useRelatievePath: false,
         outputPath: "img/",
-        name: '[name].[hash].[ext]',
+        name: '[name].[ext]',
     },
 };
 
@@ -46,7 +46,7 @@ module.exports.entry = {
 };
 
 module.exports.output = {
-    filename: '[name].bundle.[chunkhash].js',
+    filename: '[name].bundle.js',
     path: PUBLIC
 };
 
