@@ -24,7 +24,6 @@ module.exports = {
         "ecmaVersion": 8,
         "ecmaFeatures": {
             "modules": true,
-            "experimentalObjectRestSpread": true,
         }
     }
 }

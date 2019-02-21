@@ -2,7 +2,7 @@
 
 const path = require('path');
 
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtract = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
 
@@ -11,17 +11,11 @@ const SRC = path.resolve(__dirname, 'src');
 
 const css_loader = {
     test: /\.sss/,
-    use: ExtractTextPlugin.extract({
-        use: [
-            'css-loader',
-            'postcss-loader'
-        ]
-    })
-};
-
-const json_loader = {
-    test: /\.json$/,
-    loader: 'json5-loader'
+    use: [
+        MiniCssExtract.loader,
+        'css-loader',
+        'postcss-loader'
+    ]
 };
 
 const img_loader = {
@@ -60,7 +54,6 @@ module.exports.module = {
     rules: [
         css_loader,
         img_loader,
-        json_loader,
         pug_loader,
         raw_loader
     ]
@@ -93,7 +86,10 @@ module.exports.plugins = [
     new ScriptExtHtmlWebpackPlugin({
         defaultAttribute: 'async'
     }),
-    new ExtractTextPlugin('[name].bundle.[chunkhash].css')
+    new MiniCssExtract({
+        filename: "[name].css",
+        chunkFilename: "[id].css"
+    })
 ];
 
 module.exports.devServer = {
