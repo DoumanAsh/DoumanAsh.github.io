@@ -165,7 +165,7 @@
                         {
                             "type": "single_line",
                             "lang": "",
-                            "line": "C, C++, Python, Rust, HTML5/CSS, JavaScript, Elixir, C#, Powershell, Bash"
+                            "line": "C, C++, Python, Rust, HTML5/CSS, JavaScript, Elixir, C#, Java, Powershell, Bash"
                         }
                     ]
                 },
@@ -190,7 +190,7 @@
                         {
                             "type": "single_line",
                             "lang": "",
-                            "line": "Node.js, Actix, Tokio, Boost, Xamarin, express/koa.js, ReactJS/Inferno, PostCSS/stylus, Redux/Mobx, Google Test/Mock, Qt"
+                            "line": "Node.js, Actix, Tokio, Boost, Xamarin, ReactJS/Inferno, PostCSS/stylus, Redux/Mobx, Google Test/Mock, Qt"
                         }
                     ]
                 },
@@ -205,7 +205,7 @@
                         {
                             "type": "single_line",
                             "lang": "",
-                            "line": "Windows, REST, POSIX Threads"
+                            "line": "Windows, Android, REST, POSIX Threads"
                         }
                     ]
                 },
@@ -684,9 +684,9 @@
                         "jp": "MERA - ニジニノヴゴロド"
                     },
                     "dates": {
-                        "en": "December 2017 - now",
-                        "ru": "Декабрь 2017 - now",
-                        "jp": "12月 2017 - 今"
+                        "en": "January 2018 - April 2019",
+                        "ru": "Январь 2018 - Апрель 2019",
+                        "jp": "1月 2018 - 4月 2017"
                     },
                     "lines": [
                         {
@@ -820,6 +820,115 @@
                             ]
                         }
 
+                    ]
+                },
+                {
+                    "title": {
+                        "en": "Software Engineer",
+                        "ru": "Разработчик",
+                        "jp": "ソフトウェアエンジニア"
+                    },
+                    "location": {
+                        "en": "Luxoft - Nizhny Novgorod",
+                        "ru": "Люксофт - Нижний Новгород",
+                        "jp": "Luxoft -  ニジニノヴゴロド"
+                    },
+                    "dates": {
+                        "en": "April 2019 - now",
+                        "ru": "Апрель 2019 - now",
+                        "jp": "4月 2017 - 今"
+                    },
+                    "lines": [
+                        {
+                            "type": "single_line",
+                            "lang": "en",
+                            "line": "Development of car safety and tracking system"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "ru",
+                            "line": "Разработка системы безопасности и отслеживания в машине"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "jp",
+                            "line": "安全運転システムの開発"
+                        },
+                        {
+                            "type": "multi_line",
+                            "lines": [
+                                {
+                                    "type": "bold_line",
+                                    "lang": "en",
+                                    "line": "OS: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "ru",
+                                    "line": "ОС: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "jp",
+                                    "line": "OS: "
+                                },
+                                {
+                                    "type": "single_line",
+                                    "lang": "",
+                                    "line": "Android"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "multi_line",
+                            "lines": [
+                                {
+                                    "type": "bold_line",
+                                    "lang": "en",
+                                    "line": "SCM: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "ru",
+                                    "line": "Система контроля версий: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "jp",
+                                    "line": "SCM: "
+                                },
+                                {
+                                    "type": "single_line",
+                                    "lang": "",
+                                    "line": "Git(Github) + CircleCI"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "multi_line",
+                            "lines": [
+                                {
+                                    "type": "bold_line",
+                                    "lang": "en",
+                                    "line": "Used technologies: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "ru",
+                                    "line": "Используемые технологии: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "jp",
+                                    "line": "テクノロジー: "
+                                },
+                                {
+                                    "type": "single_line",
+                                    "lang": "",
+                                    "line": "C, C++11, Java, Android NDK, Flatbuffers"
+                                }
+                            ]
+                        }
                     ]
                 }
             ]
