@@ -11,6 +11,16 @@
                 "description": "Beautiful and elegant HTTP client library."
             },
             {
+                "name": "async-timer",
+                "link": "https://github.com/DoumanAsh/async-timer",
+                "description": "Timer facilities for Rust's async story"
+            },
+            {
+                "name": "compu",
+                "link": "https://github.com/DoumanAsh/compu",
+                "description": "Rust Compression library with generic interface "
+            },
+            {
                 "name": "fie",
                 "link": "https://github.com/DoumanAsh/fie",
                 "description": "Small and cute social media CLI tool."
@@ -204,6 +214,11 @@
                 "name": "Make Web JS-less Again",
                 "link": "https://doumanash.gitbooks.io/make-web-js-less-again/content/",
                 "description": "My thoughts on over-using JS and tips on enhancing user experience without JS."
+            },
+            {
+                "name": "Translation Why no one remembers my world?",
+                "link": "https://doumanash.github.io/Naze_Boku_no_Sekai_wo_Dare_mo_Oboeteinainoka/about.html",
+                "description": "My translation as I read through this ranobe."
             }
         ]
     },
