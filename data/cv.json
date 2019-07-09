@@ -35,9 +35,9 @@
             },
             "type": "str",
             "value": {
-                "en": "Nizhny Novgorod, Russia",
-                "ru": "Ниж. Новгород, Россия",
-                "jp": "ニジニノヴゴロド、 ロシア"
+                "en": "Krakow, Poland",
+                "ru": "Краков, Польша",
+                "jp": " クラクフ、 ポーランド"
             }
         },
         {
@@ -829,9 +829,9 @@
                         "jp": "ソフトウェアエンジニア"
                     },
                     "location": {
-                        "en": "Luxoft - Nizhny Novgorod",
-                        "ru": "Люксофт - Нижний Новгород",
-                        "jp": "Luxoft -  ニジニノヴゴロド"
+                        "en": "Luxoft - Krakow",
+                        "ru": "Люксофт - Краков",
+                        "jp": "Luxoft -  クラクフ"
                     },
                     "dates": {
                         "en": "April 2019 - now",
