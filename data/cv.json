@@ -925,7 +925,7 @@
                                 {
                                     "type": "single_line",
                                     "lang": "",
-                                    "line": "C++11, Java, Android NDK, Flatbuffers, Docker, Tensorflow, Google Test/Mock"
+                                    "line": "C++11, Java, Kotlin, Android NDK, Flatbuffers, Docker, Tensorflow, Google Test/Mock"
                                 }
                             ]
                         }
