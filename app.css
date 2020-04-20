@@ -645,6 +645,11 @@ nav.lang-switcher {
             justify-content: space-between
 }
 
+.cv-body__section__content__title > .spoiler_link {
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%
+}
+
 .cv-body__section__content__sub {
     font-style: italic;
     color: #999
