@@ -834,9 +834,9 @@
                         "jp": "Luxoft -  クラクフ"
                     },
                     "dates": {
-                        "en": "April 2019 - now",
-                        "ru": "Апрель 2019 - now",
-                        "jp": "4月 2019 - 今"
+                        "en": "April 2019 - April 2020",
+                        "ru": "Апрель 2019 - Апрель 2020",
+                        "jp": "4月 2019 - 4月 2020"
                     },
                     "lines": [
                         {
@@ -926,6 +926,90 @@
                                     "type": "single_line",
                                     "lang": "",
                                     "line": "C++11, Java, Kotlin, Android NDK, Flatbuffers, Docker, Tensorflow, Google Test/Mock"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": {
+                        "en": "Software Engineer",
+                        "ru": "Разработчик",
+                        "jp": "ソフトウェアエンジニア"
+                    },
+                    "location": {
+                        "en": "Orb, Inc - Tokyo",
+                        "ru": "Orb, Inc - Токио",
+                        "jp": "Orb, Inc - 東京"
+                    },
+                    "dates": {
+                        "en": "November 2019 - now",
+                        "ru": "Апрель 2019 - now",
+                        "jp": "11月 2019 - 今"
+                    },
+                    "lines": [
+                        {
+                            "type": "single_line",
+                            "lang": "en",
+                            "line": "Development of distributed transactional system for virtual currencies"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "ru",
+                            "line": "Разработка распределенной системы транзакций для виртуальных денег"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "jp",
+                            "line": "バーチャル通貨の分散トランザクショナルシステムの開発"
+                        },
+                        {
+                            "type": "multi_line",
+                            "lines": [
+                                {
+                                    "type": "bold_line",
+                                    "lang": "en",
+                                    "line": "SCM: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "ru",
+                                    "line": "Система контроля версий: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "jp",
+                                    "line": "SCM: "
+                                },
+                                {
+                                    "type": "single_line",
+                                    "lang": "",
+                                    "line": "Git(Github) + Jenkins"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "multi_line",
+                            "lines": [
+                                {
+                                    "type": "bold_line",
+                                    "lang": "en",
+                                    "line": "Used technologies: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "ru",
+                                    "line": "Используемые технологии: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "jp",
+                                    "line": "テクノロジー: "
+                                },
+                                {
+                                    "type": "single_line",
+                                    "lang": "",
+                                    "line": "Java, Go, Rust, Cassandra, Kafka, Spring, Docker"
                                 }
                             ]
                         }
