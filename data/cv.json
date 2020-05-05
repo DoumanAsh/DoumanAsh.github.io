@@ -938,9 +938,9 @@
                         "jp": "ソフトウェアエンジニア"
                     },
                     "location": {
-                        "en": "Orb, Inc - Tokyo",
-                        "ru": "Orb, Inc - Токио",
-                        "jp": "Orb, Inc - 東京"
+                        "en": "Orb, Inc - Remote(Tokyo)",
+                        "ru": "Orb, Inc - Удаленка(Токио)",
+                        "jp": "Orb, Inc - リモート(東京)"
                     },
                     "dates": {
                         "en": "November 2019 - now",
@@ -1055,15 +1055,15 @@
                 {
                     "en": {
                         "title": "Japanese: ",
-                        "level": "Basic"
+                        "level": "N3"
                     },
                     "ru": {
                         "title": "Японский: ",
-                        "level": "Базовый"
+                        "level": "N3"
                     },
                     "jp": {
                         "title": "日本語: ",
-                        "level": "最低限のコミュニケーション"
+                        "level": "N3"
                     }
                 }
             ]
