@@ -6,6 +6,16 @@
         "id": "Rust",
         "data": [
             {
+                "name": "xxhash-rust",
+                "link": "https://github.com/DoumanAsh/xxhash-rust",
+                "description": "My port of great hashing algorithm xxHash."
+            },
+            {
+                "name": "str-buf",
+                "link": "https://github.com/DoumanAsh/str-buf",
+                "description": "Efficient static string buffer."
+            },
+            {
                 "name": "Yukikaze",
                 "link": "https://gitlab.com/Douman/yukikaze",
                 "description": "Beautiful and elegant HTTP client library."
@@ -56,16 +66,6 @@
                 "description": "Abstractions for my stm32l4 microcontroller"
             },
             {
-                "name": "toa-ping",
-                "link": "https://github.com/DoumanAsh/toa-ping",
-                "description": "Cute ping tool"
-            },
-            {
-                "name": "lazy-socket",
-                "link": "https://github.com/DoumanAsh/lazy-socket.rs",
-                "description": "Thin wrapper over raw C sockets"
-            },
-            {
                 "name": "lazy-bytes-cast",
                 "link": "https://crates.io/crates/lazy-bytes-cast",
                 "description": "Lazy casts from & to byte arrays."
@@ -76,19 +76,9 @@
                 "description": "Simple cli utility to calculate file checksums."
             },
             {
-                "name": "windows-error",
-                "link": "https://crates.io/crates/windows-error",
-                "description": "Library to provide wrapper over Windows errors."
-            },
-            {
                 "name": "windows-win",
                 "link": "https://crates.io/crates/windows-win",
                 "description": "Some Windows hacking library with utilities to find windows and access them."
-            },
-            {
-                "name": "rusty-eushully",
-                "link": "https://github.com/DoumanAsh/rusty-eushully",
-                "description": "My utils to hack Eushully games"
             },
             {
                 "name": "clipboard-monitor",
@@ -134,6 +124,11 @@
         "title": "My C++ code",
         "id": "C_plus_plus",
         "data": [
+            {
+                "name": "Type map",
+                "link": "https://github.com/DoumanAsh/typemap.cpp",
+                "description": "Simple type map prototype for one of my work projects"
+            },
             {
                 "name": "Result",
                 "link": "https://github.com/DoumanAsh/Result.cpp",
