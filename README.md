@@ -1,6 +1,6 @@
 # DoumanAsh.github.io Generator
 
-[![Build Status](https://travis-ci.org/DoumanAsh/DoumanAsh.github.io.svg?branch=generator2)](https://travis-ci.org/DoumanAsh/DoumanAsh.github.io)
+![Build](https://github.com/DoumanAsh/DoumanAsh.github.io/workflows/gen2/badge.svg)
 
 Just generator of my site.
 
