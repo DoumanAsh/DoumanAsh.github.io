@@ -1,6 +1,6 @@
 # DoumanAsh.github.io Generator
 
-![Build](https://github.com/DoumanAsh/DoumanAsh.github.io/workflows/gen2/badge.svg)
+![Build](https://github.com/DoumanAsh/DoumanAsh.github.io/workflows/Site%20Generator%202/badge.svg)
 
 Just generator of my site.
 
