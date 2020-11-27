@@ -117,36 +117,6 @@
                 {
                     "type": "single_line",
                     "lang": "en",
-                    "line": "Multiple years of experience in software development (including open source contributions)."
-                },
-                {
-                    "type": "single_line",
-                    "lang": "ru",
-                    "line": "Множество лет опыта в разработке ПО (включая open-source)."
-                },
-                {
-                    "type": "single_line",
-                    "lang": "jp",
-                    "line": "ソフトウェア開発の数年の経験 (オープンソース込み)"
-                },
-                {
-                    "type": "single_line",
-                    "lang": "en",
-                    "line": "Experience with embedded development."
-                },
-                {
-                    "type": "single_line",
-                    "lang": "ru",
-                    "line": "Опыт embedded разработки."
-                },
-                {
-                    "type": "single_line",
-                    "lang": "jp",
-                    "line": "組み込みシステム開発"
-                },
-                {
-                    "type": "single_line",
-                    "lang": "en",
                     "line": "C++/Rust Expert"
                 },
                 {
@@ -159,6 +129,7 @@
                     "lang": "jp",
                     "line": "C++/Rust  エキスパート"
                 },
+
                 {
                     "type": "multi_line",
                     "lines": [
@@ -180,7 +151,7 @@
                         {
                             "type": "single_line",
                             "lang": "",
-                            "line": "C, C++, Python, Rust, HTML5/CSS, JavaScript, Elixir, C#, Powershell, Bash"
+                            "line": "C, C++, Rust, Python, Java, JavaScript, Elixir, C#, Powershell, Bash"
                         }
                     ]
                 },
@@ -205,7 +176,7 @@
                         {
                             "type": "single_line",
                             "lang": "",
-                            "line": "Node.js, Actix, Tokio, Boost, Xamarin, ReactJS/Inferno, PostCSS/stylus, Redux/Mobx, Google Test/Mock, Qt"
+                            "line": "Node.js, Tokio, Boost, Xamarin, Google Test/Mock, Qt, Spring"
                         }
                     ]
                 },
@@ -315,6 +286,7 @@
                             "lang": "jp",
                             "line": "通信ソフトウェアのサポートとメンテナンス(SS7)"
                         },
+
                         {
                             "type": "single_line",
                             "lang": "en",
@@ -329,6 +301,22 @@
                             "type": "single_line",
                             "lang": "jp",
                             "line": "既存のシステムソフトウェアの設計と改善"
+                        },
+
+                        {
+                            "type": "single_line",
+                            "lang": "en",
+                            "line": "Porting existing SW to a Wind River Linux"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "ru",
+                            "line": "Портирование существующего софта под Wind River Linux"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "jp",
+                            "line": "Wind River Linuxにソフトウェアのポーティング"
                         },
                         {
                             "type": "single_line",
