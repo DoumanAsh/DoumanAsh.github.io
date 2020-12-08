@@ -200,6 +200,21 @@
                     "lines": [
                         {
                             "type": "bold_line",
+                            "lang": "",
+                            "line": "DB: "
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "",
+                            "line": "Sqlite, Mysql, Cassandra"
+                        }
+                    ]
+                },
+                {
+                    "type": "multi_line",
+                    "lines": [
+                        {
+                            "type": "bold_line",
                             "lang": "en",
                             "line": "Tools: "
                         },
@@ -1062,7 +1077,7 @@
                                 {
                                     "type": "single_line",
                                     "lang": "",
-                                    "line": "Java, Go, Rust, Cassandra, Kafka, Spring, Docker"
+                                    "line": "Java, Go, Rust, Mysql, Cassandra, Kafka, Spring, Docker"
                                 }
                             ]
                         }
