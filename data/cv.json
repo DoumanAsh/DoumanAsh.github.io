@@ -889,6 +889,21 @@
                             "line": "MLモデルで車の内と外の状況を監視してアルゴリズムの開発"
                         },
 
+                        {
+                            "type": "single_line",
+                            "lang": "en",
+                            "line": "Using pub/sub interface on top of nanomsg"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "ru",
+                            "line": "Использование pub/sub интерфейса на базе nanomsg"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "jp",
+                            "line": "nanomsgによってpub / subインターフェースを使用する"
+                        },
 
                         {
                             "type": "single_line",
