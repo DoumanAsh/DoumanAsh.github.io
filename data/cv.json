@@ -998,6 +998,58 @@
                         }
                     ]
                 },
+
+                {
+                    "title": {
+                        "en": "Software Engineer",
+                        "ru": "Разработчик",
+                        "jp": "ソフトウェアエンジニア"
+                    },
+                    "location": {
+                        "en": "Orb, Inc - Remote",
+                        "ru": "Orb, Inc - Удаленка",
+                        "jp": "Orb, Inc - リモート"
+                    },
+                    "dates": {
+                        "en": "November 2019 - April 2020",
+                        "ru": "Апрель 2019 - Апрель 2020",
+                        "jp": "11月 2019 - 4月 2020"
+                    },
+                    "lines": [
+                        {
+                            "type": "single_line",
+                            "lang": "en",
+                            "line": "Part time work"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "ru",
+                            "line": "Неполный рабочий день"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "jp",
+                            "line": "アルバイト"
+                        },
+
+                        {
+                            "type": "single_line",
+                            "lang": "en",
+                            "line": "Development of web API to provide access to DLT"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "ru",
+                            "line": "Разработка веб АПИ для предоставление доступа к распределлному леджеру"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "jp",
+                            "line": "DLTアクセスのAPI開発"
+                        }
+                    ]
+                },
+
                 {
                     "title": {
                         "en": "Software Engineer",
@@ -1010,9 +1062,9 @@
                         "jp": "Orb, Inc - リモート(東京)"
                     },
                     "dates": {
-                        "en": "November 2019 - now",
-                        "ru": "Апрель 2019 - now",
-                        "jp": "11月 2019 - 今"
+                        "en": "May 2020 - now",
+                        "ru": "Май 2020 - now",
+                        "jp": "5月 2020 - 今"
                     },
                     "lines": [
                         {
@@ -1046,6 +1098,7 @@
                             "lang": "jp",
                             "line": "DLTアクセスのAPI開発"
                         },
+
                         {
                             "type": "multi_line",
                             "lines": [
