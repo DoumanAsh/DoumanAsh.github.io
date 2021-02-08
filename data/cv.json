@@ -1062,9 +1062,9 @@
                         "jp": "Orb, Inc - リモート(東京)"
                     },
                     "dates": {
-                        "en": "May 2020 - now",
-                        "ru": "Май 2020 - now",
-                        "jp": "5月 2020 - 今"
+                        "en": "May 2020 - January 2021",
+                        "ru": "Май 2020 - Январь 2021",
+                        "jp": "5月 2020 - 1月 2021"
                     },
                     "lines": [
                         {
@@ -1182,7 +1182,54 @@
                             ]
                         }
                     ]
+                },
+
+
+                {
+                    "title": {
+                        "en": "Software Engineer",
+                        "ru": "Разработчик",
+                        "jp": "ソフトウェアエンジニア"
+                    },
+                    "location": {
+                        "en": "Pocket Change, Inc - Tokyo",
+                        "ru": "Pocket Change, Inc - Токио",
+                        "jp": "Pocket Change, Inc - 東京"
+                    },
+                    "dates": {
+                        "en": "February 2021 - now",
+                        "ru": "Февраль 2021 - now",
+                        "jp": "2月 2021 - 今"
+                    },
+                    "lines": [
+                        {
+                            "type": "multi_line",
+                            "lines": [
+                                {
+                                    "type": "bold_line",
+                                    "lang": "en",
+                                    "line": "Used technologies: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "ru",
+                                    "line": "Используемые технологии: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "jp",
+                                    "line": "テクノロジー: "
+                                },
+                                {
+                                    "type": "single_line",
+                                    "lang": "",
+                                    "line": "Rust, Flutter, Android NDK"
+                                }
+                            ]
+                        }
+                    ]
                 }
+
             ]
         },
         "languages": {
