@@ -6,9 +6,19 @@
         "id": "Rust",
         "data": [
             {
+                "name": "stroka",
+                "link": "https://github.com/DoumanAsh/stroka",
+                "description": "Alternative Rust String implementation with SSO"
+            },
+            {
                 "name": "xxhash-rust",
                 "link": "https://github.com/DoumanAsh/xxhash-rust",
                 "description": "My port of great hashing algorithm xxHash."
+            },
+            {
+                "name": "plogcat",
+                "link": "https://github.com/DoumanAsh/plogcat",
+                "description": "Pretty wrapper over logcat"
             },
             {
                 "name": "str-buf",
