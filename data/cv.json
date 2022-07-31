@@ -1248,6 +1248,34 @@
                             "line": "継続的インテグレーション(Github Actions)の改善"
                         },
 
+
+                        {
+
+                            "type": "multi_line",
+                            "lines": [
+                                {
+                                    "type": "bold_line",
+                                    "lang": "en",
+                                    "line": "Hardware: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "ru",
+                                    "line": "Hardware: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "jp",
+                                    "line": "ハードウェア: "
+                                },
+                                {
+                                    "type": "single_line",
+                                    "lang": "",
+                                    "line": "Raspberry Pi"
+                                }
+                            ]
+                        },
+
                         {
 
                             "type": "multi_line",
@@ -1270,7 +1298,7 @@
                                 {
                                     "type": "single_line",
                                     "lang": "",
-                                    "line": "Rust, Flutter, Android NDK, Redis, GraphQL, AWS SQS, AWS SES"
+                                    "line": "Rust, Flutter, Linux, Android NDK, Redis, GraphQL, AWS SQS, AWS SES"
                                 }
                             ]
                         }
