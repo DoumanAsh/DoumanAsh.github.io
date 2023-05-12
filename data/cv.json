@@ -20,15 +20,6 @@
     "basic": [
         {
             "key": {
-                "en": "Birth date:",
-                "ru": "Дата рождения:",
-                "jp": "生年月日:"
-            },
-            "type": "str",
-            "value": "12.02.1992"
-        },
-        {
-            "key": {
                 "en": "Residence:",
                 "ru": "Местожительство:",
                 "jp": "住まい:"
@@ -60,19 +51,6 @@
                     "logo": "portfolio.svg"
                 }
             ]
-        },
-        {
-            "key": {
-                "en": "Marital status:",
-                "ru": "Семейное положение:",
-                "jp": "配偶者の有無:"
-            },
-            "type": "str",
-            "value": {
-                "en": "Single",
-                "ru": "Холост",
-                "jp": "無"
-            }
         },
         {
             "key": {
