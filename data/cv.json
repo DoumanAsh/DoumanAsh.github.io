@@ -1175,9 +1175,9 @@
                         "jp": "Pocket Change, Inc - 東京"
                     },
                     "dates": {
-                        "en": "February 2021 - now",
-                        "ru": "Февраль 2021 - now",
-                        "jp": "2月 2021 - 今"
+                        "en": "February 2021 - Aug 2023",
+                        "ru": "Февраль 2021 - Август 2023",
+                        "jp": "2月 2021 - 8月 2023"
                     },
                     "lines": [
                         {
@@ -1281,7 +1281,86 @@
                             ]
                         }
                     ]
+                },
+
+                {
+                    "title": {
+                        "en": "Backend Engineer",
+                        "ru": "Бэкенд-разработчик",
+                        "jp": "バックエンドエンジニア"
+                    },
+                    "location": {
+                        "en": "Drivemode, Inc - Tokyo",
+                        "ru": "Drivemode, Inc - Токио",
+                        "jp": "Drivemode, Inc - 東京"
+                    },
+                    "dates": {
+                        "en": "August 2023 - now",
+                        "ru": "Август 2023 - now",
+                        "jp": "8月 2023 - 今"
+                    },
+                    "lines": [
+                        {
+                            "type": "single_line",
+                            "lang": "en",
+                            "line": "gRPC backend development"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "ru",
+                            "line": "Разработка gRPC бэкэнда"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "jp",
+                            "line": "gRPCバックエンドの開発"
+                        },
+
+                        {
+                            "type": "single_line",
+                            "lang": "en",
+                            "line": "Integrating cloud HSM with Android build system for purpose of signing application"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "ru",
+                            "line": "Интеграция билд системы Андроида с веб HSM'ом для подписки приложения"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "jp",
+                            "line": "アプリに署名するためクラウドHSMをAndroidビルドに統合"
+                        },
+
+                        {
+
+                            "type": "multi_line",
+                            "lines": [
+                                {
+                                    "type": "bold_line",
+                                    "lang": "en",
+                                    "line": "Used technologies: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "ru",
+                                    "line": "Используемые технологии: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "jp",
+                                    "line": "テクノロジー: "
+                                },
+                                {
+                                    "type": "single_line",
+                                    "lang": "",
+                                    "line": "Rust, Docker, Kubernetes, Terraform, Google Cloud"
+                                }
+                            ]
+                        }
+                    ]
                 }
+
 
             ]
         },
