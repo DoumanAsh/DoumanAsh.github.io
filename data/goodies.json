@@ -15,6 +15,7 @@
                 "link": "https://github.com/DoumanAsh/xxhash-rust",
                 "description": "My port of great hashing algorithm xxHash."
             },
+
             {
                 "name": "plogcat",
                 "link": "https://github.com/DoumanAsh/plogcat",
@@ -24,6 +25,11 @@
                 "name": "str-buf",
                 "link": "https://github.com/DoumanAsh/str-buf",
                 "description": "Efficient static string buffer."
+            },
+            {
+                "name": "nng-c",
+                "link": "https://github.com/DoumanAsh/nng-c",
+                "description": "Bindings to NNG library."
             },
             {
                 "name": "Yukikaze",
