@@ -1,0 +1,15 @@
+include ../_common.pug
++head
+
+body.main
+    +nav("Blog")
+
+    -
+        var content = require('../../../blog/' + htmlWebpackPlugin.options._post.path)
+        var MarkdownIt = require('markdown-it')
+        var md = new MarkdownIt({
+            html: true
+        });
+        var html = md.render(content);
+    main.page-content.article.blog-post.blog-post--md
+        != html

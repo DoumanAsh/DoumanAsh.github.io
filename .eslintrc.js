@@ -11,7 +11,7 @@ module.exports = {
         "max-depth": ["error", 5],
         "no-duplicate-imports": "error",
         "compat/compat": 2,
-        "no-console": 1
+        "no-console": 0
     },
     "plugins": ["compat"],
     "env": {
@@ -24,7 +24,6 @@ module.exports = {
         "ecmaVersion": 8,
         "ecmaFeatures": {
             "modules": true,
-            "experimentalObjectRestSpread": true,
         }
     }
 }

@@ -9,6 +9,10 @@ include _common.pug
         { title: "Github", href: "https://github.com/DoumanAsh", img: require('../assets/img/icons/github-logo.svg'), target: "_blank"}
     ]
 
+    var supports = [
+        { title: "Sponsor via github", href: "https://github.com/sponsors/DoumanAsh", img: 'https://github.com/fluidicon.png', target: "_blank" }
+    ]
+
 body.main
     +nav("Contacts")
 
@@ -18,4 +22,9 @@ body.main
         div.contant-links
             each contact in contacts
                 a.bk-image.bk-image__link(title=contact.title, href=contact.href, target=contact.target, style=`background-image: url('${contact.img}')`)
+
+        p="Wanna support me?"
+        div.contant-links
+            each support in supports
+                a.bk-image.bk-image__link.bk-image__link--wide(title=support.title, href=support.href, target=support.target, style=`background-image: url('${support.img}')`)
 

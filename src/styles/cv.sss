@@ -1,5 +1,4 @@
 @import './main.sss'
-
 @import './spoiler.sss'
 
 .cv
@@ -19,15 +18,18 @@
     padding-bottom: 1rem
     border-bottom: 1px solid #000
 
-//Default
-#ru:not(:target) ~ .lang-switch *[lang]:not(:lang(en))
+//When non-en target is selected hide en lang
+//When non-en target is not selected hide its lang
+#ru:target ~ .lang-switch *[lang]:lang(en)
     display: none
 
-//Hide
-#ru:target ~ .lang-switch *[lang]:not(:lang(ru))
+#ru:not(:target) ~ .lang-switch *[lang]:lang(ru)
     display: none
 
-#en:target ~ .lang-switch *[lang]:not(:lang(en))
+#jp:target ~ .lang-switch *[lang]:lang(en)
+    display: none
+
+#jp:not(:target) ~ .lang-switch *[lang]:lang(jp)
     display: none
 
 nav.lang-switcher
@@ -35,8 +37,8 @@ nav.lang-switcher
     & > a
         display: inline-block
         margin-right: .5em
-        width: 32px
-        height: 32px
+        width: 35px
+        height: 35px
         padding: 0
         background-size: contain
         background-repeat: no-repeat
@@ -54,6 +56,10 @@ nav.lang-switcher
     flex-flow: wrap
     justify-content: space-between
     text-align: left
+
+.bk-image__link--print
+    @media print
+        padding-top: 0.75em
 
 .cv-body__section
     margin-top: 1em
@@ -77,6 +83,9 @@ nav.lang-switcher
     display: flex
     flex-flow: row wrap
     justify-content: space-between
+
+    & > .spoiler_link
+        flex-basis: 50%
 
 .cv-body__section__content__sub
     font-style: italic

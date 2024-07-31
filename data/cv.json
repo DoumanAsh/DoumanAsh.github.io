@@ -1,41 +1,41 @@
 {
-    "name": "Arthur Martirosyan",
+    "name": "Artur Martirosian",
     "langs": [
-        {
-            "code": "en",
-            "title": "English",
-            "icon": "eng.png"
-        },
         {
             "code": "ru",
             "title": "Русский",
-            "icon": "russian.png"
+            "icon": "russian.svg"
+        },
+        {
+            "code": "jp",
+            "title": "日本語",
+            "icon": "jp.svg"
+        },
+        {
+            "code": "en",
+            "title": "English",
+            "icon": "eng.svg"
         }
     ],
     "basic": [
         {
             "key": {
-                "en": "Birth date:",
-                "ru": "Дата рождения:"
-            },
-            "type": "str",
-            "value": "12.02.1992"
-        },
-        {
-            "key": {
                 "en": "Residence:",
-                "ru": "Местожительство:"
+                "ru": "Местожительство:",
+                "jp": "住まい:"
             },
             "type": "str",
             "value": {
-                "en": "Nizhny Novgorod, Russia",
-                "ru": "Нижний Новгород, Россия"
+                "en": "Tokyo, Japan",
+                "ru": "Токио, Japan",
+                "jp": "東京、日本"
             }
         },
         {
             "key": {
                 "en": "Links:",
-                "ru": "Ссылки:"
+                "ru": "Ссылки:",
+                "jp": "リンク"
             },
             "type": "links",
             "value" : [
@@ -47,40 +47,31 @@
                 },
                 {
                     "title": "Portfolio",
-                    "href": "https://doumanash.github.io/#Goodies",
+                    "href": "https://doumanash.github.io/goodies.html",
                     "logo": "portfolio.svg"
                 }
             ]
         },
         {
             "key": {
-                "en": "Marital status:",
-                "ru": "Семейное положение:"
-            },
-            "type": "str",
-            "value": {
-                "en": "Single",
-                "ru": "Холост"
-            }
-        },
-        {
-            "key": {
                 "en": "Phone:",
-                "ru": "Телефон:"
+                "ru": "Телефон:",
+                "jp": "電話番号:"
             },
             "type": "str",
-            "value": "+7 910 131 72 70"
+            "value": "+81 070 3976 9774"
         },
         {
             "key": {
                 "en": "Contacts:",
-                "ru": "Контакты:"
+                "ru": "Контакты:",
+                "jp": "お問い合わせ:"
             },
             "type": "links",
             "value": [
                 {
-                    "title": "douman@gmx.se",
-                    "href": "mailto:douman@gmx.se",
+                    "title": "douman.ash@gmail.com",
+                    "href": "mailto:douman.ash@gmail.com",
                     "logo": "close-envelope.svg",
                     "is_print": true
                 },
@@ -97,19 +88,26 @@
         "expertise": {
             "title": {
                 "en": "Expertise",
-                "ru": "Экспертиза"
+                "ru": "Экспертиза",
+                "jp": "専門知識"
             },
             "data": [
                 {
                     "type": "single_line",
                     "lang": "en",
-                    "line": "Several years of experience in software development (including open source contributions)."
+                    "line": "C++/Rust Expert"
                 },
                 {
                     "type": "single_line",
                     "lang": "ru",
-                    "line": "Несколько лет опыта в разработке ПО (включая open-source) ."
+                    "line": "C++/Rust Эксперт"
                 },
+                {
+                    "type": "single_line",
+                    "lang": "jp",
+                    "line": "C++/Rust  エキスパート"
+                },
+
                 {
                     "type": "multi_line",
                     "lines": [
@@ -124,9 +122,14 @@
                             "line": "Языки: "
                         },
                         {
+                            "type": "bold_line",
+                            "lang": "jp",
+                            "line": "プログラム言語: "
+                        },
+                        {
                             "type": "single_line",
                             "lang": "",
-                            "line": "C/C++, Python, Rust, HTML5/CSS, JavaScript, Elixir, Powershell, Bash"
+                            "line": "C, C++, Rust, Python, Java, JavaScript, Elixir, C#, Powershell, Bash"
                         }
                     ]
                 },
@@ -136,17 +139,22 @@
                         {
                             "type": "bold_line",
                             "lang": "en",
-                            "line": "Frameworks: "
+                            "line": "Frameworks/Libraries: "
                         },
                         {
                             "type": "bold_line",
                             "lang": "ru",
-                            "line": "Фреймворки: "
+                            "line": "Фреймворки/Библиотеки: "
+                        },
+                        {
+                            "type": "bold_line",
+                            "lang": "jp",
+                            "line": "フレームワーク: "
                         },
                         {
                             "type": "single_line",
                             "lang": "",
-                            "line": "Node.js, koa.js, ReactJS/Inferno, Mobx, Google Test/Mock, CUnit"
+                            "line": "Node.js, Tokio, Boost, Xamarin, Google Test/Mock, Qt, Spring"
                         }
                     ]
                 },
@@ -161,7 +169,22 @@
                         {
                             "type": "single_line",
                             "lang": "",
-                            "line": "Windows, REST, POSIX Threads"
+                            "line": "Windows, Android, POSIX Threads"
+                        }
+                    ]
+                },
+                {
+                    "type": "multi_line",
+                    "lines": [
+                        {
+                            "type": "bold_line",
+                            "lang": "",
+                            "line": "DB: "
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "",
+                            "line": "Sqlite, Mysql, Cassandra"
                         }
                     ]
                 },
@@ -177,6 +200,11 @@
                             "type": "bold_line",
                             "lang": "ru",
                             "line": "Утилиты: "
+                        },
+                        {
+                            "type": "bold_line",
+                            "lang": "jp",
+                            "line": "ツール: "
                         },
                         {
                             "type": "single_line",
@@ -199,6 +227,11 @@
                             "line": "Протоколы: "
                         },
                         {
+                            "type": "bold_line",
+                            "lang": "jp",
+                            "line": "プロトコル: "
+                        },
+                        {
                             "type": "single_line",
                             "lang": "",
                             "line": "SCTP, TCP/IP"
@@ -210,21 +243,25 @@
         "experience": {
             "title": {
                 "en": "Experience",
-                "ru": "Опыт работы"
+                "ru": "Опыт работы",
+                "jp": "実務経験"
             },
             "data": [
                 {
                     "title": {
                         "en": "Senior Software Engineer",
-                        "ru": "Старший Разработчик"
+                        "ru": "Старший Разработчик",
+                        "jp": "シニアソフトウェアエンジニア"
                     },
                     "location": {
-                        "en": "MERA Networks - Nizhny Novgorod",
-                        "ru": "МЕРА НН - Нижний Новгород"
+                        "en": "MERA - Nizhny Novgorod",
+                        "ru": "МЕРА - Нижний Новгород",
+                        "jp": "MERA - ニジニノヴゴロド"
                     },
                     "dates": {
                         "en": "September 2012 - December 2016",
-                        "ru": "Сентябрь 2012 - Декабрь 2016"
+                        "ru": "Сентябрь 2012 - Декабрь 2016",
+                        "jp": "9月 2012 - 12月 2016"
                     },
                     "lines": [
                         {
@@ -239,6 +276,12 @@
                         },
                         {
                             "type": "single_line",
+                            "lang": "jp",
+                            "line": "通信ソフトウェアのサポートとメンテナンス(SS7)"
+                        },
+
+                        {
+                            "type": "single_line",
                             "lang": "en",
                             "line": "Design and feature implementation for existing system software(C/C++)."
                         },
@@ -249,13 +292,39 @@
                         },
                         {
                             "type": "single_line",
+                            "lang": "jp",
+                            "line": "既存のシステムソフトウェアの設計と改善"
+                        },
+
+                        {
+                            "type": "single_line",
                             "lang": "en",
-                            "line": "Troubleshooting of network issues and log analysis. Including Wireshark."
+                            "line": "Porting existing SW to a Wind River Linux"
                         },
                         {
                             "type": "single_line",
                             "lang": "ru",
-                            "line": "Анализ и разрешение проблем сети, анализ логов. Включая Wireshark."
+                            "line": "Портирование существующего софта под Wind River Linux"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "jp",
+                            "line": "Wind River Linuxにソフトウェアのポーティング"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "en",
+                            "line": "Troubleshooting of network issues and log analysis(including Wireshark)."
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "ru",
+                            "line": "Анализ и разрешение проблем сети, анализ логов(включая Wireshark)."
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "jp",
+                            "line": "ネットワークはトラブルシューティングするやログ解析(Wireshark込み)"
                         },
                         {
                             "type": "single_line",
@@ -266,6 +335,11 @@
                             "type": "single_line",
                             "lang": "ru",
                             "line": "Написание юнит-тестов средствами Google Test/Mock."
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "jp",
+                            "line": "Google Test/Mockによるユニットテストを作る"
                         },
                         {
                             "type": "multi_line",
@@ -279,6 +353,11 @@
                                     "type": "bold_line",
                                     "lang": "ru",
                                     "line": "ОС: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "jp",
+                                    "line": "OS: "
                                 },
                                 {
                                     "type": "single_line",
@@ -301,6 +380,11 @@
                                     "line": "Методологии разработки: "
                                 },
                                 {
+                                    "type": "bold_line",
+                                    "lang": "jp",
+                                    "line": "開発手法: "
+                                },
+                                {
                                     "type": "single_line",
                                     "lang": "",
                                     "line": "Scrum, Agile."
@@ -319,6 +403,11 @@
                                     "type": "bold_line",
                                     "lang": "ru",
                                     "line": "Система контроля версий: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "jp",
+                                    "line": "SCM: "
                                 },
                                 {
                                     "type": "single_line",
@@ -341,6 +430,11 @@
                                     "line": "Протоколы: "
                                 },
                                 {
+                                    "type": "bold_line",
+                                    "lang": "jp",
+                                    "line": "プロトコル: "
+                                },
+                                {
                                     "type": "single_line",
                                     "lang": "",
                                     "line": "SCTP, M3UA, IP"
@@ -359,6 +453,11 @@
                                     "type": "bold_line",
                                     "lang": "ru",
                                     "line": "Анализ кода: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "jp",
+                                    "line": "コード解析ツール: "
                                 },
                                 {
                                     "type": "single_line",
@@ -381,6 +480,11 @@
                                     "line": "Написание документации: "
                                 },
                                 {
+                                    "type": "bold_line",
+                                    "lang": "jp",
+                                    "line": "コードのドキュメンテーション: "
+                                },
+                                {
                                     "type": "single_line",
                                     "lang": "",
                                     "line": "Doxygen"
@@ -399,6 +503,11 @@
                                     "type": "bold_line",
                                     "lang": "ru",
                                     "line": "Управление проектом: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "jp",
+                                    "line": "タスクボード: "
                                 },
                                 {
                                     "type": "single_line",
@@ -422,6 +531,11 @@
                                     "line": "Профилировка кода: "
                                 },
                                 {
+                                    "type": "bold_line",
+                                    "lang": "jp",
+                                    "line": "コードプロファイリング: "
+                                },
+                                {
                                     "type": "single_line",
                                     "lang": "",
                                     "line": "gprof, oprfile, callgrind."
@@ -431,12 +545,17 @@
                         {
                             "type": "single_line",
                             "lang": "en",
-                            "line": "Writing automation and code generations Python scripts."
+                            "line": "Writing automation and code generation Python scripts."
                         },
                         {
                             "type": "single_line",
                             "lang": "ru",
                             "line": "Написание скриптов автоматизации и кодо-генерации."
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "jp",
+                            "line": "オートメーションやコード生成のPythonスクリプトを作る"
                         },
                         {
                             "type": "single_line",
@@ -449,13 +568,807 @@
                             "line": "Прототипирование синхронизации тредов в тестовом окружении, используя POSIX Threads."
                         }
                     ]
+                },
+                {
+                    "title": {
+                        "en": "Front-end Developer",
+                        "ru": "Front-end Разработчик",
+                        "jp": "フロントエンドエンジニア"
+                    },
+                    "location": {
+                        "en": "Smartbics - Nizhny Novgorod",
+                        "ru": "Smartbics - Нижний Новгород",
+                        "jp": "Smartbics - ニジニノヴゴロド"
+                    },
+                    "dates": {
+                        "en": "June 2017 - Jule 2017",
+                        "ru": "Июнь 2017 - Июль 2017",
+                        "jp": "6月 2017 - 7月 2017"
+                    },
+                    "lines": [
+                        {
+                            "type": "single_line",
+                            "lang": "en",
+                            "line": "Development of front-end for booking system."
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "ru",
+                            "line": "Разработка front-end'a для системы букинга."
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "jp",
+                            "line": "予約システムのフロントエンドを作る"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "en",
+                            "line": "Writing email templates."
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "ru",
+                            "line": "Написание темплейтов писем."
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "jp",
+                            "line": "電子メールテンプレートを作る"
+                        },
+                        {
+                            "type": "multi_line",
+                            "lines": [
+                                {
+                                    "type": "bold_line",
+                                    "lang": "en",
+                                    "line": "Stack: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "ru",
+                                    "line": "Стэк: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "jp",
+                                    "line": "テクノロジースタック: "
+                                },
+                                {
+                                    "type": "single_line",
+                                    "lang": "",
+                                    "line": "webpack, React/Redux, Redux Form, SCSS"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "multi_line",
+                            "lines": [
+                                {
+                                    "type": "bold_line",
+                                    "lang": "en",
+                                    "line": "SCM: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "ru",
+                                    "line": "Система контроля версий: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "jp",
+                                    "line": "SCM: "
+                                },
+                                {
+                                    "type": "single_line",
+                                    "lang": "",
+                                    "line": "Mercurial"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": {
+                        "en": "Software Engineer",
+                        "ru": "Разработчик",
+                        "jp": "ソフトウェアエンジニア"
+                    },
+                    "location": {
+                        "en": "MERA Networks - Nizhny Novgorod",
+                        "ru": "МЕРА НН - Нижний Новгород",
+                        "jp": "MERA - ニジニノヴゴロド"
+                    },
+                    "dates": {
+                        "en": "January 2018 - April 2019",
+                        "ru": "Январь 2018 - Апрель 2019",
+                        "jp": "1月 2018 - 4月 2019"
+                    },
+                    "lines": [
+                        {
+                            "type": "single_line",
+                            "lang": "en",
+                            "line": "Support and maintenance of SIP based phones"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "ru",
+                            "line": "Разработка и поддержка SIP телефонов"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "jp",
+                            "line": "SIP電話のサポートとメンテナンス"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "en",
+                            "line": "ARM embedded development"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "ru",
+                            "line": "Разработка под ARM"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "jp",
+                            "line": "ARM組み込み開発"
+                        },
+                        {
+                            "type": "multi_line",
+                            "lines": [
+                                {
+                                    "type": "bold_line",
+                                    "lang": "en",
+                                    "line": "SCM: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "ru",
+                                    "line": "Система контроля версий: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "jp",
+                                    "line": "SCM: "
+                                },
+                                {
+                                    "type": "single_line",
+                                    "lang": "",
+                                    "line": "Git"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "multi_line",
+                            "lines": [
+                                {
+                                    "type": "bold_line",
+                                    "lang": "en",
+                                    "line": "Used technologies: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "ru",
+                                    "line": "Используемые технологии: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "jp",
+                                    "line": "テクノロジー: "
+                                },
+                                {
+                                    "type": "single_line",
+                                    "lang": "",
+                                    "line": "C, C++, Qt"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "multi_line",
+                            "lines": [
+                                {
+                                    "type": "bold_line",
+                                    "lang": "en",
+                                    "line": "Protocols: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "ru",
+                                    "line": "Протоколы: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "jp",
+                                    "line": "プロトコル: "
+                                },
+                                {
+                                    "type": "single_line",
+                                    "lang": "",
+                                    "line": "SIP, Bluetooth(headset support)"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "multi_line",
+                            "lines": [
+                                {
+                                    "type": "bold_line",
+                                    "lang": "en",
+                                    "line": "Database: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "ru",
+                                    "line": "База данных: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "jp",
+                                    "line": " データベース: "
+                                },
+                                {
+                                    "type": "single_line",
+                                    "lang": "",
+                                    "line": "SQlite"
+                                }
+                            ]
+                        }
+
+                    ]
+                },
+                {
+                    "title": {
+                        "en": "Software Engineer",
+                        "ru": "Разработчик",
+                        "jp": "ソフトウェアエンジニア"
+                    },
+                    "location": {
+                        "en": "Luxoft - Krakow",
+                        "ru": "Люксофт - Краков",
+                        "jp": "Luxoft -  クラクフ"
+                    },
+                    "dates": {
+                        "en": "April 2019 - April 2020",
+                        "ru": "Апрель 2019 - Апрель 2020",
+                        "jp": "4月 2019 - 4月 2020"
+                    },
+                    "lines": [
+                        {
+                            "type": "single_line",
+                            "lang": "en",
+                            "line": "Development of car safety and tracking system"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "ru",
+                            "line": "Разработка системы безопасности и отслеживания в машине"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "jp",
+                            "line": "安全運転システムの開発"
+                        },
+
+                        {
+                            "type": "single_line",
+                            "lang": "en",
+                            "line": "Development of algorithms to monitor situation outside & inside car using machine learning models"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "ru",
+                            "line": "Разработка алгоритмов для отслеживания ситуации внутри и снаружи машины, используя модели машинного обучения"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "jp",
+                            "line": "MLモデルで車の内と外の状況を監視してアルゴリズムの開発"
+                        },
+
+                        {
+                            "type": "single_line",
+                            "lang": "en",
+                            "line": "Using pub/sub interface on top of nanomsg"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "ru",
+                            "line": "Использование pub/sub интерфейса на базе nanomsg"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "jp",
+                            "line": "nanomsgによってpub / subインターフェースを使用する"
+                        },
+
+                        {
+                            "type": "single_line",
+                            "lang": "en",
+                            "line": "Migration from SNPE to Tensorflow Lite"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "ru",
+                            "line": "Миграция с SNPE на Tensorflow Lite"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "jp",
+                            "line": "SNPEからTensorflow Lite移行"
+                        },
+
+                        {
+                            "type": "multi_line",
+                            "lines": [
+                                {
+                                    "type": "bold_line",
+                                    "lang": "en",
+                                    "line": "OS: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "ru",
+                                    "line": "ОС: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "jp",
+                                    "line": "OS: "
+                                },
+                                {
+                                    "type": "single_line",
+                                    "lang": "",
+                                    "line": "Android"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "multi_line",
+                            "lines": [
+                                {
+                                    "type": "bold_line",
+                                    "lang": "en",
+                                    "line": "SCM: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "ru",
+                                    "line": "Система контроля версий: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "jp",
+                                    "line": "SCM: "
+                                },
+                                {
+                                    "type": "single_line",
+                                    "lang": "",
+                                    "line": "Git(Github) + CircleCI"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "multi_line",
+                            "lines": [
+                                {
+                                    "type": "bold_line",
+                                    "lang": "en",
+                                    "line": "Used technologies: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "ru",
+                                    "line": "Используемые технологии: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "jp",
+                                    "line": "テクノロジー: "
+                                },
+                                {
+                                    "type": "single_line",
+                                    "lang": "",
+                                    "line": "C++11, Java, Kotlin, Android NDK, Flatbuffers, Docker, SNPE, Tensorflow, Google Test/Mock"
+                                }
+                            ]
+                        }
+                    ]
+                },
+
+                {
+                    "title": {
+                        "en": "Software Engineer",
+                        "ru": "Разработчик",
+                        "jp": "ソフトウェアエンジニア"
+                    },
+                    "location": {
+                        "en": "Orb, Inc - Remote",
+                        "ru": "Orb, Inc - Удаленка",
+                        "jp": "Orb, Inc - リモート"
+                    },
+                    "dates": {
+                        "en": "November 2019 - April 2020",
+                        "ru": "Апрель 2019 - Апрель 2020",
+                        "jp": "11月 2019 - 4月 2020"
+                    },
+                    "lines": [
+                        {
+                            "type": "single_line",
+                            "lang": "en",
+                            "line": "Part time work"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "ru",
+                            "line": "Неполный рабочий день"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "jp",
+                            "line": "アルバイト"
+                        },
+
+                        {
+                            "type": "single_line",
+                            "lang": "en",
+                            "line": "Development of web API to provide access to DLT"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "ru",
+                            "line": "Разработка веб АПИ для предоставление доступа к распределлному леджеру"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "jp",
+                            "line": "DLTアクセスのAPI開発"
+                        }
+                    ]
+                },
+
+                {
+                    "title": {
+                        "en": "Software Engineer",
+                        "ru": "Разработчик",
+                        "jp": "ソフトウェアエンジニア"
+                    },
+                    "location": {
+                        "en": "Orb, Inc - Remote(Tokyo)",
+                        "ru": "Orb, Inc - Удаленка(Токио)",
+                        "jp": "Orb, Inc - リモート(東京)"
+                    },
+                    "dates": {
+                        "en": "May 2020 - January 2021",
+                        "ru": "Май 2020 - Январь 2021",
+                        "jp": "5月 2020 - 1月 2021"
+                    },
+                    "lines": [
+                        {
+                            "type": "single_line",
+                            "lang": "en",
+                            "line": "Development of distributed transactional system for virtual currencies"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "ru",
+                            "line": "Разработка распределенной системы транзакций для виртуальных денег"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "jp",
+                            "line": "バーチャル通貨の分散トランザクショナルシステムの開発"
+                        },
+
+                        {
+                            "type": "single_line",
+                            "lang": "en",
+                            "line": "Development of web API to provide access to DLT"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "ru",
+                            "line": "Разработка веб АПИ для предоставление доступа к распределлному леджеру"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "jp",
+                            "line": "DLTアクセスのAPI開発"
+                        },
+
+                        {
+                            "type": "single_line",
+                            "lang": "en",
+                            "line": "Bug fix and improvement of fault tolerance"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "ru",
+                            "line": "Баг фикс и улучшение в области отказоустойчивости"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "jp",
+                            "line": "バグを治して、フォールトトレランスを上がっている"
+                        },
+
+                        {
+                            "type": "single_line",
+                            "lang": "en",
+                            "line": "Implementation of transaction batching"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "ru",
+                            "line": "Имплементация функциональности выполнения групп транзакций"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "jp",
+                            "line": "トランザクションバッチの開発"
+                        },
+
+                        {
+                            "type": "multi_line",
+                            "lines": [
+                                {
+                                    "type": "bold_line",
+                                    "lang": "en",
+                                    "line": "SCM: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "ru",
+                                    "line": "Система контроля версий: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "jp",
+                                    "line": "SCM: "
+                                },
+                                {
+                                    "type": "single_line",
+                                    "lang": "",
+                                    "line": "Git(Github) + Jenkins"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "multi_line",
+                            "lines": [
+                                {
+                                    "type": "bold_line",
+                                    "lang": "en",
+                                    "line": "Used technologies: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "ru",
+                                    "line": "Используемые технологии: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "jp",
+                                    "line": "テクノロジー: "
+                                },
+                                {
+                                    "type": "single_line",
+                                    "lang": "",
+                                    "line": "Java, Go, Rust, Mysql, Cassandra, Kafka, Spring, Docker"
+                                }
+                            ]
+                        }
+                    ]
+                },
+
+
+                {
+                    "title": {
+                        "en": "Software Engineer",
+                        "ru": "Разработчик",
+                        "jp": "ソフトウェアエンジニア"
+                    },
+                    "location": {
+                        "en": "Pocket Change, Inc - Tokyo",
+                        "ru": "Pocket Change, Inc - Токио",
+                        "jp": "Pocket Change, Inc - 東京"
+                    },
+                    "dates": {
+                        "en": "February 2021 - Aug 2023",
+                        "ru": "Февраль 2021 - Август 2023",
+                        "jp": "2月 2021 - 8月 2023"
+                    },
+                    "lines": [
+                        {
+                            "type": "single_line",
+                            "lang": "en",
+                            "line": "Development of money processing terminals"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "ru",
+                            "line": "Разработка терминала обрабатывающего деньги"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "jp",
+                            "line": "現金扱う端末の開発"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "en",
+                            "line": "Back-end development (GraphQL server, Task processing queue based on AWS SQS)"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "ru",
+                            "line": "Серверная разработка (GraphQL сервер, Queue обработки тасков используя AWS SQS)"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "jp",
+                            "line": "バックエンド開発 (Graphqlサーバー、AWS SQSによってタスクキュー)"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "en",
+                            "line": "Improvement of Continuous Integration(Gtihub Actions)."
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "ru",
+                            "line": "Улучшение CI(Github Actions)"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "jp",
+                            "line": "継続的インテグレーション(Github Actions)の改善"
+                        },
+
+
+                        {
+
+                            "type": "multi_line",
+                            "lines": [
+                                {
+                                    "type": "bold_line",
+                                    "lang": "en",
+                                    "line": "Hardware: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "ru",
+                                    "line": "Hardware: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "jp",
+                                    "line": "ハードウェア: "
+                                },
+                                {
+                                    "type": "single_line",
+                                    "lang": "",
+                                    "line": "Raspberry Pi"
+                                }
+                            ]
+                        },
+
+                        {
+
+                            "type": "multi_line",
+                            "lines": [
+                                {
+                                    "type": "bold_line",
+                                    "lang": "en",
+                                    "line": "Used technologies: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "ru",
+                                    "line": "Используемые технологии: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "jp",
+                                    "line": "テクノロジー: "
+                                },
+                                {
+                                    "type": "single_line",
+                                    "lang": "",
+                                    "line": "Rust, Flutter, Docker, Linux, Android NDK, Redis, GraphQL, AWS SQS, AWS SES"
+                                }
+                            ]
+                        }
+                    ]
+                },
+
+                {
+                    "title": {
+                        "en": "Backend Engineer",
+                        "ru": "Бэкенд-разработчик",
+                        "jp": "バックエンドエンジニア"
+                    },
+                    "location": {
+                        "en": "Drivemode, Inc - Tokyo",
+                        "ru": "Drivemode, Inc - Токио",
+                        "jp": "Drivemode, Inc - 東京"
+                    },
+                    "dates": {
+                        "en": "August 2023 - now",
+                        "ru": "Август 2023 - now",
+                        "jp": "8月 2023 - 今"
+                    },
+                    "lines": [
+                        {
+                            "type": "single_line",
+                            "lang": "en",
+                            "line": "gRPC backend development"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "ru",
+                            "line": "Разработка gRPC бэкэнда"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "jp",
+                            "line": "gRPCバックエンドの開発"
+                        },
+
+                        {
+                            "type": "single_line",
+                            "lang": "en",
+                            "line": "Integrating cloud HSM with Android build system for purpose of signing application"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "ru",
+                            "line": "Интеграция билд системы Андроида с веб HSM'ом для подписки приложения"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "jp",
+                            "line": "アプリに署名するためクラウドHSMをAndroidビルドに統合"
+                        },
+
+                        {
+
+                            "type": "multi_line",
+                            "lines": [
+                                {
+                                    "type": "bold_line",
+                                    "lang": "en",
+                                    "line": "Used technologies: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "ru",
+                                    "line": "Используемые технологии: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "jp",
+                                    "line": "テクノロジー: "
+                                },
+                                {
+                                    "type": "single_line",
+                                    "lang": "",
+                                    "line": "Rust, Docker, Kubernetes, Terraform, Google Cloud"
+                                }
+                            ]
+                        }
+                    ]
                 }
+
+
             ]
         },
         "languages": {
             "title": {
                 "en": "Languages",
-                "ru": "Языки"
+                "ru": "Языки",
+                "jp": "言語"
             },
             "data": [
                 {
@@ -466,6 +1379,10 @@
                     "ru": {
                         "title": "Английский: ",
                         "level": "Продвинутый уровень"
+                    },
+                    "jp": {
+                        "title": "英語: ",
+                        "level": "ビジネス会話"
                     }
                 },
                 {
@@ -476,6 +1393,24 @@
                     "ru": {
                         "title": "Русский: ",
                         "level": "Родной"
+                    },
+                    "jp": {
+                        "title": "ロシア語: ",
+                        "level": "ネイティヴ"
+                    }
+                },
+                {
+                    "en": {
+                        "title": "Japanese: ",
+                        "level": "N3"
+                    },
+                    "ru": {
+                        "title": "Японский: ",
+                        "level": "N3"
+                    },
+                    "jp": {
+                        "title": "日本語: ",
+                        "level": "N3"
                     }
                 }
             ]
@@ -483,7 +1418,8 @@
         "education": {
             "title": {
                 "en": "Education",
-                "ru": "Образование"
+                "ru": "Образование",
+                "jp": "学歴"
             },
             "info_map": {
                 "en": {
@@ -493,13 +1429,18 @@
                 "ru": {
                     "major": "Специальность: ",
                     "degree": "Квалификация: "
+                },
+                "jp": {
+                    "major": "専攻分野: ",
+                    "degree": "学位: "
                 }
             },
             "data": [
                 {
                     "name": {
                         "en": "Nizhny Novgorod Economics and Law College",
-                        "ru": "Нижегородский Экономико-Правовой Колледж"
+                        "ru": "Нижегородский Экономико-Правовой Колледж",
+                        "jp": "ニズニ・ノヴゴロド経済法学大学"
                     },
                     "title": "",
                     "dates": "2008 - 2012",
@@ -511,17 +1452,23 @@
                         "ru": {
                             "major": "Информационные технологии",
                             "degree": "Среднее профессиональное образованиe"
+                        },
+                        "jp": {
+                            "major": "応用情報学",
+                            "degree": "専門学校"
                         }
                     }
                 },
                 {
                     "name": {
                         "en": "RANEPA",
-                        "ru": "РАНХиГС"
+                        "ru": "РАНХиГС",
+                        "jp": "RANEPA"
                     },
                     "title": {
                         "en": "Russian Academy of National Economy and Public Administration",
-                        "ru": "Российская академия народного хозяйства и государственной службы"
+                        "ru": "Российская академия народного хозяйства и государственной службы",
+                        "jp": "ロシア大統領指定国家経済と行政専門学校"
                     },
                     "dates": "2012 - 2016",
                     "info": {
@@ -532,6 +1479,10 @@
                         "ru": {
                             "major": "Информационные технологии",
                             "degree": "Бакалавр"
+                        },
+                        "jp": {
+                            "major": "応用情報学",
+                            "degree": "大学"
                         }
                     }
                 }
@@ -540,11 +1491,13 @@
         "interests": {
             "title": {
                 "en": "Interests",
-                "ru": "Интересы"
+                "ru": "Интересы",
+                "jp": "趣味"
             },
             "data": {
                 "en": "Programming, Gaming, History, Chivalry",
-                "ru": "Программирование, Видео-игры, История, Рыцарство"
+                "ru": "Программирование, Видео-игры, История, Рыцарство",
+                "jp": "プログラミング、ゲーム、歴史、騎士道"
             }
         }
     }

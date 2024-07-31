@@ -2,7 +2,7 @@
 
 const path = require('path');
 
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtract = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
 
@@ -11,17 +11,11 @@ const SRC = path.resolve(__dirname, 'src');
 
 const css_loader = {
     test: /\.sss/,
-    use: ExtractTextPlugin.extract({
-        use: [
-            'css-loader',
-            'postcss-loader'
-        ]
-    })
-};
-
-const json_loader = {
-    test: /\.json$/,
-    loader: 'json5-loader'
+    use: [
+        MiniCssExtract.loader,
+        'css-loader',
+        'postcss-loader'
+    ]
 };
 
 const img_loader = {
@@ -30,16 +24,13 @@ const img_loader = {
     options: {
         useRelatievePath: false,
         outputPath: "img/",
-        name: '[name].[hash].[ext]',
+        name: '[name].[ext]',
     },
 };
 
-const js_loader = {
-    test: /\.jsx?$/,
-    use: [
-        "babel-loader",
-        "eslint-loader"
-    ]
+const raw_loader = {
+    test: /\.md?$/,
+    use: 'raw-loader'
 };
 
 const pug_loader = {
@@ -55,7 +46,7 @@ module.exports.entry = {
 };
 
 module.exports.output = {
-    filename: '[name].bundle.[chunkhash].js',
+    filename: '[name].bundle.js',
     path: PUBLIC
 };
 
@@ -63,9 +54,8 @@ module.exports.module = {
     rules: [
         css_loader,
         img_loader,
-        json_loader,
-        js_loader,
-        pug_loader
+        pug_loader,
+        raw_loader
     ]
 };
 
@@ -83,17 +73,23 @@ const STATIC_HTML = {
     inject: false
 };
 
+const get_blog_posts = require('./utils/get_blog_posts.js');
+
 module.exports.plugins = [
-    html_pug_plug(TITLE, "templates/index.pug", STATIC_HTML),
-    html_pug_plug(TITLE, "templates/contacts.pug", STATIC_HTML),
-    html_pug_plug(TITLE, "templates/waifu.pug", STATIC_HTML),
-    html_pug_plug(TITLE, "templates/goodies.pug", STATIC_HTML),
+    ...get_blog_posts(`${SRC}/templates/blog/post.pug`, `${SRC}/templates/blog/index.pug`),
+    html_pug_plug(TITLE + ' | Home', "templates/index.pug", STATIC_HTML),
+    html_pug_plug(TITLE + ' | Contacts', "templates/contacts.pug", STATIC_HTML),
+    html_pug_plug(TITLE + ' | Gallery', "templates/gallery.pug", STATIC_HTML),
+    html_pug_plug(TITLE + ' | Goodies', "templates/goodies.pug", STATIC_HTML),
     html_pug_plug("Arthur's CV", "templates/cv.pug", STATIC_HTML),
     html_pug_plug("Page not found", "templates/404.pug", STATIC_HTML),
     new ScriptExtHtmlWebpackPlugin({
         defaultAttribute: 'async'
     }),
-    new ExtractTextPlugin('[name].bundle.[chunkhash].css')
+    new MiniCssExtract({
+        filename: "[name].css",
+        chunkFilename: "[id].css"
+    })
 ];
 
 module.exports.devServer = {

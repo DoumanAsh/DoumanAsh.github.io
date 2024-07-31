@@ -7,7 +7,7 @@ mixin head(title)
             meta(content="utf-8", http-equiv="encoding")
             if htmlWebpackPlugin.options.inject === false
                 each stylesheet in htmlWebpackPlugin.files.css
-                    link(rel="stylesheet" type="text/css" href=stylesheet)
+                    link(rel="stylesheet" type="text/css" href=`/${stylesheet}`)
 
 mixin inline_style(styles)
     style !{styles.join('')}
@@ -21,7 +21,6 @@ mixin noscript
     var links = [
         {title: "Home", url: "/"},
         {title: "Goodies", url: "/goodies.html"},
-        {title: "My Waifu", url: "/waifu.html"},
         {title: "Contacts", url: "/contacts.html"},
         {title: "CV", url: "/cv.html"}
     ]

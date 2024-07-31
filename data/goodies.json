@@ -6,19 +6,80 @@
         "id": "Rust",
         "data": [
             {
+                "name": "stroka",
+                "link": "https://github.com/DoumanAsh/stroka",
+                "description": "Alternative Rust String implementation with SSO"
+            },
+            {
+                "name": "xxhash-rust",
+                "link": "https://github.com/DoumanAsh/xxhash-rust",
+                "description": "My port of great hashing algorithm xxHash."
+            },
+
+            {
+                "name": "plogcat",
+                "link": "https://github.com/DoumanAsh/plogcat",
+                "description": "Pretty wrapper over logcat"
+            },
+            {
+                "name": "str-buf",
+                "link": "https://github.com/DoumanAsh/str-buf",
+                "description": "Efficient static string buffer."
+            },
+            {
+                "name": "nng-c",
+                "link": "https://github.com/DoumanAsh/nng-c",
+                "description": "Bindings to NNG library."
+            },
+            {
+                "name": "Yukikaze",
+                "link": "https://gitlab.com/Douman/yukikaze",
+                "description": "Beautiful and elegant HTTP client library."
+            },
+            {
+                "name": "async-timer",
+                "link": "https://github.com/DoumanAsh/async-timer",
+                "description": "Timer facilities for Rust's async story"
+            },
+            {
+                "name": "compu",
+                "link": "https://github.com/DoumanAsh/compu",
+                "description": "Rust Compression library with generic interface "
+            },
+            {
+                "name": "fie",
+                "link": "https://github.com/DoumanAsh/fie",
+                "description": "Small and cute social media CLI tool."
+            },
+            {
                 "name": "clipboard-win",
                 "link": "https://crates.io/crates/clipboard-win",
                 "description": "Library to interact with Windows clipboard."
             },
             {
-                "name": "toa-ping",
-                "link": "https://github.com/DoumanAsh/toa-ping",
-                "description": "Cute ping tool"
+                "name": "vndb",
+                "link": "https://github.com/DoumanAsh/vndb.rs",
+                "description": "Tokio TCP based client to VNDB"
             },
             {
-                "name": "lazy-socket",
-                "link": "https://github.com/DoumanAsh/lazy-socket.rs",
-                "description": "Thin wrapper over raw C sockets"
+                "name": "Roseline",
+                "link": "https://github.com/DoumanAsh/roseline.rs",
+                "description": "My IRC bot written using tokio and actix async libraries"
+            },
+            {
+                "name": "cortex-m-log",
+                "link": "https://github.com/DoumanAsh/cortex-m-log",
+                "description": "Logging facilities for Cortex-m"
+            },
+            {
+                "name": "etag",
+                "link": "https://github.com/DoumanAsh/etag-rs",
+                "description": "Simple ETag calculation."
+            },
+            {
+                "name": "stm32l4x6_hal",
+                "link": "https://github.com/DoumanAsh/stm32l4x6_hal",
+                "description": "Abstractions for my stm32l4 microcontroller"
             },
             {
                 "name": "lazy-bytes-cast",
@@ -31,19 +92,9 @@
                 "description": "Simple cli utility to calculate file checksums."
             },
             {
-                "name": "windows-error",
-                "link": "https://crates.io/crates/windows-error",
-                "description": "Library to provide wrapper over Windows errors."
-            },
-            {
                 "name": "windows-win",
                 "link": "https://crates.io/crates/windows-win",
                 "description": "Some Windows hacking library with utilities to find windows and access them."
-            },
-            {
-                "name": "rusty-eushully",
-                "link": "https://github.com/DoumanAsh/rusty-eushully",
-                "description": "My utils to hack Eushully games"
             },
             {
                 "name": "clipboard-monitor",
@@ -67,6 +118,47 @@
                 "name": "lazy-re",
                 "link": "https://github.com/DoumanAsh/lazy_re",
                 "description": "Posix Regex C wrapper. Prototype for my work to simplify verification of debug command output"
+            }
+        ]
+    },
+    "c_sharp": {
+        "name": "C#",
+        "img": "c_sharp.svg",
+        "title": "My C# code",
+        "id": "C_sharp",
+        "data": [
+            {
+                "name": "Fie.mobile",
+                "link": "https://github.com/DoumanAsh/Fie.mobile",
+                "description": "Simple Xamarin app to post on multiple social medias"
+            }
+        ]
+    },
+    "c_plus_plus": {
+        "name": "C++",
+        "img": "c_plus_plus.svg",
+        "title": "My C++ code",
+        "id": "C_plus_plus",
+        "data": [
+            {
+                "name": "Type map",
+                "link": "https://github.com/DoumanAsh/typemap.cpp",
+                "description": "Simple type map prototype for one of my work projects"
+            },
+            {
+                "name": "Result",
+                "link": "https://github.com/DoumanAsh/Result.cpp",
+                "description": "Result type for C++ inspired by Rust"
+            },
+            {
+                "name": "gomibako",
+                "link": "https://github.com/DoumanAsh/gomibako.cpp",
+                "description": "Simple HTTP server using Boost Asio & Beast"
+            },
+            {
+                "name": "c++ exercises",
+                "link": "https://github.com/DoumanAsh/c--test-exe",
+                "description": "Various test exercises I've been doing"
             }
         ]
     },
@@ -133,6 +225,11 @@
                 "name": "Make Web JS-less Again",
                 "link": "https://doumanash.gitbooks.io/make-web-js-less-again/content/",
                 "description": "My thoughts on over-using JS and tips on enhancing user experience without JS."
+            },
+            {
+                "name": "Translation Why no one remembers my world?",
+                "link": "https://doumanash.github.io/Naze_Boku_no_Sekai_wo_Dare_mo_Oboeteinainoka/about.html",
+                "description": "My translation as I read through this ranobe."
             }
         ]
     },
@@ -177,6 +274,24 @@
                 "name": "clipboard-monitor",
                 "link": "https://github.com/DoumanAsh/clipboard-monitor",
                 "description": "Bunch of utilities to work with Win clipboard."
+            }
+        ]
+    },
+    "elixir": {
+        "name": "Elixir",
+        "img": "elixir.svg",
+        "title": "My Elixir code",
+        "id": "Elixir",
+        "data": [
+            {
+                "name": "EliVndb",
+                "link": "https://github.com/DoumanAsh/EliVndb",
+                "description": "Cute wrapper over VNDB API. It is a project I used to learn Elixir."
+            },
+            {
+                "name": "Roseline",
+                "link": "https://github.com/DoumanAsh/Roseline",
+                "description": "My adorable IRC bot that relies on EliVndb to provide help and storage for AGHT hooks."
             }
         ]
     }
