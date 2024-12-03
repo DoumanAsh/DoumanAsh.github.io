@@ -138,23 +138,13 @@
                     "lines": [
                         {
                             "type": "bold_line",
-                            "lang": "en",
-                            "line": "Frameworks/Libraries: "
-                        },
-                        {
-                            "type": "bold_line",
-                            "lang": "ru",
-                            "line": "Фреймворки/Библиотеки: "
-                        },
-                        {
-                            "type": "bold_line",
-                            "lang": "jp",
-                            "line": "フレームワーク: "
+                            "lang": "",
+                            "line": "APIs: "
                         },
                         {
                             "type": "single_line",
                             "lang": "",
-                            "line": "Node.js, Tokio, Boost, Xamarin, Google Test/Mock, Qt, Spring"
+                            "line": "Windows, Android, POSIX"
                         }
                     ]
                 },
@@ -164,12 +154,12 @@
                         {
                             "type": "bold_line",
                             "lang": "",
-                            "line": "APIs: "
+                            "line": "CI/CD: "
                         },
                         {
                             "type": "single_line",
                             "lang": "",
-                            "line": "Windows, Android, POSIX Threads"
+                            "line": "Github Actions/Gitlab, Docker, Terraform"
                         }
                     ]
                 },
@@ -184,7 +174,7 @@
                         {
                             "type": "single_line",
                             "lang": "",
-                            "line": "Sqlite, Mysql, Cassandra"
+                            "line": "Postgresql/Sqlite, Mongodb"
                         }
                     ]
                 },
@@ -209,7 +199,7 @@
                         {
                             "type": "single_line",
                             "lang": "",
-                            "line": "Git, Wireshark, JIRA, Redmine, Doxygen, Valgrind/Callgrind, CMake, gprof, oprofile, Lint, cppcheck"
+                            "line": "Git, Wireshark, JIRA, Redmine, Doxygen, Valgrind/Callgrind, CMake, gprof, oprofile"
                         }
                     ]
                 },
@@ -1371,7 +1361,7 @@
                                 {
                                     "type": "single_line",
                                     "lang": "",
-                                    "line": "Rust, Docker, Kubernetes, Terraform, Google Cloud, Sentry"
+                                    "line": "Rust, Docker, Kubernetes, Terraform, Google Cloud, MongoDB, Redis, Sentry"
                                 }
                             ]
                         }
