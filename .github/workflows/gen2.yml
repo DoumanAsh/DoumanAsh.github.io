@@ -27,9 +27,6 @@ jobs:
       - name: Lint
         run: npm run lint
 
-      - name: Generate data
-        run: npm run gen_data
-
       - name: Build site
         run: npm run build:p
 
