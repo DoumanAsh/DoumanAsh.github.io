@@ -1340,6 +1340,22 @@
                         },
 
                         {
+                            "type": "single_line",
+                            "lang": "en",
+                            "line": "Making prototype of AWS IoT Core integration"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "ru",
+                            "line": "Разработка прототипа интеграции с AWS IoT Core"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "jp",
+                            "line": "AWS IoT Coreプロトタイプのを開発"
+                        },
+
+                        {
 
                             "type": "multi_line",
                             "lines": [
