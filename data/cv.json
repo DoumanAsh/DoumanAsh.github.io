@@ -273,22 +273,6 @@
                         {
                             "type": "single_line",
                             "lang": "en",
-                            "line": "Design and feature implementation for existing system software(C/C++)."
-                        },
-                        {
-                            "type": "single_line",
-                            "lang": "ru",
-                            "line": "Разработка новой функциональности на базе существующего софта(C/C++)."
-                        },
-                        {
-                            "type": "single_line",
-                            "lang": "jp",
-                            "line": "既存のシステムソフトウェアの設計と改善"
-                        },
-
-                        {
-                            "type": "single_line",
-                            "lang": "en",
                             "line": "Porting existing SW to a Wind River Linux"
                         },
                         {
@@ -309,7 +293,7 @@
                         {
                             "type": "single_line",
                             "lang": "ru",
-                            "line": "Анализ и разрешение проблем сети, анализ логов(включая Wireshark)."
+                            "line": "Анализ и решение проблем сети, анализ логов(включая Wireshark)."
                         },
                         {
                             "type": "single_line",
@@ -319,18 +303,35 @@
                         {
                             "type": "single_line",
                             "lang": "en",
-                            "line": "Writing automatic unit tests by means of Google Test/Mock."
+                            "line": "Writing automation and code generation Python scripts."
                         },
                         {
                             "type": "single_line",
                             "lang": "ru",
-                            "line": "Написание юнит-тестов средствами Google Test/Mock."
+                            "line": "Написание скриптов автоматизации и кодо-генерации."
                         },
                         {
                             "type": "single_line",
                             "lang": "jp",
-                            "line": "Google Test/Mockによるユニットテストを作る"
+                            "line": "オートメーションやコード生成のPythonスクリプトを作る"
                         },
+
+                        {
+                            "type": "single_line",
+                            "lang": "en",
+                            "line": "Prototyping thread synchronization for test environment"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "ru",
+                            "line": "Прототипирование синхронизации тредов в тестовом окружении."
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "jp",
+                            "line": "テスト環境ためマルチスレッドの同期をプロトタイピングして"
+                        },
+
                         {
                             "type": "multi_line",
                             "lines": [
@@ -487,32 +488,6 @@
                                 {
                                     "type": "bold_line",
                                     "lang": "en",
-                                    "line": "Task boards: "
-                                },
-                                {
-                                    "type": "bold_line",
-                                    "lang": "ru",
-                                    "line": "Управление проектом: "
-                                },
-                                {
-                                    "type": "bold_line",
-                                    "lang": "jp",
-                                    "line": "タスクボード: "
-                                },
-                                {
-                                    "type": "single_line",
-                                    "lang": "",
-                                    "line": "JIRA, Redmine"
-                                }
-
-                            ]
-                        },
-                        {
-                            "type": "multi_line",
-                            "lines": [
-                                {
-                                    "type": "bold_line",
-                                    "lang": "en",
                                     "line": "Code profiling: "
                                 },
                                 {
@@ -533,30 +508,31 @@
                             ]
                         },
                         {
-                            "type": "single_line",
-                            "lang": "en",
-                            "line": "Writing automation and code generation Python scripts."
-                        },
-                        {
-                            "type": "single_line",
-                            "lang": "ru",
-                            "line": "Написание скриптов автоматизации и кодо-генерации."
-                        },
-                        {
-                            "type": "single_line",
-                            "lang": "jp",
-                            "line": "オートメーションやコード生成のPythonスクリプトを作る"
-                        },
-                        {
-                            "type": "single_line",
-                            "lang": "en",
-                            "line": "Prototyping thread synchronization for test environment using POSIX Threads."
-                        },
-                        {
-                            "type": "single_line",
-                            "lang": "ru",
-                            "line": "Прототипирование синхронизации тредов в тестовом окружении, используя POSIX Threads."
+                            "type": "multi_line",
+                            "lines": [
+                                {
+                                    "type": "bold_line",
+                                    "lang": "en",
+                                    "line": "Used technologies: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "ru",
+                                    "line": "Используемые технологии: "
+                                },
+                                {
+                                    "type": "bold_line",
+                                    "lang": "jp",
+                                    "line": "テクノロジー: "
+                                },
+                                {
+                                    "type": "single_line",
+                                    "lang": "",
+                                    "line": "C, C++, Google Test/Mock"
+                                }
+                            ]
                         }
+
                     ]
                 },
                 {
