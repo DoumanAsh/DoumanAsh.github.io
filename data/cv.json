@@ -76,9 +76,9 @@
                     "is_print": true
                 },
                 {
-                    "title": "Skype: coldgloom",
-                    "href": "skype:coldgloom?call",
-                    "logo": "skype.svg",
+                    "title": "Telegram: @DoumanAsh",
+                    "href": "https://t.me/DoumanAsh",
+                    "logo": "telegram.svg",
                     "is_print": true
                 }
             ]
