@@ -1345,10 +1345,24 @@
                             "lang": "jp",
                             "line": "gRPC用のKotlin WireライバラリためKtorのトランスポートライバラリを作成"
                         },
+                        {
+                            "type": "single_line",
+                            "lang": "en",
+                            "line": "Implementation of batching pipeline to write columnar database"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "ru",
+                            "line": "Разработка батча для записи в стольбцовую СУБД"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "jp",
+                            "line": "列指向データベースの書き込みバッチのパイプラインを開発して"
+                        },
 
 
                         {
-
                             "type": "multi_line",
                             "lines": [
                                 {
