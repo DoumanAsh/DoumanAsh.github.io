@@ -80,7 +80,7 @@ module.exports.plugins = [
     html_pug_plug(TITLE + ' | Home', "templates/index.pug", STATIC_HTML),
     html_pug_plug(TITLE + ' | Contacts', "templates/contacts.pug", STATIC_HTML),
     html_pug_plug(TITLE + ' | Goodies', "templates/goodies.pug", STATIC_HTML),
-    html_pug_plug("Arthur's CV", "templates/cv.pug", STATIC_HTML),
+    html_pug_plug("Artur's CV", "templates/cv.pug", STATIC_HTML),
     html_pug_plug("Page not found", "templates/404.pug", STATIC_HTML),
     new ScriptExtHtmlWebpackPlugin({
         defaultAttribute: 'async'
