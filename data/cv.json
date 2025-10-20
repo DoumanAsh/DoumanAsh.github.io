@@ -129,22 +129,7 @@
                         {
                             "type": "single_line",
                             "lang": "",
-                            "line": "C, C++, Rust, Python, Java, JavaScript, Elixir, C#, Powershell, Bash"
-                        }
-                    ]
-                },
-                {
-                    "type": "multi_line",
-                    "lines": [
-                        {
-                            "type": "bold_line",
-                            "lang": "",
-                            "line": "APIs: "
-                        },
-                        {
-                            "type": "single_line",
-                            "lang": "",
-                            "line": "Windows, Android, POSIX"
+                            "line": "Rust, C, C++, Python, JavaScript, Java/Kotlin, Elixir"
                         }
                     ]
                 },
@@ -199,7 +184,7 @@
                         {
                             "type": "single_line",
                             "lang": "",
-                            "line": "Git, Wireshark, JIRA, Redmine, Doxygen, Valgrind/Callgrind, CMake, gprof, oprofile"
+                            "line": "Git, Wireshark, Valgrind/Callgrind, CMake"
                         }
                     ]
                 },
@@ -224,7 +209,7 @@
                         {
                             "type": "single_line",
                             "lang": "",
-                            "line": "SCTP, TCP/IP"
+                            "line": "SCTP, TCP/IP, HTTP, gRPC"
                         }
                     ]
                 }
@@ -1398,7 +1383,7 @@
                                 {
                                     "type": "single_line",
                                     "lang": "",
-                                    "line": "Rust, Kotlin, Docker, Kubernetes, Terraform, Google Cloud, MongoDB, Redis, Sentry"
+                                    "line": "Rust, Kotlin, Docker, Kubernetes, Terraform, Google Cloud, MongoDB, Redis, Bigquery, AWS Athena, Sentry"
                                 }
                             ]
                         }
