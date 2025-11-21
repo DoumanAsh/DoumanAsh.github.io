@@ -96,17 +96,17 @@
                 {
                     "type": "single_line",
                     "lang": "en",
-                    "line": "C++/Rust Expert"
+                    "line": "Rust Expert"
                 },
                 {
                     "type": "single_line",
                     "lang": "ru",
-                    "line": "C++/Rust Эксперт"
+                    "line": "Rust Эксперт"
                 },
                 {
                     "type": "single_line",
                     "lang": "jp",
-                    "line": "C++/Rust  エキスパート"
+                    "line": "Rust  エキスパート"
                 },
 
                 {
@@ -1213,17 +1213,17 @@
                         {
                             "type": "single_line",
                             "lang": "en",
-                            "line": "Creating Rust library to control WPA supplicant"
+                            "line": "Creating Rust library to control WPA supplicant for network UI"
                         },
                         {
                             "type": "single_line",
                             "lang": "ru",
-                            "line": "Разработка Rust библиотеки для управлением WPA supplicant"
+                            "line": "Разработка Rust библиотеки для управлением WPA supplicant для сетевого интерфейса"
                         },
                         {
                             "type": "single_line",
                             "lang": "jp",
-                            "line": "WPA supplicantの操作Rustライブラリーの開発"
+                            "line": "ネットワークUIためWPA supplicantの操作Rustライブラリーの開発"
                         },
 
                         {
@@ -1394,6 +1394,21 @@
                             "line": "列指向データベースの書き込みバッチのパイプラインを開発して"
                         },
 
+                        {
+                            "type": "single_line",
+                            "lang": "en",
+                            "line": "Cloud migration from GCP to AWS"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "ru",
+                            "line": "Перенос серверной части из GCP в AWS"
+                        },
+                        {
+                            "type": "single_line",
+                            "lang": "jp",
+                            "line": "GCPからAWSへの移動"
+                        },
 
                         {
                             "type": "multi_line",
