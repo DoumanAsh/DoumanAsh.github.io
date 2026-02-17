@@ -6,6 +6,11 @@
         "id": "Rust",
         "data": [
             {
+                "name": "tracing-opentelemetry-setup",
+                "link": "https://github.com/DoumanAsh/tracing-opentelemetry-setup",
+                "description": "All-included Opentelemetry integration library. Includes Datadog support."
+            },
+            {
                 "name": "stroka",
                 "link": "https://github.com/DoumanAsh/stroka",
                 "description": "Alternative Rust String implementation with SSO"
