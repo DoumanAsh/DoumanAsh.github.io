@@ -140,12 +140,12 @@
                         {
                             "type": "bold_line",
                             "lang": "",
-                            "line": "CI/CD: "
+                            "line": "CI/CD/Devops: "
                         },
                         {
                             "type": "single_line",
                             "lang": "",
-                            "line": "Github Actions/Gitlab, Docker, Terraform"
+                            "line": "Github Actions/Gitlab, Docker, Kubernetes, Terraform, AWS"
                         }
                     ]
                 },
@@ -185,7 +185,7 @@
                         {
                             "type": "single_line",
                             "lang": "",
-                            "line": "Git, Wireshark, Valgrind/Callgrind, CMake"
+                            "line": "Git, Wireshark, Valgrind/Callgrind, CMake, fluent-bit, OpenObserve, Datadog"
                         }
                     ]
                 },
