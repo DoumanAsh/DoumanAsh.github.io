@@ -96,17 +96,65 @@
                 {
                     "type": "single_line",
                     "lang": "en",
-                    "line": "Rust Expert"
+                    "line": "Lazy programmer who enjoys learning new stuff"
                 },
                 {
                     "type": "single_line",
                     "lang": "ru",
-                    "line": "Rust Эксперт"
+                    "line": "Ленивый программист наслаждающийся изучением всего нового"
                 },
                 {
                     "type": "single_line",
                     "lang": "jp",
-                    "line": "Rust  エキスパート"
+                    "line": "新しい技術学ぶ楽しみしている怠惰なプログラマー"
+                },
+
+                {
+                    "type": "single_line",
+                    "lang": "en",
+                    "line": "My favorite programming language is Rust, C++ goes second"
+                },
+                {
+                    "type": "single_line",
+                    "lang": "ru",
+                    "line": "На текущий момент мой любимый язык это Раст, а после него идет С++"
+                },
+                {
+                    "type": "single_line",
+                    "lang": "jp",
+                    "line": "一番好み言語はＲｕｓt，セカンドはC++"
+                },
+
+                {
+                    "type": "single_line",
+                    "lang": "en",
+                    "line": "Recently been looking into DevOps"
+                },
+                {
+                    "type": "single_line",
+                    "lang": "ru",
+                    "line": "Недавно начал пробовать DevOps"
+                },
+                {
+                    "type": "single_line",
+                    "lang": "jp",
+                    "line": "最近DevOps試してみたい"
+                },
+
+                {
+                    "type": "single_line",
+                    "lang": "en",
+                    "line": "Enjoy doing good quality development at my own pace"
+                },
+                {
+                    "type": "single_line",
+                    "lang": "ru",
+                    "line": "Предпочитаю заниматься высококачественной разработкой"
+                },
+                {
+                    "type": "single_line",
+                    "lang": "jp",
+                    "line": "ゆっくり良い開発楽しんてマイペース人"
                 },
 
                 {
@@ -125,7 +173,7 @@
                         {
                             "type": "bold_line",
                             "lang": "jp",
-                            "line": "プログラム言語: "
+                            "line": "プログラミング言語: "
                         },
                         {
                             "type": "single_line",
