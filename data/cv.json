@@ -88,9 +88,9 @@
     "elements": {
         "expertise": {
             "title": {
-                "en": "Expertise",
-                "ru": "Экспертиза",
-                "jp": "専門知識"
+                "en": "About me",
+                "ru": "Кратко обо мне",
+                "jp": "自己PR"
             },
             "data": [
                 {
